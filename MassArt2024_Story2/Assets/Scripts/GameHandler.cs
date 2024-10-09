@@ -3,20 +3,25 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 using UnityEngine.SceneManagement;
 
 public class GameHandler : MonoBehaviour
 {
 
-    public static int playerStat1;
+    public static int timeRemaining;
+	public int timeMax = 100;
+	public TMP_Text timerText;
     // public GameObject textGameObject;
 
-    // void Start () { UpdateScore (); }
+    void Start () { 
+		timeRemaining = timeMax;
+		UpdateStats(); 
+	}
 
-    void Update()
-    {         //delete this quit functionality when a Pause Menu is added!
-        if (Input.GetKey("escape"))
-        {
+    void Update(){         
+		//delete this quit functionality when a Pause Menu is added!
+        if (Input.GetKey("escape")){
             Application.Quit();
         }
 
@@ -26,31 +31,28 @@ public class GameHandler : MonoBehaviour
         //}
     }
 
-    // void UpdateScore () {
-    //        Text scoreTemp = textGameObject.GetComponent<Text>();
-    //        scoreTemp.text = "Score: " + score; }
+	//public function that other scripts can access to update stats like time remaining:
+    public void UpdateStats () {
+    	timerText.text = "TIME REMAINING: " + timeRemaining; 
+	}
 
-    public void StartGame()
-    {
+    public void StartGame(){
         SceneManager.LoadScene("Scene1");
     }
 
-    public void OpenCredits()
-    {
+    public void OpenCredits(){
         SceneManager.LoadScene("Credits");
     }
 
-    public void RestartGame()
-    {
+    public void RestartGame(){
         SceneManager.LoadScene("MainMenu");
     }
 
-    public void QuitGame()
-    {
-#if UNITY_EDITOR
+    public void QuitGame(){
+	#if UNITY_EDITOR
         UnityEditor.EditorApplication.isPlaying = false;
-#else
+	#else
                 Application.Quit();
-#endif
+	#endif
     }
 }

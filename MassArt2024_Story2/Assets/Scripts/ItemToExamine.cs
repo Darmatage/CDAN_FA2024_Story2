@@ -20,8 +20,9 @@ public class ItemToExamine : MonoBehaviour{
     public TMP_Text Char2speech;
     //public AudioSource audioSource1;
 
+	//array of strings or player to think while looking at object
     public string[] examineThoughts;
-
+	public int timeCost = 10;
     GameHandler gameHandler;
 
     void Start(){
@@ -38,25 +39,31 @@ public class ItemToExamine : MonoBehaviour{
         }
     }
 
+	//function assigned to the button:
     public void RevealBigItem(){
         itemIcon.sprite = GetComponent<Image>().sprite;
         nextExamine_Button.SetActive(true);
         itemLargeDisplay.SetActive(true);
         dialogueDisplay.SetActive(false);
         //nextExamine_Button.GetComponentInChildren<Button>().onClick.AddListener(MyNext);
+
+		//actvate time cost:
+		GameHandler.timeRemaining -= timeCost;
+		gameHandler.UpdateStats();
     }
 
     public void ItemNext(){
         primeInt = primeInt + 1;
-        if (primeInt == examineThoughts.Length){
-            EndDisplay();
-        }
+        
         if (primeInt < examineThoughts.Length){
             dialogueDisplay.SetActive(true);
             Char1name.text = "YOU";
             Char1speech.text = examineThoughts[primeInt];
             Char2name.text = "";
             Char2speech.text = "";
+        }
+		if (primeInt == examineThoughts.Length){
+            EndDisplay();
         }
     }
 
@@ -66,6 +73,7 @@ public class ItemToExamine : MonoBehaviour{
         dialogueDisplay.SetActive(false);
         nextExamine_Button.SetActive(false);
         itemLargeDisplay.SetActive(false);
+		primeInt = -1;
     }
 
 }
