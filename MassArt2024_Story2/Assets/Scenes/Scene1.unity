@@ -3220,6 +3220,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 792738245}
     m_Modifications:
+    - target: {fileID: 295422666980181263, guid: 4225aefd801270d43a3f1c84369f1ae0, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: b42727a14cc8e994896234584f8cf6c3, type: 3}
+    - target: {fileID: 295422666980181263, guid: 4225aefd801270d43a3f1c84369f1ae0, type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1607427083847576452, guid: 4225aefd801270d43a3f1c84369f1ae0, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: bfd32a415ccff0e4d83bc0593d823527, type: 3}
+    - target: {fileID: 1607427083847576452, guid: 4225aefd801270d43a3f1c84369f1ae0, type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8113524767399174494, guid: 4225aefd801270d43a3f1c84369f1ae0, type: 3}
       propertyPath: m_Name
       value: DIALOGUE_DISPLAY
