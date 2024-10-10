@@ -18,7 +18,7 @@ public class ActivateExamine : MonoBehaviour{
         largeIconImage.SetActive(false);
     }
 
-    public void OpenCloseExamine(){  
+    public void OpenCloseExamine(){
         isOpen = !isOpen;
         if (isOpen){
             DialogueDisplay.SetActive(false);
@@ -32,6 +32,9 @@ public class ActivateExamine : MonoBehaviour{
             DialogueDisplay.SetActive(true);
             Nextbutton.SetActive(true);
             InvestigationMenu.SetActive(false);
+            for (int i =0; i<characters.Length; i++){
+              characters[i].SetActive(true);
+            }
         }
     }
 }
