@@ -2149,6 +2149,14 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 5619988457422349120, guid: f47a1449ec44fbd4cb11c0871c9445d8, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5619988457422349120, guid: f47a1449ec44fbd4cb11c0871c9445d8, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 104210abf129fcf46a985929ba3fcd09, type: 3}
     - target: {fileID: 7966427278787692198, guid: f47a1449ec44fbd4cb11c0871c9445d8, type: 3}
       propertyPath: m_Name
       value: Button_storyCHOICE_1b
@@ -2993,6 +3001,14 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5687483028513746309, guid: 6824ee063bdb6884e9dc1f013332e7ec, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5687483028513746309, guid: 6824ee063bdb6884e9dc1f013332e7ec, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: d933c1b6f6bdacb4f9914d8081e02c42, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3123,6 +3139,18 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 5619988457422349120, guid: f47a1449ec44fbd4cb11c0871c9445d8, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5619988457422349120, guid: f47a1449ec44fbd4cb11c0871c9445d8, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 104210abf129fcf46a985929ba3fcd09, type: 3}
+    - target: {fileID: 5619988457422349120, guid: f47a1449ec44fbd4cb11c0871c9445d8, type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7966427278787692198, guid: f47a1449ec44fbd4cb11c0871c9445d8, type: 3}
       propertyPath: m_Name
       value: Button_storyCHOICE_1a
@@ -3220,6 +3248,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 792738245}
     m_Modifications:
+    - target: {fileID: 295422666980181263, guid: 4225aefd801270d43a3f1c84369f1ae0, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: b42727a14cc8e994896234584f8cf6c3, type: 3}
+    - target: {fileID: 295422666980181263, guid: 4225aefd801270d43a3f1c84369f1ae0, type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1607427083847576452, guid: 4225aefd801270d43a3f1c84369f1ae0, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: bfd32a415ccff0e4d83bc0593d823527, type: 3}
+    - target: {fileID: 1607427083847576452, guid: 4225aefd801270d43a3f1c84369f1ae0, type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8113524767399174494, guid: 4225aefd801270d43a3f1c84369f1ae0, type: 3}
       propertyPath: m_Name
       value: DIALOGUE_DISPLAY
