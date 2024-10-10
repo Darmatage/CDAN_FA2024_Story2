@@ -6,6 +6,7 @@ TagManager:
   tags:
   - ItemToExamine
   - GameHandler
+  - PauseMenuSlider
   layers:
   - Default
   - TransparentFX
