@@ -19,6 +19,8 @@ public class Scene1Dialogue : MonoBehaviour
     //public Text Char3speech;
     public GameObject DialogueDisplay;
     public GameObject ArtChar1a;
+    //this is for the second character in scene
+    public GameObject ArtChar2a;
     //public GameObject ArtChar1b;
     //public GameObject ArtChar2;
     public GameObject ArtBG1;
@@ -35,6 +37,7 @@ public class Scene1Dialogue : MonoBehaviour
     {
         DialogueDisplay.SetActive(false);
         ArtChar1a.SetActive(false);
+        ArtChar2a.SetActive(false);
         ArtBG1.SetActive(true);
         Choice1a.SetActive(false);
         Choice1b.SetActive(false);
@@ -74,6 +77,7 @@ public class Scene1Dialogue : MonoBehaviour
         }
         else if (primeInt == 3)
         {
+            ArtChar2a.SetActive(true); //*Allows second charcter to appear! Copy and paste where needed
             Char1name.text = "YOU";
             Char1speech.text = "Wuh..? What happened?";
             Char2name.text = "";
@@ -200,4 +204,3 @@ public class Scene1Dialogue : MonoBehaviour
         SceneManager.LoadScene("Scene2b");
     }
 }
-
