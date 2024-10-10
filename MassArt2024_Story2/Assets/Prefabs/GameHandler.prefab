@@ -44,3 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dca57e87cbc42d34d8861431022541d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timeMax: 100
+  timerText: {fileID: 0}
+  pauseMenuUI: {fileID: 0}
+  mixer: {fileID: 24100000, guid: abf46e8e4421b3348957757cecacdb9a, type: 2}

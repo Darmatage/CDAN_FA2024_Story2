@@ -100,7 +100,7 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 0.48401564, g: 0.6226415, b: 0.49261764, a: 1}
+    m_NormalColor: {r: 0.5176471, g: 0.8117647, b: 0.8666667, a: 1}
     m_HighlightedColor: {r: 0.2716581, g: 0.41509432, b: 0.26002133, a: 1}
     m_PressedColor: {r: 0.7436454, g: 0.9339623, b: 0.7997458, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -150,6 +150,7 @@ MonoBehaviour:
   DialogueDisplay: {fileID: 0}
   Nextbutton: {fileID: 0}
   InvestigationMenu: {fileID: 0}
+  largeIconImage: {fileID: 0}
   characters:
   - {fileID: 0}
 --- !u!1 &837482191572647718
@@ -227,8 +228,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4290896577
-  m_fontColor: {r: 0.75628334, g: 0.8867924, b: 0.75628334, a: 1}
+    rgba: 4281216558
+  m_fontColor: {r: 0.1792453, g: 0.1792453, b: 0.1792453, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
