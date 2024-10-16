@@ -72,52 +72,132 @@ public class Scene1Dialogue : MonoBehaviour
             DialogueDisplay.SetActive(true);
             Char1name.text = "";
             Char1speech.text = "";
-            Char2name.text = "Jeda";
-            Char2speech.text = "Wakey wakey, human.";
+            Char2name.text = "AI";
+            Char2speech.text = "[ POWER- UP INITIATED ]";
         }
         else if (primeInt == 3)
         {
             ArtChar2a.SetActive(true); //*Allows second charcter to appear! Copy and paste where needed
-            Char1name.text = "YOU";
-            Char1speech.text = "Wuh..? What happened?";
-            Char2name.text = "";
-            Char2speech.text = "";
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "AI";
+            Char2speech.text = "[ BEGINNING START-UP. ] ";
             //gameHandler.AddPlayerStat(1);
         }
         else if (primeInt == 4)
         {
             Char1name.text = "";
             Char1speech.text = "";
-            Char2name.text = "Jeda";
-            Char2speech.text = "I know I did not hit you that hard.";
+            Char2name.text = "AI";
+            Char2speech.text = "[ BOOTING. ]";
         }
         else if (primeInt == 5)
         {
-            Char1name.text = "YOU";
-            Char1speech.text = "Hit me? Why?";
-            Char2name.text = "";
-            Char2speech.text = "";
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "AI";
+            Char2speech.text = "[ BOOTING. . ] ";
         }
         else if (primeInt == 6)
         {
             Char1name.text = "";
             Char1speech.text = "";
-            Char2name.text = "Jeda";
-            Char2speech.text = "I am searching for a fugitive. Ragu Fahn.";
+            Char2name.text = "AI";
+            Char2speech.text = "[ BOOTING . . . ] ";
         }
         else if (primeInt == 7)
         {
-            Char1name.text = "YOU";
-            Char1speech.text = "Why do you think I know anything?";
-            Char2name.text = "";
-            Char2speech.text = "";
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "AI";
+            Char2speech.text = "[ SUCCESS ! ]";
         }
         else if (primeInt == 8)
         {
             Char1name.text = "";
             Char1speech.text = "";
-            Char2name.text = "Jeda";
-            Char2speech.text = "Do not play the stupid. You will take me to him.";
+            Char2name.text = "AI";
+            Char2speech.text = "[ WELCOME ONLINE, R.O.B.I. ]";
+        }
+        else if (primeInt == 9)
+        {
+            Char1name.text = "R.O.B.I.";
+            Char1speech.text = "( My lens suddenly opened, revealing a messy, dusty, run down laboratory. )";
+            Char2name.text = "";
+            Char2speech.text = "";
+        }
+        else if (primeInt == 10)
+        {
+            Char1name.text = "R.O.B.I.";
+            Char1speech.text = "( . . .At least, that's what my sensors are telling me. )";
+            Char2name.text = "";
+            Char2speech.text = "";
+        }
+        else if (primeInt == 11)
+        {
+            Char1name.text = "R.O.B.I.";
+            Char1speech.text = "( My logic unit feels as if its not working up to speed. . .) ";
+            Char2name.text = "";
+            Char2speech.text = "";
+        }
+        else if (primeInt == 12)
+        {
+            Char1name.text = "R.O.B.I.";
+            Char1speech.text = "( Maybe I should charge just a little bit more. . . )";
+            Char2name.text = "";
+            Char2speech.text = "";
+            // Here would be a game over choice with robi either continuing or sleeping. If he sleeps it would lead to a Game over screen, but if he stays awake script would continue as usual. Ask 10/17/24 jason how to make more buttons, either me or someone else if im still sick - SAM
+        // Didnt put any choices here for now! will when we figure out. :-D!!!!
+    }
+    else if (primeInt == 13)
+        {
+            Char1name.text = "R.O.B.I.";
+            Char1speech.text = "( I cant be messing around! Its probably just a slow start up. . . better start looking around!)";
+            Char2name.text = "";
+            Char2speech.text = "";
+        }
+        else if (primeInt == 14)
+        {
+            Char1name.text = "";
+            Char1speech.text = " ";
+            Char2name.text = "AI";
+            Char2speech.text = "Welcome awake, R.O.B.I.";
+        }
+        else if (primeInt == 15)
+        {
+            Char1name.text = "R.O.B.I";
+            Char1speech.text = "Huh?";
+            Char2name.text = "";
+            Char2speech.text = "";
+        }
+        else if (primeInt == 16)
+        {
+            Char1name.text = "";
+            Char1speech.text = " ";
+            Char2name.text = "AI";
+            Char2speech.text = "If you are confused about the term `Welcome awake`, it is a biological term for gaining power.";
+        }
+        else if (primeInt == 17)
+        {
+            Char1name.text = "";
+            Char1speech.text = " ";
+            Char2name.text = "AI";
+            Char2speech.text = "Of which, you just got for the first time.";
+        }
+        else if (primeInt == 18)
+        {
+            Char1name.text = "";
+            Char1speech.text = " ";
+            Char2name.text = "AI";
+            Char2speech.text = "However, if you are confused about your identification. Your shortened name is R.O.B.I, or Responsive Optimization Behavior Interface";
+       
+        }
+        else if (primeInt == 19)
+        {
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "AI";
+            Char2speech.text = "Is that clear?";
             // Turn off the "Next" button, turn on "Choice" buttons
             nextButton.SetActive(false);
             allowSpace = false;
@@ -131,39 +211,122 @@ public class Scene1Dialogue : MonoBehaviour
             //gameHandler.AddPlayerStat(1);
             Char1name.text = "";
             Char1speech.text = "";
-            Char2name.text = "Jeda";
-            Char2speech.text = "Then you are no use to me, and must be silenced.";
+            Char2name.text = "AI";
+            Char2speech.text = "Excellent. I see you are working as expected.";
         }
-        else if (primeInt == 21)
-        {
-            Char1name.text = "";
-            Char1speech.text = "";
-            Char2name.text = "Jeda";
-            Char2speech.text = "Come back here! Do not think you can hide from me!";
-            // Turn off the "Next" button, turn on "Scene" button/s
-            nextButton.SetActive(false);
-            allowSpace = false;
-            NextScene1Button.SetActive(true);
-        }
-
+    
         // after choice 1b
         else if (primeInt == 30)
         {
             Char1name.text = "";
             Char1speech.text = "";
-            Char2name.text = "Jeda";
-            Char2speech.text = "Do not think you can fool me, human. Where will we find him?";
+            Char2name.text = "AI";
+            Char2speech.text = "Ah, you must have gained some damage throughout the time prior to your activation. You will most likely be fine. ";
         }
         else if (primeInt == 31)
         {
-            Char1name.text = "YOU";
-            Char1speech.text = "Ragu hangs out in a rough part of town. I'll take you now.";
+            Char1name.text = "R.O.B.I.";
+            Char1speech.text = "So, What exactly am I supposed to do?";
             Char2name.text = "";
             Char2speech.text = "";
-            // Turn off the "Next" button, turn on "Scene" button/s
-            nextButton.SetActive(false);
-            allowSpace = false;
-            NextScene2Button.SetActive(true);
+        }
+        else if (primeInt == 32)
+        {
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "AI";
+            Char2speech.text = "That’s a simple question! What does your programming tell you to do?";
+        }
+        else if (primeInt == 33)
+        {
+            Char1name.text = "R.O.B.I.";
+            Char1speech.text = "Oh! It. . .";
+            Char2name.text = "";
+            Char2speech.text = "";
+        }
+        else if (primeInt == 34)
+        {
+            Char1name.text = "R.O.B.I.";
+            Char1speech.text = "Um. . .";
+            Char2name.text = "";
+            Char2speech.text = "";
+        }
+        else if (primeInt == 35)
+        {
+            Char1name.text = "R.O.B.I.";
+            Char1speech.text = "Where in my programming say that?";
+            Char2name.text = "";
+            Char2speech.text = "";
+        }
+        else if (primeInt == 36)
+        {
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "AI";
+            Char2speech.text = "You would know. Perhaps you were never programmed with one.";
+        }
+        else if (primeInt == 37)
+        {
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "";
+            Char2speech.text = "";
+        }
+        else if (primeInt == 38)
+        {
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "";
+            Char2speech.text = "";
+        }
+        else if (primeInt == 39)
+        {
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "";
+            Char2speech.text = "";
+        }
+        else if (primeInt == 40)
+        {
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "";
+            Char2speech.text = "";
+        }
+        else if (primeInt == 41)
+        {
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "";
+            Char2speech.text = "";
+        }
+        else if (primeInt == 42)
+        {
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "";
+            Char2speech.text = "";
+        }
+        else if (primeInt == 43)
+        {
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "";
+            Char2speech.text = "";
+        }
+        else if (primeInt == 44)
+        {
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "";
+            Char2speech.text = "";
+        }
+        else if (primeInt == 45)
+        {
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "";
+            Char2speech.text = "";
         }
 
         //Please do NOT delete this final bracket that ends the Next() function:
