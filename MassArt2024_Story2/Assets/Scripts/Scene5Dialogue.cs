@@ -19,6 +19,10 @@ public class Scene5Dialogue : MonoBehaviour
     //public Text Char3speech;
     public GameObject DialogueDisplay;
     public GameObject ArtChar1a;
+    public GameObject ArtChar1b;
+    public GameObject ArtChar1c;
+    public GameObject ArtChar1d;
+    public GameObject ArtChar1e;
     //this is for the second character in scene
     public GameObject ArtChar2a;
     //public GameObject ArtChar1b;

@@ -70,13 +70,13 @@ public class Scene6Dialogue : MonoBehaviour
         }
     }
 
-   
+
     public void Next()
     {
         primeInt = primeInt + 1;
         if (primeInt == 1)
         {
-            
+
         }
         else if (primeInt == 2)
         {
@@ -89,7 +89,7 @@ public class Scene6Dialogue : MonoBehaviour
         }
         else if (primeInt == 3)
         {
-             
+
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "???";
@@ -202,7 +202,7 @@ public class Scene6Dialogue : MonoBehaviour
             Char1speech.text = "";
             Char2name.text = "Dodo";
             Char2speech.text = "Alright, go ahead and take a look around, but don’t mess up any of my work papers! Can’t have you messing up years of calculations.";
-            
+
     }
     else if (primeInt == 41)
         {
@@ -221,10 +221,10 @@ public class Scene6Dialogue : MonoBehaviour
             nextButton.SetActive(false);
             allowSpace = false;
             Choice2a.SetActive(true);
-            Choice2b.SetActive(true); 
+            Choice2b.SetActive(true);
         }
-        
-        
+
+
 
         // after choice 2a
         else if (primeInt == 50)
@@ -277,7 +277,7 @@ public class Scene6Dialogue : MonoBehaviour
             allowSpace = true;
             NextScene1Button.SetActive(true);
         }
-        
+
 
 
         //Please do NOT delete this final bracket that ends the Next() function:
@@ -310,7 +310,7 @@ public class Scene6Dialogue : MonoBehaviour
         allowSpace = true;
     }
 
-  
+
 
     //choice 2a and 2b functions:
     public void Choice2aFunct()

@@ -225,6 +225,79 @@ public class Scene10Dialogue : MonoBehaviour
               Char2name.text = "A.I";
               Char2speech.text = "I suppose so. After All, you’ve already completed your designated purpose.";
           }
+          else if (primeInt == 55)
+          {
+              ArtChar2a.SetActive(true);
+              Char1name.text = "ROBI";
+              Char1speech.text = "Oh… wait, you mean grabbing the override items?!";
+              Char2name.text = "";
+              Char2speech.text = "";
+          }
+          else if (primeInt == 56)
+          {
+              ArtChar2a.SetActive(true);
+              Char1name.text = "";
+              Char1speech.text = "";
+              Char2name.text = "A.I";
+              Char2speech.text = "Affirmative. The Overseer was quite a forgetful person you see.";
+          }
+          else if (primeInt == 57)
+          {
+              ArtChar2a.SetActive(true);
+              Char1name.text = "";
+              Char1speech.text = "";
+              Char2name.text = "A.I";
+              Char2speech.text = "So their solution was to use some of their brain data to create a sentient robot that would go live if ever there was an imminent shut down.";
+          }
+          else if (primeInt == 58)
+          {
+              ArtChar2a.SetActive(true);
+              Char1name.text = "ROBI";
+              Char1speech.text = "But… couldn’t they just, like, put a reminder?";
+              Char2name.text = "";
+              Char2speech.text = "";
+          }
+          else if (primeInt == 59)
+          {
+              ArtChar2a.SetActive(true);
+              Char1name.text = "";
+              Char1speech.text = "";
+              Char2name.text = "A.I";
+              Char2speech.text = "Indeed. Quite the fellow that one. I suppose it all worked out in the end though. ";
+          }
+          else if (primeInt == 60)
+          {
+              ArtChar2a.SetActive(true);
+              Char1name.text = "ROBI";
+              Char1speech.text = "So now what? Do I need to go back to sleep?";
+              Char2name.text = "";
+              Char2speech.text = "";
+          }
+          else if (primeInt == 61)
+          {
+              ArtChar2a.SetActive(true);
+              Char1name.text = "";
+              Char1speech.text = "";
+              Char2name.text = "A.I";
+              Char2speech.text = "I hold no control over you. You are free to do as you wish. As the Overseer would put it, ‘Live a little’";
+          }
+          else if (primeInt == 62)
+          {
+              ArtChar2a.SetActive(true);
+              Char1name.text = "ROBI";
+              Char1speech.text = "Huh. Yeah maybe your right! I think I'll get out of here and explore!";
+              Char2name.text = "";
+              Char2speech.text = "";
+          }
+          else if (primeInt == 63)
+          {
+              ArtChar2a.SetActive(false);
+              DialogueDisplay.SetActive(false);
+              SceneManager.LoadScene("SceneWin");
+
+          }
+
+
         //Please do NOT delete this final bracket that ends the Next() function:
     }
 
