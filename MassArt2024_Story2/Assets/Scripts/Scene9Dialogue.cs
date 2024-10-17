@@ -32,6 +32,8 @@ public class Scene9Dialogue : MonoBehaviour
     public GameObject ArtBG1;
     public GameObject Choice1a;
     public GameObject Choice1b;
+    public GameObject Choice2a;
+    public GameObject Choice2b;
     public GameObject NextScene1Button;
     public GameObject NextScene2Button;
     public GameObject nextButton;
@@ -47,6 +49,8 @@ public class Scene9Dialogue : MonoBehaviour
         ArtBG1.SetActive(true);
         Choice1a.SetActive(false);
         Choice1b.SetActive(false);
+        Choice2a.SetActive(false);
+        Choice2b.SetActive(false);
         NextScene1Button.SetActive(false);
         NextScene2Button.SetActive(false);
         nextButton.SetActive(true);
@@ -177,26 +181,14 @@ public class Scene9Dialogue : MonoBehaviour
             Char1speech.text = "";
             Char2name.text = "Prof. Fin";
             Char2speech.text = "Dude, you're a robot, you'd probably taste terrible. Besides, I’m not going around eating people anyways, I’m vegan.";
+            nextButton.SetActive(false);
+            allowSpace = false;
+            Choice2a.SetActive(true);
+            Choice2b.SetActive(true);
         }
 
 
-        else if (primeInt == 15)
-        {
-            //a choice will happen here, it will be a once scene dialogue difference “ A vegan shark? How does that even work out for you?
-            //
-            Char1name.text = "ROBI";
-            Char1speech.text = "Oh my bad. I didn’t know";
-            Char2name.text = "";
-            Char2speech.text = "";
-        }
-        else if (primeInt == 16)
-        {
-
-            Char1name.text = "";
-            Char1speech.text = "";
-            Char2name.text = "Prof. Fin";
-            Char2speech.text = "No prob Bob, I get that alot.";
-        }
+        
         else if (primeInt == 17)
         {
 
@@ -204,6 +196,7 @@ public class Scene9Dialogue : MonoBehaviour
             Char1speech.text = "Anyways, just pick this up, right?";
             Char2name.text = "";
             Char2speech.text = "";
+
         }
         else if (primeInt == 18)
         {
@@ -301,7 +294,44 @@ public class Scene9Dialogue : MonoBehaviour
             allowSpace = false;
             NextScene2Button.SetActive(true);
         }
+        //after choice 2a
+        else if (primeInt == 40)
+        {
 
+            Char1name.text = "ROBI";
+            Char1speech.text = "Oh my bad. I didn’t know";
+            Char2name.text = "";
+            Char2speech.text = "";
+        }
+        else if (primeInt == 41)
+        {
+
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Prof. Fin";
+            Char2speech.text = "No prob Bob, I get that alot.";
+            primeInt = 16;
+        }
+
+        //after choice 2b
+        else if (primeInt == 50)
+        {
+
+            Char1name.text = "R.O.B.I.";
+            Char1speech.text = "A vegan shark? How does that even work out for you?";
+            Char2name.text = "";
+            Char2speech.text = "";
+        }
+        else if (primeInt == 51)
+        {
+
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Prof. Fin";
+            Char2speech.text = "Hey don’t knock the lifestyle, I get by just fine!";
+
+            primeInt = 16;
+        }
         //Please do NOT delete this final bracket that ends the Next() function:
     }
 
@@ -330,6 +360,31 @@ public class Scene9Dialogue : MonoBehaviour
         nextButton.SetActive(true);
         allowSpace = true;
     }
+    public void Choice2aFunct()
+    {
+        Char1name.text = "";
+        Char1speech.text = "";
+        Char2name.text = "";
+        Char2speech.text = "";
+        primeInt = 39;
+        Choice1a.SetActive(false);
+        Choice1b.SetActive(false);
+        nextButton.SetActive(true);
+        allowSpace = true;
+    }
+    public void Choice2bFunct()
+    {
+        Char1name.text = "";
+        Char1speech.text = "";
+        Char2name.text = "";
+        Char2speech.text = "";
+        primeInt = 49;
+        Choice1a.SetActive(false);
+        Choice1b.SetActive(false);
+        nextButton.SetActive(true);
+        allowSpace = true;
+    }
+    
 
     public void SceneChange1()
     {
