@@ -182,7 +182,8 @@ public class Scene9Dialogue : MonoBehaviour
 
         else if (primeInt == 15)
         {
-
+            //a choice will happen here, it will be a once scene dialogue difference “ A vegan shark? How does that even work out for you?
+            //
             Char1name.text = "ROBI";
             Char1speech.text = "Oh my bad. I didn’t know";
             Char2name.text = "";

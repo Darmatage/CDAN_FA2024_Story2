@@ -360,10 +360,14 @@ public class Scene2Dialogue : MonoBehaviour
 
     public void SceneChange1()
     {
-        SceneManager.LoadScene("Scene2");
+        SceneManager.LoadScene("Scene3");
     }
     public void SceneChange2()
     {
-        SceneManager.LoadScene("Scene2b");
+        SceneManager.LoadScene("Scene4");
+    }
+    public void SceneChange3()
+    {
+        SceneManager.LoadScene("Scene5");
     }
 }
