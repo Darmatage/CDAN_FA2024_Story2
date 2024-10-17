@@ -180,7 +180,7 @@ public class Scene9Dialogue : MonoBehaviour
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Prof. Fin";
-            Char2speech.text = "Dude, you're a robot, you'd probably taste terrible. Besides, I’m not going around eating people anyways, I’m vegan.";
+            Char2speech.text = "Dude, you're a robot, you'd probably taste terrible. Besides, I’m vegan.";
             nextButton.SetActive(false);
             allowSpace = false;
             Choice2a.SetActive(true);
@@ -242,7 +242,7 @@ public class Scene9Dialogue : MonoBehaviour
         {
 
             Char1name.text = "ROBI";
-            Char1speech.text = "I’m actually looking for items to override the lock on this place! The solar powered generator seems to be down and can’t be accessed without the overseer’s items!";
+            Char1speech.text = "I’m looking for items to override the lock on this place! The solar powered generator seems to be down and can’t be accessed without the overseer’s items!";
             Char2name.text = "";
             Char2speech.text = "";
         }
@@ -252,7 +252,7 @@ public class Scene9Dialogue : MonoBehaviour
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Prof. Fin";
-            Char2speech.text = "Oh word? There should be an item like that somewhere in this room, a USB! I’d search for it with you, but again no hands. Feel free to look around.";
+            Char2speech.text = "Oh word? There should be an item like that somewhere in this room, a USB! I’d search for it with you, but again no hands.";
             nextButton.SetActive(false);
             allowSpace = false;
         }
@@ -295,15 +295,8 @@ public class Scene9Dialogue : MonoBehaviour
             NextScene2Button.SetActive(true);
         }
         //after choice 2a
+        
         else if (primeInt == 40)
-        {
-
-            Char1name.text = "ROBI";
-            Char1speech.text = "Oh my bad. I didn’t know";
-            Char2name.text = "";
-            Char2speech.text = "";
-        }
-        else if (primeInt == 41)
         {
 
             Char1name.text = "";
@@ -314,15 +307,8 @@ public class Scene9Dialogue : MonoBehaviour
         }
 
         //after choice 2b
+        
         else if (primeInt == 50)
-        {
-
-            Char1name.text = "R.O.B.I.";
-            Char1speech.text = "A vegan shark? How does that even work out for you?";
-            Char2name.text = "";
-            Char2speech.text = "";
-        }
-        else if (primeInt == 51)
         {
 
             Char1name.text = "";
@@ -362,25 +348,25 @@ public class Scene9Dialogue : MonoBehaviour
     }
     public void Choice2aFunct()
     {
-        Char1name.text = "";
-        Char1speech.text = "";
+        Char1name.text = "R.O.B.I.";
+        Char1speech.text = "Oh my bad. I didn’t know";
         Char2name.text = "";
         Char2speech.text = "";
         primeInt = 39;
-        Choice1a.SetActive(false);
-        Choice1b.SetActive(false);
+        Choice2a.SetActive(false);
+        Choice2b.SetActive(false);
         nextButton.SetActive(true);
         allowSpace = true;
     }
     public void Choice2bFunct()
     {
-        Char1name.text = "";
-        Char1speech.text = "";
+        Char1name.text = "R.O.B.I.";
+        Char1speech.text = "A vegan shark? How does that even work out for you?";
         Char2name.text = "";
         Char2speech.text = "";
         primeInt = 49;
-        Choice1a.SetActive(false);
-        Choice1b.SetActive(false);
+        Choice2a.SetActive(false);
+        Choice2b.SetActive(false);
         nextButton.SetActive(true);
         allowSpace = true;
     }
