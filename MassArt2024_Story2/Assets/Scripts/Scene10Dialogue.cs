@@ -28,6 +28,7 @@ public class Scene10Dialogue : MonoBehaviour
     public GameObject Choice1b;
     public GameObject NextScene1Button;
     public GameObject NextScene2Button;
+    public GameObject NextScene3Button;
     public GameObject nextButton;
     //public AudioSource audioSource1;
     private bool allowSpace = true;
@@ -43,6 +44,7 @@ public class Scene10Dialogue : MonoBehaviour
         Choice1b.SetActive(false);
         NextScene1Button.SetActive(false);
         NextScene2Button.SetActive(false);
+        NextScene3Button.SetActive(false);
         nextButton.SetActive(true);
     }
 
@@ -70,54 +72,54 @@ public class Scene10Dialogue : MonoBehaviour
         {
             ArtChar1a.SetActive(true);
             DialogueDisplay.SetActive(true);
-            Char1name.text = "";
-            Char1speech.text = "";
-            Char2name.text = "Jeda";
-            Char2speech.text = "Wakey wakey, human.";
+            Char1name.text = "ROBI";
+            Char1speech.text = "Yikes! This room is pretty creepy";
+            Char2name.text = "";
+            Char2speech.text = "";
         }
         else if (primeInt == 3)
         {
             ArtChar2a.SetActive(true); //*Allows second charcter to appear! Copy and paste where needed
-            Char1name.text = "YOU";
-            Char1speech.text = "Wuh..? What happened?";
-            Char2name.text = "";
-            Char2speech.text = "";
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "???";
+            Char2speech.text = "Your criticism is duly noted.";
             //gameHandler.AddPlayerStat(1);
         }
         else if (primeInt == 4)
         {
-            Char1name.text = "";
-            Char1speech.text = "";
-            Char2name.text = "Jeda";
-            Char2speech.text = "I know I did not hit you that hard.";
+            Char1name.text = "ROBI";
+            Char1speech.text = "ACK!";
+            Char2name.text = "";
+            Char2speech.text = "";
         }
         else if (primeInt == 5)
         {
-            Char1name.text = "YOU";
-            Char1speech.text = "Hit me? Why?";
-            Char2name.text = "";
-            Char2speech.text = "";
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "A.I";
+            Char2speech.text = "You've done well to make it this far in one piece. This lab has certainly seen better days, with far fewer creatures roaming around.";
         }
         else if (primeInt == 6)
         {
-            Char1name.text = "";
-            Char1speech.text = "";
-            Char2name.text = "Jeda";
-            Char2speech.text = "I am searching for a fugitive. Ragu Fahn.";
+            Char1name.text = "ROBI";
+            Char1speech.text = "Don't sneak up on me like that! You almost fried my circuits!";
+            Char2name.text = "";
+            Char2speech.text = "";
         }
         else if (primeInt == 7)
         {
-            Char1name.text = "YOU";
-            Char1speech.text = "Why do you think I know anything?";
-            Char2name.text = "";
-            Char2speech.text = "";
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "A.I";
+            Char2speech.text = "Noted. We have more pressing matters to discuss however.";
         }
         else if (primeInt == 8)
         {
             Char1name.text = "";
             Char1speech.text = "";
-            Char2name.text = "Jeda";
-            Char2speech.text = "Do not play the stupid. You will take me to him.";
+            Char2name.text = "A.I";
+            Char2speech.text = "Have you acquired all 3 of the override pieces?";
             // Turn off the "Next" button, turn on "Choice" buttons
             nextButton.SetActive(false);
             allowSpace = false;
@@ -131,40 +133,71 @@ public class Scene10Dialogue : MonoBehaviour
             //gameHandler.AddPlayerStat(1);
             Char1name.text = "";
             Char1speech.text = "";
-            Char2name.text = "Jeda";
-            Char2speech.text = "Then you are no use to me, and must be silenced.";
+            Char2name.text = "A.I";
+            Char2speech.text = "Welp, that suc-";
+            
         }
         else if (primeInt == 21)
         {
-            Char1name.text = "";
-            Char1speech.text = "";
-            Char2name.text = "Jeda";
-            Char2speech.text = "Come back here! Do not think you can hide from me!";
-            // Turn off the "Next" button, turn on "Scene" button/s
-            nextButton.SetActive(false);
-            allowSpace = false;
-            NextScene1Button.SetActive(true);
+            SceneManager.LoadScene("SceneLose");
         }
+        
 
         // after choice 1b
         else if (primeInt == 30)
         {
             Char1name.text = "";
             Char1speech.text = "";
-            Char2name.text = "Jeda";
-            Char2speech.text = "Do not think you can fool me, human. Where will we find him?";
+            Char2name.text = "A.I";
+            Char2speech.text = "Well done. Now all that's left is for you to do is to use all 3 on that master computer there.";
         }
         else if (primeInt == 31)
         {
-            Char1name.text = "YOU";
-            Char1speech.text = "Ragu hangs out in a rough part of town. I'll take you now.";
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "A.I";
+            Char2speech.text = "And whatever you do, don't touch that red button. As tempting as it may be.";
+            // Turn off the "Next" button, turn on "Scene" button/s
+            ///nextButton.SetActive(false);
+            ///allowSpace = false;
+            ///NextScene1Button.SetActive(true);
+        }
+        else if (primeInt == 32)
+        {
+            Char1name.text = "ROBI";
+            Char1speech.text = "Sure, master computer and no red button, got it!(now I really wanna press it)";
             Char2name.text = "";
             Char2speech.text = "";
-            // Turn off the "Next" button, turn on "Scene" button/s
+            
+        }
+        else if (primeInt == 33)
+        {
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "";
+            Char2speech.text = "";
             nextButton.SetActive(false);
             allowSpace = false;
+            DialogueDisplay.SetActive(false);
             NextScene2Button.SetActive(true);
+            NextScene3Button.SetActive(true);
         }
+
+        ///After red button press
+        else if (primeInt == 41)
+        {
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "A.I";
+            Char2speech.text = "I see. Shi-";
+            
+        }
+        else if (primeInt == 42)
+        {
+            SceneManager.LoadScene("SceneLose");
+            
+        }
+
 
         //Please do NOT delete this final bracket that ends the Next() function:
     }
@@ -172,8 +205,8 @@ public class Scene10Dialogue : MonoBehaviour
     // FUNCTIONS FOR BUTTONS TO ACCESS (Choice #1 and SceneChanges)
     public void Choice1aFunct()
     {
-        Char1name.text = "YOU";
-        Char1speech.text = "I don't know what you're talking about!";
+        Char1name.text = "ROBI";
+        Char1speech.text = "Ummmm about that...";
         Char2name.text = "";
         Char2speech.text = "";
         primeInt = 19;
@@ -184,11 +217,23 @@ public class Scene10Dialogue : MonoBehaviour
     }
     public void Choice1bFunct()
     {
-        Char1name.text = "YOU";
-        Char1speech.text = "Sure, anything you want... just lay off the club.";
+        Char1name.text = "ROBI";
+        Char1speech.text = "Yeah I have them stored in my hidden compartment!";
         Char2name.text = "";
         Char2speech.text = "";
         primeInt = 29;
+        Choice1a.SetActive(false);
+        Choice1b.SetActive(false);
+        nextButton.SetActive(true);
+        allowSpace = true;
+    }
+    public void Choice2aFunct()
+    {
+        Char1name.text = "ROBI";
+        Char1speech.text = "I GOTTA PRESS THAT BUTTON";
+        Char2name.text = "";
+        Char2speech.text = "";
+        primeInt = 40;
         Choice1a.SetActive(false);
         Choice1b.SetActive(false);
         nextButton.SetActive(true);
@@ -201,6 +246,10 @@ public class Scene10Dialogue : MonoBehaviour
     }
     public void SceneChange2()
     {
-        SceneManager.LoadScene("Scene2b");
+        SceneManager.LoadScene("SceneWin");
+    }
+    public void SceneChange3()
+    {
+        SceneManager.LoadScene("SceneLose");
     }
 }
