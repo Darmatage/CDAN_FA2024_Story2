@@ -6,7 +6,7 @@ using TMPro;
 using UnityEngine.SceneManagement;
 using UnityEngine.Audio;
 
-public class Scene2Dialogue : MonoBehaviour
+public class Scene4Dialogue : MonoBehaviour
 {
     // These are the script variables.
     // For more character images or buttons, duplicate the ArtChar ones listed here and renumber.
@@ -55,6 +55,11 @@ public class Scene2Dialogue : MonoBehaviour
             {
                 Next();
             }
+            if (Input.GetKeyDown("p"))
+            {
+                primeInt -= 2;
+                Next();
+            }
         }
     }
 
@@ -73,15 +78,15 @@ public class Scene2Dialogue : MonoBehaviour
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "AI";
-            Char2speech.text = "[ POWER- UP INITIATED ]";
+            Char2speech.text = "Stop there.";
         }
         else if (primeInt == 3)
         {
             ArtChar2a.SetActive(true); //*Allows second charcter to appear! Copy and paste where needed
-            Char1name.text = "";
-            Char1speech.text = "";
-            Char2name.text = "AI";
-            Char2speech.text = "[ BEGINNING START-UP. ] ";
+            Char1name.text = "ROBI";
+            Char1speech.text = "...Huh?";
+            Char2name.text = "";
+            Char2speech.text = "";
             //gameHandler.AddPlayerStat(1);
         }
         else if (primeInt == 4)
@@ -360,14 +365,10 @@ public class Scene2Dialogue : MonoBehaviour
 
     public void SceneChange1()
     {
-        SceneManager.LoadScene("Scene3");
+        SceneManager.LoadScene("Scene2");
     }
     public void SceneChange2()
     {
-        SceneManager.LoadScene("Scene4");
-    }
-    public void SceneChange3()
-    {
-        SceneManager.LoadScene("Scene5");
+        SceneManager.LoadScene("Scene2b");
     }
 }
