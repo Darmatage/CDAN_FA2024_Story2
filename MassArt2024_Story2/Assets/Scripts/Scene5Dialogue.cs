@@ -26,6 +26,8 @@ public class Scene5Dialogue : MonoBehaviour
     public GameObject ArtBG1;
     public GameObject Choice1a;
     public GameObject Choice1b;
+    public GameObject Choice2a;
+    public GameObject Choice2b;
     public GameObject NextScene1Button;
     public GameObject NextScene2Button;
     public GameObject nextButton;
@@ -41,6 +43,8 @@ public class Scene5Dialogue : MonoBehaviour
         ArtBG1.SetActive(true);
         Choice1a.SetActive(false);
         Choice1b.SetActive(false);
+        Choice2a.SetActive(false);
+        Choice2b.SetActive(false);
         NextScene1Button.SetActive(false);
         NextScene2Button.SetActive(false);
         nextButton.SetActive(true);
@@ -129,19 +133,21 @@ public class Scene5Dialogue : MonoBehaviour
         else if (primeInt == 10)
         {
             Char1name.text = "R.O.B.I.";
-            Char1speech.text = "FINE! You win. Just ask your stupid riddle already.";
+            Char1speech.text = "Wha- me! Not good!?";
             Char2name.text = "";
             Char2speech.text = "";
+            Choice2a.SetActive(true);
+            Choice2b.SetActive(true);
         }
-        else if (primeInt == 11)
+        else if (primeInt == 12)
         {
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "A.I";
             Char2speech.text = "With pleasure.";
         }
-    
-        else if (primeInt == 12)
+
+        else if (primeInt == 13)
         {
             Char1name.text = "";
             Char1speech.text = "";
@@ -180,7 +186,7 @@ public class Scene5Dialogue : MonoBehaviour
             Char2speech.text = "";
             SceneManager.LoadScene("Scene2");
         }
-    
+
         // after choice 1b
         else if (primeInt == 30)
         {
@@ -212,7 +218,8 @@ public class Scene5Dialogue : MonoBehaviour
         }
         else if (primeInt == 34)
         {
-            SceneManager.LoadScene("Scene8");
+            NextScene2Button.SetActive(true);
+            DialogueDisplay.SetActive(false);
         }
 
         //Please do NOT delete this final bracket that ends the Next() function:
@@ -243,7 +250,34 @@ public class Scene5Dialogue : MonoBehaviour
         nextButton.SetActive(true);
         allowSpace = true;
     }
-
+    public void Choice2aFunct()
+    {
+        Char1name.text = "ROBI";
+        Char1speech.text = "You're ON! Ask your stupid question!";
+        Char2name.text = "";
+        Char2speech.text = "";
+        primeInt = 11;
+        Choice1a.SetActive(false);
+        Choice1b.SetActive(false);
+        Choice2a.SetActive(false);
+        Choice2b.SetActive(false);
+        nextButton.SetActive(true);
+        allowSpace = true;
+    }
+    public void Choice2bFunct()
+    {
+        Char1name.text = "ROBI";
+        Char1speech.text = "Go ahead and try me! I can answer it no problem!";
+        Char2name.text = "";
+        Char2speech.text = "";
+        primeInt = 11;
+        Choice1a.SetActive(false);
+        Choice1b.SetActive(false);
+        Choice2a.SetActive(false);
+        Choice2b.SetActive(false);
+        nextButton.SetActive(true);
+        allowSpace = true;
+      }
     public void SceneChange1()
     {
         SceneManager.LoadScene("Scene2");

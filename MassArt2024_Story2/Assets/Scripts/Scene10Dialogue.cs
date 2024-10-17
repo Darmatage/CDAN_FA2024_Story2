@@ -135,13 +135,13 @@ public class Scene10Dialogue : MonoBehaviour
             Char1speech.text = "";
             Char2name.text = "A.I";
             Char2speech.text = "Welp, that suc-";
-            
+
         }
         else if (primeInt == 21)
         {
             SceneManager.LoadScene("SceneLose");
         }
-        
+
 
         // after choice 1b
         else if (primeInt == 30)
@@ -168,37 +168,63 @@ public class Scene10Dialogue : MonoBehaviour
             Char1speech.text = "Sure, master computer and no red button, got it!(now I really wanna press it)";
             Char2name.text = "";
             Char2speech.text = "";
-            
-        }
-        else if (primeInt == 33)
-        {
-            Char1name.text = "";
-            Char1speech.text = "";
-            Char2name.text = "";
-            Char2speech.text = "";
+            ArtChar1a.SetActive(false);
+            ArtChar2a.SetActive(false);
             nextButton.SetActive(false);
             allowSpace = false;
             DialogueDisplay.SetActive(false);
             NextScene2Button.SetActive(true);
             NextScene3Button.SetActive(true);
+
         }
 
         ///After red button press
         else if (primeInt == 41)
         {
+            ArtChar2a.SetActive(true);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "A.I";
             Char2speech.text = "I see. Shi-";
-            
         }
         else if (primeInt == 42)
         {
             SceneManager.LoadScene("SceneLose");
-            
+
         }
-
-
+        ///After going to super computer
+        else if (primeInt == 51)
+        {
+            ArtChar1a.SetActive(true);
+            Char1name.text = "ROBI";
+            Char1speech.text = "Alright now let's see what we got. We plug in the USB, swipe this Keycard, and lastly input the password!";
+            Char2name.text = "";
+            Char2speech.text = "";
+          }
+          else if (primeInt == 52)
+          {
+              ArtChar2a.SetActive(true);
+              Char1name.text = "";
+              Char1speech.text = "";
+              Char2name.text = "A.I";
+              Char2speech.text = "Good work little ROBI. I can now bring the solar generators back online.";
+          }
+          else if (primeInt == 53)
+          {
+              ArtChar2a.SetActive(true);
+              Char1name.text = "ROBI";
+              Char1speech.text = "So can I finally know my purpose? Why I was made?";
+              Char2name.text = "";
+              Char2speech.text = "";
+          }
+          else if (primeInt == 54)
+          {
+              ArtChar2a.SetActive(true);
+              Char1name.text = "";
+              Char1speech.text = "";
+              Char2name.text = "A.I";
+              Char2speech.text = "I suppose so. After All, you’ve already completed your designated purpose.";
+          }
         //Please do NOT delete this final bracket that ends the Next() function:
     }
 
@@ -227,15 +253,35 @@ public class Scene10Dialogue : MonoBehaviour
         nextButton.SetActive(true);
         allowSpace = true;
     }
-    public void Choice2aFunct()
+    public void Button2aFunct()
     {
+        ArtChar1a.SetActive(true);
         Char1name.text = "ROBI";
         Char1speech.text = "I GOTTA PRESS THAT BUTTON";
         Char2name.text = "";
         Char2speech.text = "";
         primeInt = 40;
+        DialogueDisplay.SetActive(true);
         Choice1a.SetActive(false);
         Choice1b.SetActive(false);
+        NextScene3Button.SetActive(false);
+        NextScene2Button.SetActive(false);
+        nextButton.SetActive(true);
+        allowSpace = true;
+    }
+    public void Computer2bFunct()
+    {
+        ArtChar1a.SetActive(true);
+        Char1name.text = "ROBI";
+        Char1speech.text = "Better listen to what he says. I'll go to the computer!";
+        Char2name.text = "";
+        Char2speech.text = "";
+        primeInt = 50;
+        DialogueDisplay.SetActive(true);
+        Choice1a.SetActive(false);
+        Choice1b.SetActive(false);
+        NextScene3Button.SetActive(false);
+        NextScene2Button.SetActive(false);
         nextButton.SetActive(true);
         allowSpace = true;
     }
