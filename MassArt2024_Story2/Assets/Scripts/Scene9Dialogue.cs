@@ -87,20 +87,22 @@ public class Scene9Dialogue : MonoBehaviour
         }
         else if (primeInt == 3)
         {
-            
+            ArtChar2a.SetActive(true);
             Char1name.text = "ROBI";
-            Char1speech.text = "AHH! Who’s there?!";
+            Char1speech.text = "AHH! Who's there?!";
             Char2name.text = "";
             Char2speech.text = "";
             //gameHandler.AddPlayerStat(1);
         }
         else if (primeInt == 4)
         {
-            ArtChar2a.SetActive(true);
+			GetComponent<CharacterBounce>().BounceMe();
+            ArtChar2a.SetActive(false);
+			ArtChar2b.SetActive(true);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Prof. Fin";
-            Char2speech.text = "HEY YOU, ROBOT DUDE! HELP A BROTHER OUT! YOU’LL REGRET IT IF YOU DON’T!";
+            Char2speech.text = "HEY YOU, ROBOT DUDE! HELP A BROTHER OUT! YOU'LL REGRET IT IF YOU DON'T!";
             // Turn off the "Next" button, turn on "Choice" buttons
             nextButton.SetActive(false);
             allowSpace = false;
@@ -111,7 +113,7 @@ public class Scene9Dialogue : MonoBehaviour
         else if (primeInt == 5)
         {
             Char1name.text = "ROBI";
-            Char1speech.text = "Please… just don’t eat me!";
+            Char1speech.text = "Please- just don't eat me!";
             Char2name.text = "";
             Char2speech.text = "";
         }
@@ -120,7 +122,7 @@ public class Scene9Dialogue : MonoBehaviour
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Prof. Fin";
-            Char2speech.text = "Yeah that’s right. You’ll do nicely. Veeeeery nicely.";
+            Char2speech.text = "Yeah that's right. You'll do nicely. Veeeeery nicely.";
         }
         else if (primeInt == 7)
         {
@@ -134,7 +136,7 @@ public class Scene9Dialogue : MonoBehaviour
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Prof. Fin";
-            Char2speech.text = "SHASHASHA FINALLY I’M GONNA...";
+            Char2speech.text = "SHASHASHA FINALLY I'M GONNA...";
         }
         else if (primeInt == 9)
         {
@@ -165,12 +167,12 @@ public class Scene9Dialogue : MonoBehaviour
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Prof. Fin";
-            Char2speech.text = "Yup. That’s it.";
+            Char2speech.text = "Yup. That's it.";
         }
         else if (primeInt == 13)
         {
             Char1name.text = "ROBI";
-            Char1speech.text = "You’re not going to experiment on me? Or eat me?";
+            Char1speech.text = "You're not going to experiment on me? Or eat me?";
             Char2name.text = "";
             Char2speech.text = "";
         }
@@ -180,7 +182,7 @@ public class Scene9Dialogue : MonoBehaviour
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Prof. Fin";
-            Char2speech.text = "Dude, you're a robot, you'd probably taste terrible. Besides, I’m vegan.";
+            Char2speech.text = "Dude, you're a robot, you'd probably taste terrible. Besides, I'm vegan.";
             nextButton.SetActive(false);
             allowSpace = false;
             Choice2a.SetActive(true);
@@ -204,13 +206,13 @@ public class Scene9Dialogue : MonoBehaviour
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Prof. Fin";
-            Char2speech.text = "Yeah thanks bro. I’ve been in here for hours trying to get it.";
+            Char2speech.text = "Yeah thanks bro. I've been in here for hours trying to get it.";
         }
         else if (primeInt == 19)
         {
 
             Char1name.text = "ROBI";
-            Char1speech.text = "Why couldn’t you just get it?";
+            Char1speech.text = "Why couldn't you just get it?";
             Char2name.text = "";
             Char2speech.text = "";
         }
@@ -220,7 +222,7 @@ public class Scene9Dialogue : MonoBehaviour
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Prof. Fin";
-            Char2speech.text = "I’m a shark. No opposable thumbs, doofus.";
+            Char2speech.text = "I'm a shark. No opposable thumbs, doofus.";
         }
         else if (primeInt == 21)
         {
@@ -242,7 +244,7 @@ public class Scene9Dialogue : MonoBehaviour
         {
 
             Char1name.text = "ROBI";
-            Char1speech.text = "I’m looking for items to override the lock on this place! The solar powered generator seems to be down and can’t be accessed without the overseer’s items!";
+            Char1speech.text = "I'm looking for items to override the lock on this place! The solar powered generator seems to be down and canï¿½t be accessed without the overseerï¿½s items!";
             Char2name.text = "";
             Char2speech.text = "";
         }
@@ -252,7 +254,7 @@ public class Scene9Dialogue : MonoBehaviour
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Prof. Fin";
-            Char2speech.text = "Oh word? There should be an item like that somewhere in this room, a USB! I’d search for it with you, but again no hands.";
+            Char2speech.text = "Oh word? There should be an item like that somewhere in this room, a USB! Iï¿½d search for it with you, but again no hands.";
             nextButton.SetActive(false);
             allowSpace = false;
         }
@@ -276,7 +278,7 @@ public class Scene9Dialogue : MonoBehaviour
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "";
-            Char2speech.text = "Prof. Fin warned you not to run! He’s unsurprisingly athletic and catches you in an instant. He tears you apart with his jaws and you watch the Lab run out of power.";
+            Char2speech.text = "Prof. Fin warned you not to run! He's unsurprisingly athletic and catches you in an instant. He tears you apart with his jaws and you watch the Lab run out of power.";
             // Turn off the "Next" button, turn on "Scene" button/s
             nextButton.SetActive(false);
             allowSpace = false;
@@ -314,7 +316,7 @@ public class Scene9Dialogue : MonoBehaviour
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Prof. Fin";
-            Char2speech.text = "Hey don’t knock the lifestyle, I get by just fine!";
+            Char2speech.text = "Hey don't knock the lifestyle, I get by just fine!";
 
             primeInt = 16;
         }
@@ -325,7 +327,7 @@ public class Scene9Dialogue : MonoBehaviour
     public void Choice1aFunct()
     {
         Char1name.text = "ROBI";
-        Char1speech.text = "As if I’d trust a shark! I’m outta here!";
+        Char1speech.text = "As if I'd trust a shark! I'm outta here!";
         Char2name.text = "";
         Char2speech.text = "";
         primeInt = 24;
@@ -337,7 +339,7 @@ public class Scene9Dialogue : MonoBehaviour
     public void Choice1bFunct()
     {
         Char1name.text = "ROBI";
-        Char1speech.text = "Alright... just don’t eat me!";
+        Char1speech.text = "Alright... just don't eat me!";
         Char2name.text = "";
         Char2speech.text = "";
         primeInt = 6;
@@ -349,7 +351,7 @@ public class Scene9Dialogue : MonoBehaviour
     public void Choice2aFunct()
     {
         Char1name.text = "R.O.B.I.";
-        Char1speech.text = "Oh my bad. I didn’t know";
+        Char1speech.text = "Oh my bad. I didn't know";
         Char2name.text = "";
         Char2speech.text = "";
         primeInt = 39;

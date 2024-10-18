@@ -2136,15 +2136,15 @@ MonoBehaviour:
     - serializedVersion: 3
       time: 0
       value: 0
-      inSlope: 5.6927443
-      outSlope: 5.6927443
+      inSlope: 4.750237
+      outSlope: 4.750237
       tangentMode: 0
       weightedMode: 0
       inWeight: 0
-      outWeight: 0.05128477
+      outWeight: 0.05
     - serializedVersion: 3
-      time: 0.095811546
-      value: 0.49654222
+      time: 0.22917175
+      value: 0.99528885
       inSlope: -0.0021109215
       outSlope: -0.0021109215
       tangentMode: 0
@@ -2152,8 +2152,8 @@ MonoBehaviour:
       inWeight: 0.33333334
       outWeight: 0.33333334
     - serializedVersion: 3
-      time: 0.17916107
-      value: 0.0103645325
+      time: 0.5
+      value: 0
       inSlope: -4.806852
       outSlope: -4.806852
       tangentMode: 0
@@ -2175,7 +2175,7 @@ MonoBehaviour:
   - {x: 0, y: 0, z: 0}
   - {x: 0, y: 0, z: 0}
   - {x: 0, y: 0, z: 0}
-  endBounce: 5
+  endBounce: 1
 --- !u!224 &814273010 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8177911768339052308, guid: f47a1449ec44fbd4cb11c0871c9445d8, type: 3}
@@ -3487,7 +3487,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &2030509752
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3521,7 +3521,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.9811321, g: 0.97478795, b: 0.86543256, a: 1}
+  m_Color: {r: 0.68196476, g: 0.7735849, b: 0.6597366, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1

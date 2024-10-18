@@ -3,61 +3,54 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class ButtonsTween_AlphaMove : MonoBehaviour{
-       public AnimationCurve curveMove = AnimationCurve.EaseInOut(0f, 0f, 1f, 1f);
-       float elapsed = 0f;
-       float elapsedMove = 0f;
-       public GameObject[] charImages;
+public class CharacterBounce : MonoBehaviour{
+	public AnimationCurve curveMove = AnimationCurve.EaseInOut(0f, 0f, 1f, 1f);
+	float elapsedMove = 0f;
+	public GameObject[] charImages;
+	public Vector3[] startPos;
+	public float bounceAmt = 5;
 	bool timeToBounce = false;
 
-       //float preOffsetPos;
-       //float startOffset = 100f;
-       public Vector3[] startPos;
-
-	public float endBounce = 0.5f;
-
-       void Start(){
+	//establish initial positions:
+	void Start(){
 		for (int i = 0; i < charImages.Length; i++){
 			startPos[i] += charImages[i].transform.position;
 		}
-              
-              //transform.position = startButtonPos; //set the start position
-       }
+	}
 
+	//for testing, hit [b]:
 	void Update(){
 		if (Input.GetKeyDown("b")){
 			BounceMe();
 		}
 	}
 
-
-       void FixedUpdate () {
-              if (timeToBounce==true)
-              {
-                     // Tween Move:
-                     //if(startButtonPos.y >= preOffsetPos){
-					for (int i = 0; i < charImages.Length; i++){
-						Debug.Log("elapsedMove: " + elapsedMove);
-						startPos[i].y += curveMove.Evaluate(elapsedMove);
-						charImages[i].transform.position = startPos[i];
-					}
-
-                            //charImages[i].transform.position.y += curveMove.Evaluate(elapsedMove);
-                            //charImages[0].transform.position = startButtonPos;
-                     //}
-                     elapsedMove += (Time.deltaTime);
-              }
-       }
-
-
-	   public void BounceMe(){
-			timeToBounce = true;
-			StartCoroutine(BounceEnd());
-	   }
-
-		IEnumerator BounceEnd(){
-			yield return new WaitForSeconds(endBounce);
-			timeToBounce = false;
+	void FixedUpdate () {
+		if (timeToBounce==true){
+		// Tween Move:
+			for (int i = 0; i < charImages.Length; i++){
+				
+				float height = curveMove.Evaluate(elapsedMove);
+				Vector3 newPos = new Vector3(startPos[i].x, startPos[i].y + (height *bounceAmt), startPos[i].z);
+				charImages[i].transform.position = newPos;
+				Debug.Log("elapsedMove: " + elapsedMove + ", startPos.y = " + startPos[i].y + ", height = " + height);
+			}
+			elapsedMove += Time.deltaTime;
+			//reset:
+			if (elapsedMove >= 1){
+				elapsedMove=0;
+				timeToBounce = false;
+			}
 		}
+	}
+
+	public void BounceMe(){
+		timeToBounce = true;
+	}
 
 }
+
+//to use this script in a story unit:
+//GetComponent<CharacterBounce>().BounceMe;
+
+//NOTE: To do this with two characters that are on screen at the same time, would need two BounceMe functions, and two sets of arrays
