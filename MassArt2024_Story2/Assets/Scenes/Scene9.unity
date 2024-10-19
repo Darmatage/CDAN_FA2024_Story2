@@ -133,7 +133,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3097773472463394182, guid: f47a1449ec44fbd4cb11c0871c9445d8, type: 3}
       propertyPath: m_text
-      value: "As if I\u2019d trust a shark! I\u2019m outta here!"
+      value: Oh I didn't know.
       objectReference: {fileID: 0}
     - target: {fileID: 3097773472463394182, guid: f47a1449ec44fbd4cb11c0871c9445d8, type: 3}
       propertyPath: m_fontSize
@@ -296,7 +296,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3097773472463394182, guid: f47a1449ec44fbd4cb11c0871c9445d8, type: 3}
       propertyPath: m_text
-      value: "Alright\u2026 just don\u2019t eat me!"
+      value: Vegan? Seriously?
       objectReference: {fileID: 0}
     - target: {fileID: 3097773472463394182, guid: f47a1449ec44fbd4cb11c0871c9445d8, type: 3}
       propertyPath: m_fontSize

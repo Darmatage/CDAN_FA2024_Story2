@@ -19,10 +19,16 @@ public class Scene6Dialogue : MonoBehaviour
     //public Text Char3speech;
     public GameObject DialogueDisplay;
     public GameObject ArtChar1a;
+    public GameObject ArtChar1b;
+    public GameObject ArtChar1c;
+    public GameObject ArtChar1d;
+    public GameObject ArtChar1e;
     //this is for the second character in scene
     public GameObject ArtChar2a;
-    //public GameObject ArtChar1b;
-    //public GameObject ArtChar2;
+    public GameObject ArtChar2b;
+    public GameObject ArtChar2c;
+    public GameObject ArtChar2d;
+    public GameObject ArtChar2e;
     public GameObject ArtBG1;
     public GameObject Choice1a;
     public GameObject Choice1b;
@@ -143,7 +149,7 @@ public class Scene6Dialogue : MonoBehaviour
         else if (primeInt == 10)
         {
             Char1name.text = "R.O.B.I";
-            Char1speech.text = "WHat do I say...?";
+            Char1speech.text = "What do I say...?";
             Char2name.text = "";
             Char2speech.text = "";
             // Turn off the "Next" button, turn on "Scene" button/s

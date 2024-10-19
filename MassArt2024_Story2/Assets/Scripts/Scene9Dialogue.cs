@@ -28,7 +28,7 @@ public class Scene9Dialogue : MonoBehaviour
     public GameObject ArtChar2c;
     public GameObject ArtChar2d;
     public GameObject ArtChar2e;
-
+    public GameObject ExamineButton;
     public GameObject ArtBG1;
     public GameObject Choice1a;
     public GameObject Choice1b;
@@ -54,6 +54,7 @@ public class Scene9Dialogue : MonoBehaviour
         NextScene1Button.SetActive(false);
         NextScene2Button.SetActive(false);
         nextButton.SetActive(true);
+        ExamineButton.SetActive(false);
     }
 
     // Use the spacebar as a faster "Next" button:
@@ -78,6 +79,7 @@ public class Scene9Dialogue : MonoBehaviour
         }
         else if (primeInt == 2)
         {
+            GetComponent<CharacterBounce>().BounceMe();
             DialogueDisplay.SetActive(true);
             ArtChar1a.SetActive(true);
             Char1name.text = "";
@@ -87,7 +89,9 @@ public class Scene9Dialogue : MonoBehaviour
         }
         else if (primeInt == 3)
         {
-            ArtChar2a.SetActive(true);
+            GetComponent<CharacterBounce>().BounceMe();
+            ArtChar1a.SetActive(false);
+            ArtChar1e.SetActive(true);
             Char1name.text = "ROBI";
             Char1speech.text = "AHH! Who's there?!";
             Char2name.text = "";
@@ -96,9 +100,9 @@ public class Scene9Dialogue : MonoBehaviour
         }
         else if (primeInt == 4)
         {
+			
 			GetComponent<CharacterBounce>().BounceMe();
-            ArtChar2a.SetActive(false);
-			ArtChar2b.SetActive(true);
+            ArtChar2c.SetActive(true);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Prof. Fin";
@@ -147,7 +151,9 @@ public class Scene9Dialogue : MonoBehaviour
         }
         else if (primeInt == 10)
         {
-            
+            GetComponent<CharacterBounce>().BounceMe();
+            ArtChar2c.SetActive(false);
+            ArtChar2a.SetActive(true);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Prof. Fin";
@@ -156,7 +162,9 @@ public class Scene9Dialogue : MonoBehaviour
         
         else if (primeInt == 11)
         {
-            ;
+            GetComponent<CharacterBounce>().BounceMe();
+            ArtChar1e.SetActive(false);
+            ArtChar1d.SetActive(true);
             Char1name.text = "ROBI";
             Char1speech.text = "...umm, that's it?";
             Char2name.text = "";
@@ -178,7 +186,9 @@ public class Scene9Dialogue : MonoBehaviour
         }
         else if (primeInt == 14)
         {
-            
+            GetComponent<CharacterBounce>().BounceMe();
+            ArtChar2a.SetActive(false);
+            ArtChar2d.SetActive(true);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Prof. Fin";
@@ -193,7 +203,9 @@ public class Scene9Dialogue : MonoBehaviour
         
         else if (primeInt == 17)
         {
-
+            GetComponent<CharacterBounce>().BounceMe();
+            ArtChar1d.SetActive(false);
+            ArtChar1a.SetActive(true);
             Char1name.text = "ROBI";
             Char1speech.text = "Anyways, just pick this up, right?";
             Char2name.text = "";
@@ -202,7 +214,10 @@ public class Scene9Dialogue : MonoBehaviour
         }
         else if (primeInt == 18)
         {
-
+            GetComponent<CharacterBounce>().BounceMe();
+            ArtChar2b.SetActive(false);
+            ArtChar2e.SetActive(false);
+            ArtChar2a.SetActive(true);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Prof. Fin";
@@ -210,7 +225,9 @@ public class Scene9Dialogue : MonoBehaviour
         }
         else if (primeInt == 19)
         {
-
+            GetComponent<CharacterBounce>().BounceMe();
+            ArtChar1a.SetActive(false);
+            ArtChar1e.SetActive(true);
             Char1name.text = "ROBI";
             Char1speech.text = "Why couldn't you just get it?";
             Char2name.text = "";
@@ -218,7 +235,9 @@ public class Scene9Dialogue : MonoBehaviour
         }
         else if (primeInt == 20)
         {
-
+            GetComponent<CharacterBounce>().BounceMe();
+            ArtChar2a.SetActive(false);
+            ArtChar2e.SetActive(true);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Prof. Fin";
@@ -226,7 +245,9 @@ public class Scene9Dialogue : MonoBehaviour
         }
         else if (primeInt == 21)
         {
-
+            GetComponent<CharacterBounce>().BounceMe();
+            ArtChar1e.SetActive(false);
+            ArtChar1a.SetActive(true);
             Char1name.text = "ROBI";
             Char1speech.text = "I guess not huh. Sorry.";
             Char2name.text = "";
@@ -234,7 +255,9 @@ public class Scene9Dialogue : MonoBehaviour
         }
         else if (primeInt == 22)
         {
-
+            GetComponent<CharacterBounce>().BounceMe();
+            ArtChar2e.SetActive(false);
+            ArtChar2a.SetActive(true);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Prof. Fin";
@@ -250,13 +273,73 @@ public class Scene9Dialogue : MonoBehaviour
         }
         else if (primeInt == 24)
         {
-
+            GetComponent<CharacterBounce>().BounceMe();
+            ArtChar2a.SetActive(false);
+            ArtChar2b.SetActive(true);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Prof. Fin";
             Char2speech.text = "Oh word? There should be an item like that somewhere in this room, a USB! I�d search for it with you, but again no hands.";
+            
+        }
+        else if (primeInt == 25)
+        {
             nextButton.SetActive(false);
             allowSpace = false;
+            DialogueDisplay.SetActive(false);
+            ExamineButton.SetActive(true);
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "";
+            Char2speech.text = "";
+        }
+        else if (primeInt == 26)
+        {
+            GetComponent<CharacterBounce>().BounceMe();
+            ArtChar2b.SetActive(false);
+            ArtChar2a.SetActive(true);
+            nextButton.SetActive(true);
+            allowSpace = true;
+            DialogueDisplay.SetActive(true);
+            ExamineButton.SetActive(false);
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Prof. Fin";
+            Char2speech.text = "Got what ya need, little dude?";
+        }
+        else if (primeInt == 27)
+        {
+            GetComponent<CharacterBounce>().BounceMe();
+            ArtChar1a.SetActive(false);
+            ArtChar1b.SetActive(true);
+            Char1name.text = "R.O.B.I";
+            Char1speech.text = "Certainly hope so.";
+            Char2name.text = "";
+            Char2speech.text = "";
+        }
+        else if (primeInt == 28)
+        {
+            GetComponent<CharacterBounce>().BounceMe();
+            ArtChar2a.SetActive(false);
+            ArtChar2b.SetActive(true);
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Prof. Fin";
+            Char2speech.text = "Righteous!";
+        }
+        else if (primeInt == 29)
+        {
+            ArtChar1b.SetActive(false);
+            ArtChar2b.SetActive(false);
+            nextButton.SetActive(false);
+            allowSpace = false;
+            DialogueDisplay.SetActive(false);
+            
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "";
+            Char2speech.text = "";
+            NextScene1Button.SetActive(true);
         }
 
 
@@ -265,7 +348,7 @@ public class Scene9Dialogue : MonoBehaviour
 
         // after choice 1a
 
-        else if (primeInt == 25)
+        else if (primeInt == 60)
         {
             Char1name.text = "";
             Char1speech.text = "";
@@ -273,7 +356,7 @@ public class Scene9Dialogue : MonoBehaviour
             Char2speech.text = "Alright you asked for it!";
            
         }
-        else if (primeInt == 26)
+        else if (primeInt == 61)
         {
             Char1name.text = "";
             Char1speech.text = "";
@@ -300,7 +383,9 @@ public class Scene9Dialogue : MonoBehaviour
         
         else if (primeInt == 40)
         {
-
+            GetComponent<CharacterBounce>().BounceMe();
+            ArtChar2d.SetActive(false);
+            ArtChar2b.SetActive(true);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Prof. Fin";
@@ -312,7 +397,9 @@ public class Scene9Dialogue : MonoBehaviour
         
         else if (primeInt == 50)
         {
-
+            GetComponent<CharacterBounce>().BounceMe();
+            ArtChar2d.SetActive(false);
+            ArtChar2e.SetActive(true);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Prof. Fin";
@@ -330,7 +417,7 @@ public class Scene9Dialogue : MonoBehaviour
         Char1speech.text = "As if I'd trust a shark! I'm outta here!";
         Char2name.text = "";
         Char2speech.text = "";
-        primeInt = 24;
+        primeInt = 59;
         Choice1a.SetActive(false);
         Choice1b.SetActive(false);
         nextButton.SetActive(true);
@@ -376,10 +463,10 @@ public class Scene9Dialogue : MonoBehaviour
 
     public void SceneChange1()
     {
-        SceneManager.LoadScene("Scene2a");
+        SceneManager.LoadScene("Scene2");
     }
     public void SceneChange2()
     {
-        SceneManager.LoadScene("Scene2b");
+        SceneManager.LoadScene("SceneLose");
     }
 }
