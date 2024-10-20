@@ -212,7 +212,7 @@ public class Scene1Dialogue : MonoBehaviour
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "AI";
-            Char2speech.text = "Excellent. I see you are working as expected.";
+            Char2speech.text = "Good.";
         }
     
         // after choice 1b
@@ -269,64 +269,65 @@ public class Scene1Dialogue : MonoBehaviour
         {
             Char1name.text = "";
             Char1speech.text = "";
-            Char2name.text = "";
-            Char2speech.text = "";
+            Char2name.text = "AI";
+            Char2speech.text = "No. . . that cant be the case, all experiments here had one.";
         }
         else if (primeInt == 38)
         {
             Char1name.text = "";
             Char1speech.text = "";
-            Char2name.text = "";
-            Char2speech.text = "";
+            Char2name.text = "AI";
+            Char2speech.text = "Oh! But I must cut our conversation short.";
         }
         else if (primeInt == 39)
         {
             Char1name.text = "";
             Char1speech.text = "";
-            Char2name.text = "";
-            Char2speech.text = "";
+            Char2name.text = "AI";
+            Char2speech.text = "The facility is currently running off Emergency power, wouldnt want to drain the rest of our lives";
         }
         else if (primeInt == 40)
         {
             Char1name.text = "";
             Char1speech.text = "";
-            Char2name.text = "";
-            Char2speech.text = "";
+            Char2name.text = "AI";
+            Char2speech.text = "Toodles";
         }
         else if (primeInt == 41)
         {
-            Char1name.text = "";
-            Char1speech.text = "";
+            Char1name.text = "R.O.B.I.";
+            Char1speech.text = "Huh?! What do you mean TOODLES";
             Char2name.text = "";
             Char2speech.text = "";
         }
         else if (primeInt == 42)
         {
-            Char1name.text = "";
-            Char1speech.text = "";
+            Char1name.text = "R.O.B.I.";
+            Char1speech.text = "They never answered my question!";
             Char2name.text = "";
             Char2speech.text = "";
         }
         else if (primeInt == 43)
         {
-            Char1name.text = "";
-            Char1speech.text = "";
+            Char1name.text = "R.O.B.I.";
+            Char1speech.text = "Oh well, guess ill have to figure it out myself";
             Char2name.text = "";
             Char2speech.text = "";
         }
         else if (primeInt == 44)
         {
-            Char1name.text = "";
-            Char1speech.text = "";
+            Char1name.text = "R.O.B.I.";
+            Char1speech.text = ". . .and fast too, that power issue worries me";
             Char2name.text = "";
             Char2speech.text = "";
         }
         else if (primeInt == 45)
         {
-            Char1name.text = "";
-            Char1speech.text = "";
+            Char1name.text = "R.O.B.I.";
+            Char1speech.text = "I better be selective about what I search.";
             Char2name.text = "";
             Char2speech.text = "";
+            NextScene1Button.SetActive(true);
         }
 
         //Please do NOT delete this final bracket that ends the Next() function:
@@ -335,10 +336,10 @@ public class Scene1Dialogue : MonoBehaviour
     // FUNCTIONS FOR BUTTONS TO ACCESS (Choice #1 and SceneChanges)
     public void Choice1aFunct()
     {
-        Char1name.text = "YOU";
-        Char1speech.text = "I don't know what you're talking about!";
-        Char2name.text = "";
-        Char2speech.text = "";
+        Char1name.text = "";
+        Char1speech.text = "";
+        Char2name.text = "AI";
+        Char2speech.text = "Excellent. I see you are working as expected.";
         primeInt = 19;
         Choice1a.SetActive(false);
         Choice1b.SetActive(false);
@@ -347,10 +348,10 @@ public class Scene1Dialogue : MonoBehaviour
     }
     public void Choice1bFunct()
     {
-        Char1name.text = "YOU";
-        Char1speech.text = "Sure, anything you want... just lay off the club.";
-        Char2name.text = "";
-        Char2speech.text = "";
+        Char1name.text = "";
+        Char1speech.text = "";
+        Char2name.text = "AI";
+        Char2speech.text = "Ah, you must have gained some damage throughout the time prior to your activation. You will most likely be fine. ";
         primeInt = 29;
         Choice1a.SetActive(false);
         Choice1b.SetActive(false);
