@@ -2110,6 +2110,7 @@ MonoBehaviour:
   ArtChar2c: {fileID: 1230473907}
   ArtChar2d: {fileID: 568697068}
   ArtChar2e: {fileID: 1398699724}
+  ExamineButton: {fileID: 1202828350}
   ArtBG1: {fileID: 473520741}
   Choice1a: {fileID: 2469117028153922749}
   Choice1b: {fileID: 1530823601}
@@ -2403,6 +2404,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1202828350 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 751929523048330801, guid: de6e8a32d7ae64b439a4457fcccabbe8, type: 3}
+  m_PrefabInstance: {fileID: 1114762057532414891}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1230473907
 GameObject:
   m_ObjectHideFlags: 0

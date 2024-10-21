@@ -82,7 +82,7 @@ public void Next(){
         }
        else if (primeInt == 5){
                 Char1name.text = "ROBI";
-                Char1speech.text = "Oh it's you! I’ve actually been meaning to ask, what is this place?";
+                Char1speech.text = "Oh it's you! I've actually been meaning to ask, what is this place?";
                 Char2name.text = "";
                 Char2speech.text = "";
         }
@@ -108,32 +108,33 @@ public void Next(){
        else if (primeInt == 20){
                 //gameHandler.AddPlayerStat(1);
                 Char1name.text = "ROBI";
-                Char1speech.text = "So like… you do human experimentation and stuff?";
+                Char1speech.text = "So like... you do human experimentation and stuff?";
                 Char2name.text = "";
                 Char2speech.text = "";
         }
+        else if (primeInt == 21){
+                //gameHandler.AddPlayerStat(1);
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "A.I";
+                Char2speech.text = "I take it you've met our other residents. Yes, this lab has taken steps to human modification. Although it's very experimental.";
+        }
         else if (primeInt == 22){
-                 //gameHandler.AddPlayerStat(1);
-                 Char1name.text = "";
-                 Char1speech.text = "";
-                 Char2name.text = "A.I";
-                 Char2speech.text = "";
-         }
-         else if (primeInt == 23){
-                  //gameHandler.AddPlayerStat(1);
-                  Char1name.text = "";
-                  Char1speech.text = "";
-                  Char2name.text = "";
-                  Char2speech.text = "";
-          }
-          else if (primeInt == 24){
-                   //gameHandler.AddPlayerStat(1);
-                   Char1name.text = "";
-                   Char1speech.text = "";
-                   Char2name.text = "";
-                   Char2speech.text = "";
-           }
-       else if (primeInt == 22){
+                //gameHandler.AddPlayerStat(1);
+                Char1name.text = "ROBI";
+                Char1speech.text = "I'm not even gonna ask what for.";
+                Char2name.text = "";
+                Char2speech.text = "";
+        }
+        else if (primeInt == 23){
+                //gameHandler.AddPlayerStat(1);
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "A.I";
+                Char2speech.text = "I believe that is a wise choice. Good for you little ROBI.";
+                primeInt = 30;
+        }
+        else if (primeInt == 24){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "";
@@ -146,20 +147,26 @@ public void Next(){
 
        // after choice 1b
        else if (primeInt == 30){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "Jeda";
-                Char2speech.text = "Do not think you can fool me, human. Where will we find him?";
-        }
-       else if (primeInt == 31){
-                Char1name.text = "YOU";
-                Char1speech.text = "Ragu hangs out in a rough part of town. I'll take you now.";
+                Char1name.text = "ROBI";
+                Char1speech.text = "uhm, yeah. I guess it is.";
                 Char2name.text = "";
                 Char2speech.text = "";
+        }
+        else if (primeInt == 31){
+                Char1name.text = "ROBI";
+                Char1speech.text = "I'm gonna take a look around now.";
+                Char2name.text = "";
+                Char2speech.text = "";
+        }
+       else if (primeInt == 32){
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "A.I";
+                Char2speech.text = "Be thorough.";
                 // Turn off the "Next" button, turn on "Scene" button/s
                 nextButton.SetActive(false);
                 allowSpace = false;
-                NextScene2Button.SetActive(true);
+                NextScene1Button.SetActive(true);
         }
 
       //Please do NOT delete this final bracket that ends the Next() function:
@@ -178,8 +185,8 @@ public void Next(){
                 allowSpace = true;
         }
         public void Choice1bFunct(){
-                Char1name.text = "YOU";
-                Char1speech.text = "Sure, anything you want... just lay off the club.";
+                Char1name.text = "ROBI";
+                Char1speech.text = "huh.";
                 Char2name.text = "";
                 Char2speech.text = "";
                 primeInt = 29;
@@ -190,7 +197,7 @@ public void Next(){
         }
 
         public void SceneChange1(){
-               SceneManager.LoadScene("Scene2a");
+               SceneManager.LoadScene("Scene9");
         }
         public void SceneChange2(){
                 SceneManager.LoadScene("Scene2b");

@@ -213,6 +213,7 @@ public class Scene1Dialogue : MonoBehaviour
             Char1speech.text = "";
             Char2name.text = "AI";
             Char2speech.text = "Good.";
+            primeInt = 30;
         }
     
         // after choice 1b
@@ -235,7 +236,7 @@ public class Scene1Dialogue : MonoBehaviour
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "AI";
-            Char2speech.text = "That’s a simple question! What does your programming tell you to do?";
+            Char2speech.text = "That's a simple question! What does your programming tell you to do?";
         }
         else if (primeInt == 33)
         {
@@ -254,7 +255,7 @@ public class Scene1Dialogue : MonoBehaviour
         else if (primeInt == 35)
         {
             Char1name.text = "R.O.B.I.";
-            Char1speech.text = "Where in my programming say that?";
+            Char1speech.text = "Where in my programming does it say that?";
             Char2name.text = "";
             Char2speech.text = "";
         }

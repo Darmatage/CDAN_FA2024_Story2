@@ -2634,14 +2634,14 @@ PrefabInstance:
     - target: {fileID: 3325622771773836486, guid: f47a1449ec44fbd4cb11c0871c9445d8, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 792738247}
     - target: {fileID: 3325622771773836486, guid: f47a1449ec44fbd4cb11c0871c9445d8, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: SceneChange1
       objectReference: {fileID: 0}
     - target: {fileID: 3325622771773836486, guid: f47a1449ec44fbd4cb11c0871c9445d8, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: Scene1Dialogue, Assembly-CSharp
+      value: Scene8Dialogue, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 3325622771773836486, guid: f47a1449ec44fbd4cb11c0871c9445d8, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName

@@ -267,7 +267,7 @@ public class Scene9Dialogue : MonoBehaviour
         {
 
             Char1name.text = "ROBI";
-            Char1speech.text = "I'm looking for items to override the lock on this place! The solar powered generator seems to be down and can�t be accessed without the overseer�s items!";
+            Char1speech.text = "I'm looking for items to override the lock on this place! The solar powered generator seems to be down and can't be accessed without the overseer's items!";
             Char2name.text = "";
             Char2speech.text = "";
         }
@@ -279,7 +279,7 @@ public class Scene9Dialogue : MonoBehaviour
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Prof. Fin";
-            Char2speech.text = "Oh word? There should be an item like that somewhere in this room, a USB! I�d search for it with you, but again no hands.";
+            Char2speech.text = "Oh word? There should be an item like that somewhere in this room, a USB! I'd search for it with you, but again no hands.";
             
         }
         else if (primeInt == 25)
