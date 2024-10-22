@@ -26,9 +26,12 @@ public class Scene10Dialogue : MonoBehaviour
     public GameObject ArtBG1;
     public GameObject Choice1a;
     public GameObject Choice1b;
+    public GameObject Choice2a;
+    public GameObject Choice2b;
     public GameObject NextScene1Button;
     public GameObject NextScene2Button;
-    public GameObject NextScene3Button;
+    public GameObject NextScene3Button; //scenelose
+    public GameObject NextScene4Button; //sceneloseboom
     public GameObject nextButton;
     //public AudioSource audioSource1;
     private bool allowSpace = true;
@@ -42,9 +45,12 @@ public class Scene10Dialogue : MonoBehaviour
         ArtBG1.SetActive(true);
         Choice1a.SetActive(false);
         Choice1b.SetActive(false);
+        Choice2a.SetActive(false);
+        Choice2b.SetActive(false);
         NextScene1Button.SetActive(false);
         NextScene2Button.SetActive(false);
         NextScene3Button.SetActive(false);
+        NextScene4Button.SetActive(false);
         nextButton.SetActive(true);
     }
 
@@ -127,22 +133,71 @@ public class Scene10Dialogue : MonoBehaviour
             Choice1b.SetActive(true); // function Choice1bFunct()
         }
 
-        // after choice 1a
-        else if (primeInt == 20)
+        // after choice 1b, but you failed:
+        else if (primeInt == 19)
         {
-            //gameHandler.AddPlayerStat(1);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "A.I";
-            Char2speech.text = "Welp, that suc-";
+            Char2speech.text = "Actually, you DON'T have them all. Why do you dissemble?";
+        }
+        // after choice 1a
+        else if (primeInt == 20)
+        {
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "A.I";
+            Char2speech.text = "Do you mean to say you failed to find the 3 critical pieces of information?";
 
         }
         else if (primeInt == 21)
         {
-            SceneManager.LoadScene("SceneLose");
+            Char1name.text = "R.O.B.I.";
+            Char1speech.text = "I mean, if you had only told me what I needed...";
+            Char2name.text = "";
+            Char2speech.text = "";
+
+        }
+        else if (primeInt == 22)
+        {
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "A.I";
+            Char2speech.text = "All is lost. Power down to 0.001% and dropping...";
+
+        }
+        else if (primeInt == 23)
+        {
+            Char1name.text = "R.O.B.I.";
+            Char1speech.text = "Can't I go back and find them?";
+            Char2name.text = "";
+            Char2speech.text = "";
+
+        }
+        else if (primeInt == 24)
+        {
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "A.I";
+            Char2speech.text = "Too late. Welp, that suc-";
+        }
+        else if (primeInt == 25)
+        {
+            //turn off Next button, turn on scene change buttons:
+            nextButton.SetActive(false);
+            allowSpace = false;
+            NextScene3Button.SetActive(true);
+            //SceneManager.LoadScene("SceneLose");
         }
 
-
+        //after choice 1a, but you DO have them all:
+        else if (primeInt == 29)
+        {
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "A.I";
+            Char2speech.text = "Actually, you DO have them all! USB, Keycard, and Password.";
+        }
         // after choice 1b
         else if (primeInt == 30)
         {
@@ -168,13 +223,14 @@ public class Scene10Dialogue : MonoBehaviour
             Char1speech.text = "Sure, master computer and no red button, got it!(now I really wanna press it)";
             Char2name.text = "";
             Char2speech.text = "";
-            ArtChar1a.SetActive(false);
-            ArtChar2a.SetActive(false);
+            //turn off Next button, turn on scene change buttons:
             nextButton.SetActive(false);
             allowSpace = false;
+            ArtChar1a.SetActive(false);
+            ArtChar2a.SetActive(false);
             DialogueDisplay.SetActive(false);
-            NextScene2Button.SetActive(true);
-            NextScene3Button.SetActive(true);
+            Choice2a.SetActive(true);
+            Choice2b.SetActive(true);
 
         }
 
@@ -185,13 +241,41 @@ public class Scene10Dialogue : MonoBehaviour
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "A.I";
-            Char2speech.text = "I see. Shi-";
+            Char2speech.text = "Why would you--? Didn't I tell you not to--";
         }
         else if (primeInt == 42)
         {
-            SceneManager.LoadScene("SceneLose");
-
+            ArtChar2a.SetActive(true);
+            Char1name.text = "R.O.B.I.";
+            Char1speech.text = "Um, yeah, but... red button... ";
+            Char2name.text = "";
+            Char2speech.text = "";
         }
+        else if (primeInt == 43)
+        {
+            ArtChar2a.SetActive(true);
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "A.I";
+            Char2speech.text = "The self destruct has been activated!";
+        }
+        else if (primeInt == 44)
+        {
+            ArtChar2a.SetActive(true);
+            Char1name.text = "R.O.B.I.";
+            Char1speech.text = "OH SHI--";
+            Char2name.text = "";
+            Char2speech.text = "";
+            //turn off Next button, turn on scene change buttons:
+            nextButton.SetActive(false);
+            allowSpace = false;
+            NextScene4Button.SetActive(true);
+            //SceneManager.LoadScene("SceneLoseBoom");
+        }
+
+
+
+
         ///After going to super computer
         else if (primeInt == 51)
         {
@@ -293,7 +377,10 @@ public class Scene10Dialogue : MonoBehaviour
           {
               ArtChar2a.SetActive(false);
               DialogueDisplay.SetActive(false);
-              SceneManager.LoadScene("SceneWin");
+            //turn off Next button, turn on scene change buttons:
+            nextButton.SetActive(false);
+            allowSpace = false;
+            SceneManager.LoadScene("SceneWin");
 
           }
 
@@ -308,7 +395,14 @@ public class Scene10Dialogue : MonoBehaviour
         Char1speech.text = "Ummmm about that...";
         Char2name.text = "";
         Char2speech.text = "";
-        primeInt = 19;
+        if (GameHandler.hasUSB == true && GameHandler.hasKeycard == true && GameHandler.hasPassword == true)
+        {
+            primeInt = 28; //good end, -1
+        }
+        else {
+            primeInt = 19; //bad end
+        }
+       
         Choice1a.SetActive(false);
         Choice1b.SetActive(false);
         nextButton.SetActive(true);
@@ -320,7 +414,14 @@ public class Scene10Dialogue : MonoBehaviour
         Char1speech.text = "Yeah I have them stored in my hidden compartment!";
         Char2name.text = "";
         Char2speech.text = "";
-        primeInt = 29;
+        if (GameHandler.hasUSB == true && GameHandler.hasKeycard == true && GameHandler.hasPassword == true)
+        {
+            primeInt = 29; //good end
+        }
+        else
+        {
+            primeInt = 18; //bad end, -1
+        }
         Choice1a.SetActive(false);
         Choice1b.SetActive(false);
         nextButton.SetActive(true);
@@ -335,10 +436,8 @@ public class Scene10Dialogue : MonoBehaviour
         Char2speech.text = "";
         primeInt = 40;
         DialogueDisplay.SetActive(true);
-        Choice1a.SetActive(false);
-        Choice1b.SetActive(false);
-        NextScene3Button.SetActive(false);
-        NextScene2Button.SetActive(false);
+        Choice2a.SetActive(false);
+        Choice2b.SetActive(false);
         nextButton.SetActive(true);
         allowSpace = true;
     }
@@ -351,10 +450,8 @@ public class Scene10Dialogue : MonoBehaviour
         Char2speech.text = "";
         primeInt = 50;
         DialogueDisplay.SetActive(true);
-        Choice1a.SetActive(false);
-        Choice1b.SetActive(false);
-        NextScene3Button.SetActive(false);
-        NextScene2Button.SetActive(false);
+        Choice2a.SetActive(false);
+        Choice2b.SetActive(false);
         nextButton.SetActive(true);
         allowSpace = true;
     }
@@ -370,5 +467,9 @@ public class Scene10Dialogue : MonoBehaviour
     public void SceneChange3()
     {
         SceneManager.LoadScene("SceneLose");
+    }
+    public void SceneChange4()
+    {
+        SceneManager.LoadScene("SceneLoseBoom");
     }
 }

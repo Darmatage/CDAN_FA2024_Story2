@@ -1784,7 +1784,7 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: 88b31f752266e474aa3cefe7ed14ad69, type: 3}
     - target: {fileID: 5128110136315399583, guid: 6c81f688c67b553418685f9a2c335471, type: 3}
       propertyPath: m_Name
-      value: Item4_ToExamine
+      value: Item4_ToExamine_USB
       objectReference: {fileID: 0}
     - target: {fileID: 5128110136315399583, guid: 6c81f688c67b553418685f9a2c335471, type: 3}
       propertyPath: m_IsActive
@@ -1873,6 +1873,10 @@ PrefabInstance:
     - target: {fileID: 6779939291938725811, guid: 6c81f688c67b553418685f9a2c335471, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 121.618
+      objectReference: {fileID: 0}
+    - target: {fileID: 6885355987710768044, guid: 6c81f688c67b553418685f9a2c335471, type: 3}
+      propertyPath: isUSB
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6885355987710768044, guid: 6c81f688c67b553418685f9a2c335471, type: 3}
       propertyPath: itemIcon

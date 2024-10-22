@@ -6,22 +6,26 @@ using UnityEngine.UI;
 using TMPro;
 using UnityEngine.SceneManagement;
 using UnityEngine.Audio;
+using UnityEditor.PackageManager;
 
 public class GameHandler : MonoBehaviour
 {
+    public static bool hasUSB = false;  // scene 9
+    public static bool hasKeycard = false; // scene 7
+    public static bool hasPassword = false; // scene 6
 
     public static int timeRemaining;
 	public int timeMax = 100;
 	public TMP_Text timerText;
     // public GameObject textGameObject;
 
- public static bool GameisPaused = false;
-        public GameObject pauseMenuUI;
-        public AudioMixer mixer;
-        public static float volumeLevel = 1.0f;
-        private Slider sliderVolumeCtrl;
+    public static bool GameisPaused = false;
+    public GameObject pauseMenuUI;
+    public AudioMixer mixer;
+    public static float volumeLevel = 1.0f;
+    private Slider sliderVolumeCtrl;
 
-        void Awake(){
+    void Awake(){
                 SetLevel (volumeLevel);
                 GameObject sliderTemp = GameObject.FindWithTag("PauseMenuSlider");
                 if (sliderTemp != null){
@@ -89,6 +93,11 @@ public class GameHandler : MonoBehaviour
 
     public void RestartGame(){
         Time.timeScale = 1f;
+        hasUSB = false;
+        hasKeycard = false;
+        hasPassword = false;
+        timeRemaining = 100;
+
         SceneManager.LoadScene("MainMenu");
     }
 

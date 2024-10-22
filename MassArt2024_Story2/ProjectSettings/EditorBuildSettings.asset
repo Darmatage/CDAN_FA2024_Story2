@@ -15,6 +15,9 @@ EditorBuildSettings:
     path: Assets/Scenes/SceneLose.unity
     guid: f708ffeee362bb546b89abc800d29ab2
   - enabled: 1
+    path: Assets/Scenes/SceneLoseBoom.unity
+    guid: ef3a031a7b77e3245ad171b8dc773212
+  - enabled: 1
     path: Assets/Scenes/SceneWin.unity
     guid: 84fc264c5168fb94f958202223298188
   - enabled: 1

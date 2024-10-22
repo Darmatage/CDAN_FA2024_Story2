@@ -275,7 +275,7 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: bc768573beeda044989638a67537a61e, type: 3}
     - target: {fileID: 5128110136315399583, guid: 6c81f688c67b553418685f9a2c335471, type: 3}
       propertyPath: m_Name
-      value: Item2_ToExamine
+      value: Item2_ToExamine_Password
       objectReference: {fileID: 0}
     - target: {fileID: 6779939291938725811, guid: 6c81f688c67b553418685f9a2c335471, type: 3}
       propertyPath: m_Pivot.x
@@ -374,6 +374,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 652051291}
     - target: {fileID: 6885355987710768044, guid: 6c81f688c67b553418685f9a2c335471, type: 3}
+      propertyPath: isPassword
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6885355987710768044, guid: 6c81f688c67b553418685f9a2c335471, type: 3}
       propertyPath: Char1speech
       value: 
       objectReference: {fileID: 1501044786}
@@ -395,19 +399,19 @@ PrefabInstance:
       objectReference: {fileID: 2110426285}
     - target: {fileID: 6885355987710768044, guid: 6c81f688c67b553418685f9a2c335471, type: 3}
       propertyPath: examineThoughts.Array.size
-      value: 4
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6885355987710768044, guid: 6c81f688c67b553418685f9a2c335471, type: 3}
       propertyPath: examineThoughts.Array.data[0]
-      value: ( It's a giant tube! One of them seems to be broken... )
+      value: (It's the List of Passwords!)
       objectReference: {fileID: 0}
     - target: {fileID: 6885355987710768044, guid: 6c81f688c67b553418685f9a2c335471, type: 3}
       propertyPath: examineThoughts.Array.data[1]
-      value: ( The Stuff inside looks green and bubbly. )
+      value: (It's a long list, good thing I've got a good memory!)
       objectReference: {fileID: 0}
     - target: {fileID: 6885355987710768044, guid: 6c81f688c67b553418685f9a2c335471, type: 3}
       propertyPath: examineThoughts.Array.data[2]
-      value: ( I wonder if organics drink this stuff. )
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 6885355987710768044, guid: 6c81f688c67b553418685f9a2c335471, type: 3}
       propertyPath: examineThoughts.Array.data[3]
@@ -1960,7 +1964,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &818298562
 RectTransform:
   m_ObjectHideFlags: 0

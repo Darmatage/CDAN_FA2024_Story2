@@ -25,6 +25,10 @@ public class ItemToExamine : MonoBehaviour{
 	public int timeCost = 10;
     GameHandler gameHandler;
 
+    public bool isUSB = false;
+    public bool isKeycard = false;
+    public bool isPassword = false;
+
     void Start(){
         if (GameObject.FindWithTag("GameHandler") != null){
             gameHandler = GameObject.FindWithTag("GameHandler").GetComponent<GameHandler>();
@@ -50,6 +54,10 @@ public class ItemToExamine : MonoBehaviour{
 		//actvate time cost:
 		GameHandler.timeRemaining -= timeCost;
 		gameHandler.UpdateStats();
+
+        if (isUSB = true) { GameHandler.hasUSB = true; }
+        else if (isKeycard = true) { GameHandler.hasKeycard = true; }
+        else if (isPassword = true) { GameHandler.hasPassword = true; }
     }
 
     public void ItemNext(){

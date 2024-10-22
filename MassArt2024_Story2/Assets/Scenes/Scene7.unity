@@ -1582,7 +1582,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &818298562
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3819,7 +3819,7 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: de8b0bb1a9803814e9b7b2fa5cdaacf9, type: 3}
     - target: {fileID: 5128110136315399583, guid: 6c81f688c67b553418685f9a2c335471, type: 3}
       propertyPath: m_Name
-      value: Item1_ToExamine
+      value: Item1_ToExamine_Keycard
       objectReference: {fileID: 0}
     - target: {fileID: 6779939291938725811, guid: 6c81f688c67b553418685f9a2c335471, type: 3}
       propertyPath: m_Pivot.x
@@ -3918,6 +3918,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 652051291}
     - target: {fileID: 6885355987710768044, guid: 6c81f688c67b553418685f9a2c335471, type: 3}
+      propertyPath: isKeycard
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6885355987710768044, guid: 6c81f688c67b553418685f9a2c335471, type: 3}
       propertyPath: Char1speech
       value: 
       objectReference: {fileID: 1501044786}
@@ -3939,15 +3943,15 @@ PrefabInstance:
       objectReference: {fileID: 208354454}
     - target: {fileID: 6885355987710768044, guid: 6c81f688c67b553418685f9a2c335471, type: 3}
       propertyPath: examineThoughts.Array.size
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6885355987710768044, guid: 6c81f688c67b553418685f9a2c335471, type: 3}
       propertyPath: examineThoughts.Array.data[0]
-      value: (It's a clock! Doesn't seem to be ticking...)
+      value: (It's the Keycard!)
       objectReference: {fileID: 0}
     - target: {fileID: 6885355987710768044, guid: 6c81f688c67b553418685f9a2c335471, type: 3}
       propertyPath: examineThoughts.Array.data[1]
-      value: (I wonder what time it is.)
+      value: (I don't know what I'll have to swipe, but I'll take it with me anyways.)
       objectReference: {fileID: 0}
     - target: {fileID: 6885355987710768044, guid: 6c81f688c67b553418685f9a2c335471, type: 3}
       propertyPath: examineThoughts.Array.data[2]
