@@ -86,6 +86,7 @@ public class Scene1Dialogue : MonoBehaviour
         }
         else if (primeInt == 4)
         {
+        
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "AI";
