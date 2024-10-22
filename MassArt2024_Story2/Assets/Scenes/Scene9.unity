@@ -594,10 +594,14 @@ PrefabInstance:
     - target: {fileID: 3704665436291957346, guid: 6c81f688c67b553418685f9a2c335471, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: f7dfb880018cb09469e0fba2f0168668, type: 3}
+      objectReference: {fileID: 21300000, guid: f09acc8d82290da41a9d0a4991e29db6, type: 3}
     - target: {fileID: 5128110136315399583, guid: 6c81f688c67b553418685f9a2c335471, type: 3}
       propertyPath: m_Name
       value: Item2_ToExamine
+      objectReference: {fileID: 0}
+    - target: {fileID: 5128110136315399583, guid: 6c81f688c67b553418685f9a2c335471, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6779939291938725811, guid: 6c81f688c67b553418685f9a2c335471, type: 3}
       propertyPath: m_Pivot.x
@@ -629,7 +633,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6779939291938725811, guid: 6c81f688c67b553418685f9a2c335471, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 312
+      value: 1273
       objectReference: {fileID: 0}
     - target: {fileID: 6779939291938725811, guid: 6c81f688c67b553418685f9a2c335471, type: 3}
       propertyPath: m_SizeDelta.y
@@ -665,7 +669,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6779939291938725811, guid: 6c81f688c67b553418685f9a2c335471, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 486
+      value: 5.4998
       objectReference: {fileID: 0}
     - target: {fileID: 6779939291938725811, guid: 6c81f688c67b553418685f9a2c335471, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -721,19 +725,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6885355987710768044, guid: 6c81f688c67b553418685f9a2c335471, type: 3}
       propertyPath: examineThoughts.Array.data[0]
-      value: ( It's a giant tube! One of them seems to be broken... )
+      value: (It's the Cage that shark came out of...)
       objectReference: {fileID: 0}
     - target: {fileID: 6885355987710768044, guid: 6c81f688c67b553418685f9a2c335471, type: 3}
       propertyPath: examineThoughts.Array.data[1]
-      value: ( The Stuff inside looks green and bubbly. )
+      value: (It doesn't really look too comfortable.)
       objectReference: {fileID: 0}
     - target: {fileID: 6885355987710768044, guid: 6c81f688c67b553418685f9a2c335471, type: 3}
       propertyPath: examineThoughts.Array.data[2]
-      value: ( I wonder if organics drink this stuff. )
+      value: (I wonder how long he was in here for...)
       objectReference: {fileID: 0}
     - target: {fileID: 6885355987710768044, guid: 6c81f688c67b553418685f9a2c335471, type: 3}
       propertyPath: examineThoughts.Array.data[3]
-      value: ( ...Whoever broke that other tube must of been REAL hungry. )
+      value: (...And why.)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -895,7 +899,7 @@ PrefabInstance:
     - target: {fileID: 3704665436291957346, guid: 6c81f688c67b553418685f9a2c335471, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 60fd74a35a1cd6c4c8f41ff188a921f5, type: 3}
+      objectReference: {fileID: 21300000, guid: 13f7766740a2e5e4d888446ae314333c, type: 3}
     - target: {fileID: 5128110136315399583, guid: 6c81f688c67b553418685f9a2c335471, type: 3}
       propertyPath: m_Name
       value: Item5_ToExamine
@@ -934,11 +938,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6779939291938725811, guid: 6c81f688c67b553418685f9a2c335471, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 240
+      value: 1280
       objectReference: {fileID: 0}
     - target: {fileID: 6779939291938725811, guid: 6c81f688c67b553418685f9a2c335471, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 320
+      value: 720
       objectReference: {fileID: 0}
     - target: {fileID: 6779939291938725811, guid: 6c81f688c67b553418685f9a2c335471, type: 3}
       propertyPath: m_LocalPosition.x
@@ -970,11 +974,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6779939291938725811, guid: 6c81f688c67b553418685f9a2c335471, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -40
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6779939291938725811, guid: 6c81f688c67b553418685f9a2c335471, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 68
+      value: -0.0000076293945
       objectReference: {fileID: 0}
     - target: {fileID: 6779939291938725811, guid: 6c81f688c67b553418685f9a2c335471, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1205,7 +1209,7 @@ PrefabInstance:
     - target: {fileID: 3704665436291957346, guid: 6c81f688c67b553418685f9a2c335471, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: f511545b325008144b1c8379db6c2b97, type: 3}
+      objectReference: {fileID: 21300000, guid: 92d8adda4581a0a4c974753191ea4eef, type: 3}
     - target: {fileID: 5128110136315399583, guid: 6c81f688c67b553418685f9a2c335471, type: 3}
       propertyPath: m_Name
       value: Item3_ToExamine
@@ -1240,11 +1244,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6779939291938725811, guid: 6c81f688c67b553418685f9a2c335471, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 240
+      value: 362.2979
       objectReference: {fileID: 0}
     - target: {fileID: 6779939291938725811, guid: 6c81f688c67b553418685f9a2c335471, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 160
+      value: 310
       objectReference: {fileID: 0}
     - target: {fileID: 6779939291938725811, guid: 6c81f688c67b553418685f9a2c335471, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1276,11 +1280,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6779939291938725811, guid: 6c81f688c67b553418685f9a2c335471, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -511
+      value: 412
       objectReference: {fileID: 0}
     - target: {fileID: 6779939291938725811, guid: 6c81f688c67b553418685f9a2c335471, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 192
+      value: -155
       objectReference: {fileID: 0}
     - target: {fileID: 6779939291938725811, guid: 6c81f688c67b553418685f9a2c335471, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1328,21 +1332,19 @@ PrefabInstance:
       objectReference: {fileID: 1820412470}
     - target: {fileID: 6885355987710768044, guid: 6c81f688c67b553418685f9a2c335471, type: 3}
       propertyPath: examineThoughts.Array.size
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6885355987710768044, guid: 6c81f688c67b553418685f9a2c335471, type: 3}
       propertyPath: examineThoughts.Array.data[0]
-      value: ( It's the screen that did the power warning... It looks to be off now.
-        )
+      value: (An old monitor)
       objectReference: {fileID: 0}
     - target: {fileID: 6885355987710768044, guid: 6c81f688c67b553418685f9a2c335471, type: 3}
       propertyPath: examineThoughts.Array.data[1]
-      value: ( I'm really worried what will come of the whole power situation. )
+      value: (It doesn't seem to turn on though.)
       objectReference: {fileID: 0}
     - target: {fileID: 6885355987710768044, guid: 6c81f688c67b553418685f9a2c335471, type: 3}
       propertyPath: examineThoughts.Array.data[2]
-      value: ( I better not take took long looking at stuff with the whole power
-        crisis. )
+      value: ( I'd hate to know what it feels like to run out... )
       objectReference: {fileID: 0}
     - target: {fileID: 6885355987710768044, guid: 6c81f688c67b553418685f9a2c335471, type: 3}
       propertyPath: examineThoughts.Array.data[3]
@@ -1779,10 +1781,14 @@ PrefabInstance:
     - target: {fileID: 3704665436291957346, guid: 6c81f688c67b553418685f9a2c335471, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 1da105414ba65e745b9558dbfc3468ba, type: 3}
+      objectReference: {fileID: 21300000, guid: 88b31f752266e474aa3cefe7ed14ad69, type: 3}
     - target: {fileID: 5128110136315399583, guid: 6c81f688c67b553418685f9a2c335471, type: 3}
       propertyPath: m_Name
       value: Item4_ToExamine
+      objectReference: {fileID: 0}
+    - target: {fileID: 5128110136315399583, guid: 6c81f688c67b553418685f9a2c335471, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6779939291938725811, guid: 6c81f688c67b553418685f9a2c335471, type: 3}
       propertyPath: m_Pivot.x
@@ -1818,7 +1824,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6779939291938725811, guid: 6c81f688c67b553418685f9a2c335471, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 50
+      value: 167.4896
       objectReference: {fileID: 0}
     - target: {fileID: 6779939291938725811, guid: 6c81f688c67b553418685f9a2c335471, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1834,27 +1840,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6779939291938725811, guid: 6c81f688c67b553418685f9a2c335471, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.48772523
       objectReference: {fileID: 0}
     - target: {fileID: 6779939291938725811, guid: 6c81f688c67b553418685f9a2c335471, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 6779939291938725811, guid: 6c81f688c67b553418685f9a2c335471, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 6779939291938725811, guid: 6c81f688c67b553418685f9a2c335471, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: 0.8729972
       objectReference: {fileID: 0}
     - target: {fileID: 6779939291938725811, guid: 6c81f688c67b553418685f9a2c335471, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -315
+      value: 270
       objectReference: {fileID: 0}
     - target: {fileID: 6779939291938725811, guid: 6c81f688c67b553418685f9a2c335471, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 32
+      value: 91
       objectReference: {fileID: 0}
     - target: {fileID: 6779939291938725811, guid: 6c81f688c67b553418685f9a2c335471, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1866,7 +1872,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6779939291938725811, guid: 6c81f688c67b553418685f9a2c335471, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
+      value: 121.618
       objectReference: {fileID: 0}
     - target: {fileID: 6885355987710768044, guid: 6c81f688c67b553418685f9a2c335471, type: 3}
       propertyPath: itemIcon
@@ -1902,15 +1908,15 @@ PrefabInstance:
       objectReference: {fileID: 1784391060}
     - target: {fileID: 6885355987710768044, guid: 6c81f688c67b553418685f9a2c335471, type: 3}
       propertyPath: examineThoughts.Array.size
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6885355987710768044, guid: 6c81f688c67b553418685f9a2c335471, type: 3}
       propertyPath: examineThoughts.Array.data[0]
-      value: ( It's me! It must be my blueprint. )
+      value: (It's the USB! I better take this with me.)
       objectReference: {fileID: 0}
     - target: {fileID: 6885355987710768044, guid: 6c81f688c67b553418685f9a2c335471, type: 3}
       propertyPath: examineThoughts.Array.data[1]
-      value: ( For some reason, when I look at it, my camera gets all fuzzy. )
+      value: '(That should be another one of the items im supposed to get.) '
       objectReference: {fileID: 0}
     - target: {fileID: 6885355987710768044, guid: 6c81f688c67b553418685f9a2c335471, type: 3}
       propertyPath: examineThoughts.Array.data[2]
@@ -2212,7 +2218,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &818298562
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3686,7 +3692,7 @@ PrefabInstance:
     - target: {fileID: 5619988457422349120, guid: f47a1449ec44fbd4cb11c0871c9445d8, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 60fd74a35a1cd6c4c8f41ff188a921f5, type: 3}
+      objectReference: {fileID: 21300000, guid: 13f7766740a2e5e4d888446ae314333c, type: 3}
     - target: {fileID: 5619988457422349120, guid: f47a1449ec44fbd4cb11c0871c9445d8, type: 3}
       propertyPath: m_Color.a
       value: 1
@@ -3729,11 +3735,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8177911768339052308, guid: f47a1449ec44fbd4cb11c0871c9445d8, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 249.53
+      value: 1280
       objectReference: {fileID: 0}
     - target: {fileID: 8177911768339052308, guid: f47a1449ec44fbd4cb11c0871c9445d8, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 311.102
+      value: 720.39
       objectReference: {fileID: 0}
     - target: {fileID: 8177911768339052308, guid: f47a1449ec44fbd4cb11c0871c9445d8, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3765,11 +3771,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8177911768339052308, guid: f47a1449ec44fbd4cb11c0871c9445d8, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -34.765
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8177911768339052308, guid: f47a1449ec44fbd4cb11c0871c9445d8, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 62.008
+      value: -0.0005774
       objectReference: {fileID: 0}
     - target: {fileID: 8177911768339052308, guid: f47a1449ec44fbd4cb11c0871c9445d8, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -4973,6 +4979,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 818298562}
     m_Modifications:
+    - target: {fileID: 3704665436291957346, guid: 6c81f688c67b553418685f9a2c335471, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 5b75f905ef19dd04da8910f627afef8e, type: 3}
     - target: {fileID: 5128110136315399583, guid: 6c81f688c67b553418685f9a2c335471, type: 3}
       propertyPath: m_Name
       value: Item1_ToExamine
@@ -5007,11 +5017,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6779939291938725811, guid: 6c81f688c67b553418685f9a2c335471, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 100
+      value: 360.45
       objectReference: {fileID: 0}
     - target: {fileID: 6779939291938725811, guid: 6c81f688c67b553418685f9a2c335471, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 100
+      value: 335.2738
       objectReference: {fileID: 0}
     - target: {fileID: 6779939291938725811, guid: 6c81f688c67b553418685f9a2c335471, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5043,11 +5053,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6779939291938725811, guid: 6c81f688c67b553418685f9a2c335471, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -268
+      value: -374
       objectReference: {fileID: 0}
     - target: {fileID: 6779939291938725811, guid: 6c81f688c67b553418685f9a2c335471, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 183
+      value: -160.64
       objectReference: {fileID: 0}
     - target: {fileID: 6779939291938725811, guid: 6c81f688c67b553418685f9a2c335471, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -5095,15 +5105,15 @@ PrefabInstance:
       objectReference: {fileID: 208354454}
     - target: {fileID: 6885355987710768044, guid: 6c81f688c67b553418685f9a2c335471, type: 3}
       propertyPath: examineThoughts.Array.size
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6885355987710768044, guid: 6c81f688c67b553418685f9a2c335471, type: 3}
       propertyPath: examineThoughts.Array.data[0]
-      value: (It's a clock! Doesn't seem to be ticking...)
+      value: (It's a Canister, encasing some kind of fire.)
       objectReference: {fileID: 0}
     - target: {fileID: 6885355987710768044, guid: 6c81f688c67b553418685f9a2c335471, type: 3}
       propertyPath: examineThoughts.Array.data[1]
-      value: (I wonder what time it is.)
+      value: (It doesn't seem too big, but it could be dangerous if let out.)
       objectReference: {fileID: 0}
     - target: {fileID: 6885355987710768044, guid: 6c81f688c67b553418685f9a2c335471, type: 3}
       propertyPath: examineThoughts.Array.data[2]

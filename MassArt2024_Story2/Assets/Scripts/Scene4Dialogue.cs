@@ -21,12 +21,12 @@ public class Scene4Dialogue : MonoBehaviour
     public GameObject ArtChar1b;
     public GameObject ArtChar1c;
     public GameObject ArtChar1d;
-    public GameObject ArtChar1ae;
+    public GameObject ArtChar1e;
     public GameObject ArtChar2a;
     public GameObject ArtChar2b;
-    public GameObject ArtChar2c;
-    public GameObject ArtChar2d;
-    public GameObject ArtChar2e;
+    //public GameObject ArtChar2c;
+    //public GameObject ArtChar2d;
+    //public GameObject ArtChar2e;
     public GameObject ArtBG1;
     public GameObject Choice1a;
     public GameObject Choice1b;
@@ -43,7 +43,12 @@ public class Scene4Dialogue : MonoBehaviour
     {
         DialogueDisplay.SetActive(false);
         ArtChar1a.SetActive(false);
+        ArtChar1b.SetActive(false);
+        ArtChar1c.SetActive(false);
+        ArtChar1d.SetActive(false);
+        ArtChar1e.SetActive(false);
         ArtChar2a.SetActive(false);
+        ArtChar2b.SetActive(false);
         ArtBG1.SetActive(true);
         Choice1a.SetActive(false);
         Choice1b.SetActive(false);
@@ -103,7 +108,7 @@ public class Scene4Dialogue : MonoBehaviour
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "AI";
-            Char2speech.text = "To gain entry, you must answer this Would You Rather question correctly";
+            Char2speech.text = "To gain entry, you must answer this Would You Rather question correctly.";
 
         }
         else if (primeInt == 5)
@@ -122,7 +127,7 @@ public class Scene4Dialogue : MonoBehaviour
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "AI";
-            Char2speech.text = "I shall decide on my own through logical deductive reasoning which option is the most optimal for survival and general satisfaction";
+            Char2speech.text = "I shall decide on my own, through logical deductive reasoning, which option is the most optimal for survival and general satisfaction.";
         }
 
 
@@ -192,7 +197,7 @@ public class Scene4Dialogue : MonoBehaviour
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "AI";
-            Char2speech.text = "Would You Rather fight ten horse-sized chickens...<p>...or one-hundred chicken sized horses?";
+            Char2speech.text = "Would You Rather fight ten horse-sized chickens...or one-hundred chicken sized horses?";
 
         }
         else if (primeInt == 42)
@@ -208,8 +213,10 @@ public class Scene4Dialogue : MonoBehaviour
             Choice2b.SetActive(true); // function Choice1bFunct()
         }
         //after answer 2a
-        else if (primeInt == 4)
+        else if (primeInt == 60)
         {
+            Choice2a.SetActive(false); 
+            Choice2b.SetActive(false);
             ArtChar2a.SetActive(true);
             Char1name.text = "";
             Char1speech.text = "";
@@ -217,7 +224,7 @@ public class Scene4Dialogue : MonoBehaviour
             Char2speech.text = "Chickens are managable...an acceptable answer";
 
         }
-        else if (primeInt == 4)
+        else if (primeInt == 61)
         {
             ArtChar2a.SetActive(true);
             Char1name.text = "R.O.B.I.";
@@ -226,10 +233,11 @@ public class Scene4Dialogue : MonoBehaviour
             Char2speech.text = "";
 
         }
-        else if (primeInt == 29)
+        else if (primeInt == 62)
         {
-            ArtChar1b.SetActive(false);
-            ArtChar2b.SetActive(false);
+            ArtChar1a.SetActive(false);
+            ArtChar2a.SetActive(false);
+           
             nextButton.SetActive(false);
             allowSpace = false;
             DialogueDisplay.SetActive(false);
@@ -242,26 +250,29 @@ public class Scene4Dialogue : MonoBehaviour
         }
         //after answer 2b
 
-        else if (primeInt == 4)
+        else if (primeInt == 50)
         {
+            Choice2a.SetActive(false);
+            Choice2b.SetActive(false);
+            ArtChar1a.SetActive(true);
             ArtChar2a.SetActive(true);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "AI";
             Char2speech.text = "Horses are scary, no matter the size. I cannot accept that answer";
         }
-        else if (primeInt == 4)
+        else if (primeInt == 51)
         {
-            ArtChar2a.SetActive(true);
+            
             Char1name.text = "R.O.B.I.";
             Char1speech.text = "Man...";
             Char2name.text = "";
             Char2speech.text = "";
         }
-        else if (primeInt == 29)
+        else if (primeInt == 52)
         {
-            ArtChar1b.SetActive(false);
-            ArtChar2b.SetActive(false);
+            ArtChar1a.SetActive(false);
+            ArtChar2a.SetActive(false);
             nextButton.SetActive(false);
             allowSpace = false;
             DialogueDisplay.SetActive(false);
@@ -317,7 +328,7 @@ public class Scene4Dialogue : MonoBehaviour
         Char1speech.text = "The Horse-Sized Chickens!";
         Char2name.text = "";
         Char2speech.text = "";
-        primeInt =1 ;
+        primeInt = 59;
         Choice1a.SetActive(false);
         Choice1b.SetActive(false);
         nextButton.SetActive(true);
@@ -329,7 +340,7 @@ public class Scene4Dialogue : MonoBehaviour
         Char1speech.text = "The Chicken-Sized Horses!";
         Char2name.text = "";
         Char2speech.text = "";
-        primeInt = 1;
+        primeInt = 49;
         Choice1a.SetActive(false);
         Choice1b.SetActive(false);
         nextButton.SetActive(true);
