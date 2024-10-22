@@ -328,9 +328,27 @@ public class Scene1Dialogue : MonoBehaviour
             Char1speech.text = "I better be selective about what I search.";
             Char2name.text = "";
             Char2speech.text = "";
-            NextScene1Button.SetActive(true);
+            
+            
         }
-
+        else if (primeInt == 46)
+        {
+            Char1name.text = "R.O.B.I.";
+            Char1speech.text = "That damn AI has gotta know something! Perhaps I should find things to get them to talk...";
+            Char2name.text = "";
+            Char2speech.text = "";
+            
+            
+        }
+        else if (primeInt == 47)
+        {
+            Char1name.text = "R.O.B.I.";
+            Char1speech.text = "Something techy that makes computers open up to you...";
+            Char2name.text = "";
+            Char2speech.text = "";
+            NextScene1Button.SetActive(true);
+            
+        }
         //Please do NOT delete this final bracket that ends the Next() function:
     }
 
