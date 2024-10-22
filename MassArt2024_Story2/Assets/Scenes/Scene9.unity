@@ -2128,7 +2128,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 792738241}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7393ae79a4bca4d4491431b12ee60b33, type: 3}
+  m_Script: {fileID: 11500000, guid: edf5e7574d59dbb45a12771d11c9ee20, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   curveMove:
@@ -2137,17 +2137,17 @@ MonoBehaviour:
     - serializedVersion: 3
       time: 0
       value: 0
-      inSlope: 4.750237
-      outSlope: 4.750237
+      inSlope: 11.42319
+      outSlope: 11.42319
       tangentMode: 0
       weightedMode: 0
       inWeight: 0
-      outWeight: 0.05
+      outWeight: 0.033333335
     - serializedVersion: 3
-      time: 0.22917175
-      value: 0.99528885
-      inSlope: -0.0021109215
-      outSlope: -0.0021109215
+      time: 0.25
+      value: 1
+      inSlope: 0
+      outSlope: 0
       tangentMode: 0
       weightedMode: 0
       inWeight: 0.33333334
@@ -2155,16 +2155,22 @@ MonoBehaviour:
     - serializedVersion: 3
       time: 0.5
       value: 0
-      inSlope: -4.806852
-      outSlope: -4.806852
+      inSlope: -9.311982
+      outSlope: -9.311982
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.04917768
+      inWeight: 0.049999952
       outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
   charImages:
+  - {fileID: 305646228}
+  - {fileID: 588682868}
+  - {fileID: 54434414}
+  - {fileID: 1984529414}
+  - {fileID: 2057808254}
+  charImages2:
   - {fileID: 2030509751}
   - {fileID: 1525632249}
   - {fileID: 1230473907}
@@ -2176,7 +2182,14 @@ MonoBehaviour:
   - {x: 0, y: 0, z: 0}
   - {x: 0, y: 0, z: 0}
   - {x: 0, y: 0, z: 0}
+  startPos2:
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
   bounceAmt: 5
+  bounceAmt2: 5
 --- !u!224 &814273010 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8177911768339052308, guid: f47a1449ec44fbd4cb11c0871c9445d8, type: 3}

@@ -46,7 +46,15 @@ public class Scene6Dialogue : MonoBehaviour
     {
         DialogueDisplay.SetActive(false);
         ArtChar1a.SetActive(false);
+        ArtChar1b.SetActive(false);
+        ArtChar1c.SetActive(false);
+        ArtChar1d.SetActive(false);
+        ArtChar1e.SetActive(false);
         ArtChar2a.SetActive(false);
+        ArtChar2b.SetActive(false);
+        ArtChar2c.SetActive(false);
+        ArtChar2d.SetActive(false);
+        ArtChar2e.SetActive(false);
         ArtBG1.SetActive(true);
         Choice1a.SetActive(false);
         Choice1b.SetActive(false);
@@ -104,6 +112,9 @@ public class Scene6Dialogue : MonoBehaviour
         }
         else if (primeInt == 4)
         {
+            GetComponent<CharacterBounce>().BounceMe();
+            ArtChar1a.SetActive(false);
+            ArtChar1e.SetActive(true);
             Char1name.text = "R.O.B.I.";
             Char1speech.text = "What!! Who’s speaking?!";
             Char2name.text = "";
@@ -119,6 +130,7 @@ public class Scene6Dialogue : MonoBehaviour
         else if (primeInt == 6)
         {
             ArtChar2a.SetActive(true);
+            GetComponent<Character2Bounce>().BounceMe();
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Dodo";
@@ -126,6 +138,9 @@ public class Scene6Dialogue : MonoBehaviour
         }
         else if (primeInt == 7)
         {
+            GetComponent<Character2Bounce>().BounceMe();
+            ArtChar2a.SetActive(false);
+            ArtChar2d.SetActive(true);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Dodo";
@@ -169,6 +184,9 @@ public class Scene6Dialogue : MonoBehaviour
         }
         else if (primeInt == 21)
         {
+            GetComponent<CharacterBounce>().BounceMe();
+            ArtChar2d.SetActive(false);
+            ArtChar2a.SetActive(true);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Dodo";
@@ -204,6 +222,7 @@ public class Scene6Dialogue : MonoBehaviour
         //after both choices 1a and 1b:
         else if (primeInt == 40)
         {
+            
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Dodo";
@@ -212,6 +231,9 @@ public class Scene6Dialogue : MonoBehaviour
     }
     else if (primeInt == 41)
         {
+            ArtChar2a.SetActive(false);
+            ArtChar2c.SetActive(true);
+            GetComponent<CharacterBounce>().BounceMe();
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Dodo";
@@ -235,6 +257,9 @@ public class Scene6Dialogue : MonoBehaviour
         // after choice 2a
         else if (primeInt == 50)
         {
+            ArtChar2c.SetActive(false);
+            ArtChar2e.SetActive(true);
+            GetComponent<CharacterBounce>().BounceMe();
             //gameHandler.AddPlayerStat(1);
             Char1name.text = "";
             Char1speech.text = "";
@@ -266,6 +291,9 @@ public class Scene6Dialogue : MonoBehaviour
         }
         else if (primeInt == 61)
         {
+            ArtChar2c.SetActive(false);
+            ArtChar2a.SetActive(true);
+            GetComponent<CharacterBounce>().BounceMe();
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Dodo";

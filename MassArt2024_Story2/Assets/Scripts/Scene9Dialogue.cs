@@ -79,7 +79,7 @@ public class Scene9Dialogue : MonoBehaviour
         }
         else if (primeInt == 2)
         {
-            GetComponent<CharacterBounce>().BounceMe();
+            GetComponent<CharactersBounceTwo>().BounceMe1();
             DialogueDisplay.SetActive(true);
             ArtChar1a.SetActive(true);
             Char1name.text = "";
@@ -89,7 +89,7 @@ public class Scene9Dialogue : MonoBehaviour
         }
         else if (primeInt == 3)
         {
-            GetComponent<CharacterBounce>().BounceMe();
+            GetComponent<CharactersBounceTwo>().BounceMe1();
             ArtChar1a.SetActive(false);
             ArtChar1e.SetActive(true);
             Char1name.text = "ROBI";
@@ -101,7 +101,7 @@ public class Scene9Dialogue : MonoBehaviour
         else if (primeInt == 4)
         {
 			
-			GetComponent<CharacterBounce>().BounceMe();
+			GetComponent<CharactersBounceTwo>().BounceMe2();
             ArtChar2c.SetActive(true);
             Char1name.text = "";
             Char1speech.text = "";
@@ -151,7 +151,7 @@ public class Scene9Dialogue : MonoBehaviour
         }
         else if (primeInt == 10)
         {
-            GetComponent<CharacterBounce>().BounceMe();
+            GetComponent<CharactersBounceTwo>().BounceMe2();
             ArtChar2c.SetActive(false);
             ArtChar2a.SetActive(true);
             Char1name.text = "";
@@ -162,7 +162,7 @@ public class Scene9Dialogue : MonoBehaviour
         
         else if (primeInt == 11)
         {
-            GetComponent<CharacterBounce>().BounceMe();
+            GetComponent<CharactersBounceTwo>().BounceMe1();
             ArtChar1e.SetActive(false);
             ArtChar1d.SetActive(true);
             Char1name.text = "ROBI";
@@ -186,7 +186,7 @@ public class Scene9Dialogue : MonoBehaviour
         }
         else if (primeInt == 14)
         {
-            GetComponent<CharacterBounce>().BounceMe();
+            GetComponent<CharactersBounceTwo>().BounceMe2();
             ArtChar2a.SetActive(false);
             ArtChar2d.SetActive(true);
             Char1name.text = "";
@@ -203,7 +203,7 @@ public class Scene9Dialogue : MonoBehaviour
         
         else if (primeInt == 17)
         {
-            GetComponent<CharacterBounce>().BounceMe();
+            GetComponent<CharactersBounceTwo>().BounceMe1();
             ArtChar1d.SetActive(false);
             ArtChar1a.SetActive(true);
             Char1name.text = "ROBI";
@@ -214,7 +214,7 @@ public class Scene9Dialogue : MonoBehaviour
         }
         else if (primeInt == 18)
         {
-            GetComponent<CharacterBounce>().BounceMe();
+            GetComponent<CharactersBounceTwo>().BounceMe2();
             ArtChar2b.SetActive(false);
             ArtChar2e.SetActive(false);
             ArtChar2a.SetActive(true);
@@ -225,7 +225,7 @@ public class Scene9Dialogue : MonoBehaviour
         }
         else if (primeInt == 19)
         {
-            GetComponent<CharacterBounce>().BounceMe();
+            GetComponent<CharactersBounceTwo>().BounceMe1();
             ArtChar1a.SetActive(false);
             ArtChar1e.SetActive(true);
             Char1name.text = "ROBI";
@@ -235,7 +235,7 @@ public class Scene9Dialogue : MonoBehaviour
         }
         else if (primeInt == 20)
         {
-            GetComponent<CharacterBounce>().BounceMe();
+            GetComponent<CharactersBounceTwo>().BounceMe2();
             ArtChar2a.SetActive(false);
             ArtChar2e.SetActive(true);
             Char1name.text = "";
@@ -245,7 +245,7 @@ public class Scene9Dialogue : MonoBehaviour
         }
         else if (primeInt == 21)
         {
-            GetComponent<CharacterBounce>().BounceMe();
+            GetComponent<CharactersBounceTwo>().BounceMe1();
             ArtChar1e.SetActive(false);
             ArtChar1a.SetActive(true);
             Char1name.text = "ROBI";
@@ -255,7 +255,7 @@ public class Scene9Dialogue : MonoBehaviour
         }
         else if (primeInt == 22)
         {
-            GetComponent<CharacterBounce>().BounceMe();
+            GetComponent<CharactersBounceTwo>().BounceMe2();
             ArtChar2e.SetActive(false);
             ArtChar2a.SetActive(true);
             Char1name.text = "";
@@ -273,7 +273,7 @@ public class Scene9Dialogue : MonoBehaviour
         }
         else if (primeInt == 24)
         {
-            GetComponent<CharacterBounce>().BounceMe();
+            GetComponent<CharactersBounceTwo>().BounceMe2();
             ArtChar2a.SetActive(false);
             ArtChar2b.SetActive(true);
             Char1name.text = "";
@@ -295,7 +295,7 @@ public class Scene9Dialogue : MonoBehaviour
         }
         else if (primeInt == 26)
         {
-            GetComponent<CharacterBounce>().BounceMe();
+            GetComponent<CharactersBounceTwo>().BounceMe2();
             ArtChar2b.SetActive(false);
             ArtChar2a.SetActive(true);
             nextButton.SetActive(true);
@@ -309,7 +309,7 @@ public class Scene9Dialogue : MonoBehaviour
         }
         else if (primeInt == 27)
         {
-            GetComponent<CharacterBounce>().BounceMe();
+            GetComponent<CharactersBounceTwo>().BounceMe1();
             ArtChar1a.SetActive(false);
             ArtChar1b.SetActive(true);
             Char1name.text = "R.O.B.I";
@@ -319,7 +319,7 @@ public class Scene9Dialogue : MonoBehaviour
         }
         else if (primeInt == 28)
         {
-            GetComponent<CharacterBounce>().BounceMe();
+            GetComponent<CharactersBounceTwo>().BounceMe2();
             ArtChar2a.SetActive(false);
             ArtChar2b.SetActive(true);
             Char1name.text = "";
@@ -383,7 +383,7 @@ public class Scene9Dialogue : MonoBehaviour
         
         else if (primeInt == 40)
         {
-            GetComponent<CharacterBounce>().BounceMe();
+            GetComponent<CharactersBounceTwo>().BounceMe2();
             ArtChar2d.SetActive(false);
             ArtChar2b.SetActive(true);
             Char1name.text = "";
@@ -397,7 +397,7 @@ public class Scene9Dialogue : MonoBehaviour
         
         else if (primeInt == 50)
         {
-            GetComponent<CharacterBounce>().BounceMe();
+            GetComponent<CharactersBounceTwo>().BounceMe2();
             ArtChar2d.SetActive(false);
             ArtChar2e.SetActive(true);
             Char1name.text = "";

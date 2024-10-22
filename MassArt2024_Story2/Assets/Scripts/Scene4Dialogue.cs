@@ -15,17 +15,23 @@ public class Scene4Dialogue : MonoBehaviour
     public TMP_Text Char1speech;
     public TMP_Text Char2name;
     public TMP_Text Char2speech;
-    //public Text Char3name;
-    //public Text Char3speech;
+    
     public GameObject DialogueDisplay;
     public GameObject ArtChar1a;
-    //this is for the second character in scene
+    public GameObject ArtChar1b;
+    public GameObject ArtChar1c;
+    public GameObject ArtChar1d;
+    public GameObject ArtChar1ae;
     public GameObject ArtChar2a;
-    //public GameObject ArtChar1b;
-    //public GameObject ArtChar2;
+    public GameObject ArtChar2b;
+    public GameObject ArtChar2c;
+    public GameObject ArtChar2d;
+    public GameObject ArtChar2e;
     public GameObject ArtBG1;
     public GameObject Choice1a;
     public GameObject Choice1b;
+    public GameObject Choice2a;
+    public GameObject Choice2b;
     public GameObject NextScene1Button;
     public GameObject NextScene2Button;
     public GameObject nextButton;
@@ -41,6 +47,8 @@ public class Scene4Dialogue : MonoBehaviour
         ArtBG1.SetActive(true);
         Choice1a.SetActive(false);
         Choice1b.SetActive(false);
+        Choice2a.SetActive(false);
+        Choice2b.SetActive(false);
         NextScene1Button.SetActive(false);
         NextScene2Button.SetActive(false);
         nextButton.SetActive(true);
@@ -82,127 +90,52 @@ public class Scene4Dialogue : MonoBehaviour
         }
         else if (primeInt == 3)
         {
-            ArtChar2a.SetActive(true); //*Allows second charcter to appear! Copy and paste where needed
-            Char1name.text = "ROBI";
+            ArtChar2a.SetActive(true);
+            Char1name.text = "R.O.B.I.";
             Char1speech.text = "...Huh?";
             Char2name.text = "";
             Char2speech.text = "";
-            //gameHandler.AddPlayerStat(1);
+
         }
         else if (primeInt == 4)
         {
+            ArtChar2a.SetActive(true);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "AI";
-            Char2speech.text = "[ BOOTING. ]";
+            Char2speech.text = "To gain entry, you must answer this Would You Rather question correctly";
+
         }
         else if (primeInt == 5)
         {
-            Char1name.text = "";
-            Char1speech.text = "";
-            Char2name.text = "AI";
-            Char2speech.text = "[ BOOTING. . ] ";
+            ArtChar2a.SetActive(true);
+            Char1name.text = "R.O.B.I.";
+            Char1speech.text = "How do you even answer correctly? Isn't it subjective?";
+            Char2name.text = "";
+            Char2speech.text = "";
+
         }
         else if (primeInt == 6)
         {
+            ArtChar1a.SetActive(true);
+            DialogueDisplay.SetActive(true);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "AI";
-            Char2speech.text = "[ BOOTING . . . ] ";
+            Char2speech.text = "I shall decide on my own through logical deductive reasoning which option is the most optimal for survival and general satisfaction";
         }
+
+
+
+
+
+
         else if (primeInt == 7)
         {
-            Char1name.text = "";
-            Char1speech.text = "";
-            Char2name.text = "AI";
-            Char2speech.text = "[ SUCCESS ! ]";
-        }
-        else if (primeInt == 8)
-        {
-            Char1name.text = "";
-            Char1speech.text = "";
-            Char2name.text = "AI";
-            Char2speech.text = "[ WELCOME ONLINE, R.O.B.I. ]";
-        }
-        else if (primeInt == 9)
-        {
             Char1name.text = "R.O.B.I.";
-            Char1speech.text = "( My lens suddenly opened, revealing a messy, dusty, run down laboratory. )";
+            Char1speech.text = "Deductive reasoning...?";
             Char2name.text = "";
             Char2speech.text = "";
-        }
-        else if (primeInt == 10)
-        {
-            Char1name.text = "R.O.B.I.";
-            Char1speech.text = "( . . .At least, that's what my sensors are telling me. )";
-            Char2name.text = "";
-            Char2speech.text = "";
-        }
-        else if (primeInt == 11)
-        {
-            Char1name.text = "R.O.B.I.";
-            Char1speech.text = "( My logic unit feels as if its not working up to speed. . .) ";
-            Char2name.text = "";
-            Char2speech.text = "";
-        }
-        else if (primeInt == 12)
-        {
-            Char1name.text = "R.O.B.I.";
-            Char1speech.text = "( Maybe I should charge just a little bit more. . . )";
-            Char2name.text = "";
-            Char2speech.text = "";
-            // Here would be a game over choice with robi either continuing or sleeping. If he sleeps it would lead to a Game over screen, but if he stays awake script would continue as usual. Ask 10/17/24 jason how to make more buttons, either me or someone else if im still sick - SAM
-        // Didnt put any choices here for now! will when we figure out. :-D!!!!
-    }
-    else if (primeInt == 13)
-        {
-            Char1name.text = "R.O.B.I.";
-            Char1speech.text = "( I cant be messing around! Its probably just a slow start up. . . better start looking around!)";
-            Char2name.text = "";
-            Char2speech.text = "";
-        }
-        else if (primeInt == 14)
-        {
-            Char1name.text = "";
-            Char1speech.text = " ";
-            Char2name.text = "AI";
-            Char2speech.text = "Welcome awake, R.O.B.I.";
-        }
-        else if (primeInt == 15)
-        {
-            Char1name.text = "R.O.B.I";
-            Char1speech.text = "Huh?";
-            Char2name.text = "";
-            Char2speech.text = "";
-        }
-        else if (primeInt == 16)
-        {
-            Char1name.text = "";
-            Char1speech.text = " ";
-            Char2name.text = "AI";
-            Char2speech.text = "If you are confused about the term `Welcome awake`, it is a biological term for gaining power.";
-        }
-        else if (primeInt == 17)
-        {
-            Char1name.text = "";
-            Char1speech.text = " ";
-            Char2name.text = "AI";
-            Char2speech.text = "Of which, you just got for the first time.";
-        }
-        else if (primeInt == 18)
-        {
-            Char1name.text = "";
-            Char1speech.text = " ";
-            Char2name.text = "AI";
-            Char2speech.text = "However, if you are confused about your identification. Your shortened name is R.O.B.I, or Responsive Optimization Behavior Interface";
-
-        }
-        else if (primeInt == 19)
-        {
-            Char1name.text = "";
-            Char1speech.text = "";
-            Char2name.text = "AI";
-            Char2speech.text = "Is that clear?";
             // Turn off the "Next" button, turn on "Choice" buttons
             nextButton.SetActive(false);
             allowSpace = false;
@@ -211,128 +144,144 @@ public class Scene4Dialogue : MonoBehaviour
         }
 
         // after choice 1a
-        else if (primeInt == 20)
+        else if (primeInt == 30)
+        {
+            //gameHandler.AddPlayerStat(1);
+            Char1name.text = "R.O.B.I.";
+            Char1speech.text = "It seems sketch, but it doesn't look like I have a choice.";
+            Char2name.text = "";
+            Char2speech.text = "";
+            
+        }
+        else if (primeInt == 31)
         {
             //gameHandler.AddPlayerStat(1);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "AI";
-            Char2speech.text = "Excellent. I see you are working as expected.";
+            Char2speech.text = "You do not.";
+            primeInt = 39 ;
         }
 
+
         // after choice 1b
-        else if (primeInt == 30)
-        {
-            Char1name.text = "";
-            Char1speech.text = "";
-            Char2name.text = "AI";
-            Char2speech.text = "Ah, you must have gained some damage throughout the time prior to your activation. You will most likely be fine. ";
-        }
-        else if (primeInt == 31)
-        {
-            Char1name.text = "R.O.B.I.";
-            Char1speech.text = "So, What exactly am I supposed to do?";
-            Char2name.text = "";
-            Char2speech.text = "";
-        }
-        else if (primeInt == 32)
-        {
-            Char1name.text = "";
-            Char1speech.text = "";
-            Char2name.text = "AI";
-            Char2speech.text = "That’s a simple question! What does your programming tell you to do?";
-        }
-        else if (primeInt == 33)
-        {
-            Char1name.text = "R.O.B.I.";
-            Char1speech.text = "Oh! It. . .";
-            Char2name.text = "";
-            Char2speech.text = "";
-        }
-        else if (primeInt == 34)
-        {
-            Char1name.text = "R.O.B.I.";
-            Char1speech.text = "Um. . .";
-            Char2name.text = "";
-            Char2speech.text = "";
-        }
+
         else if (primeInt == 35)
         {
-            Char1name.text = "R.O.B.I.";
-            Char1speech.text = "Where in my programming say that?";
-            Char2name.text = "";
-            Char2speech.text = "";
-        }
-        else if (primeInt == 36)
-        {
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "AI";
-            Char2speech.text = "You would know. Perhaps you were never programmed with one.";
+            Char2speech.text = "Life is often not fair.";
+            primeInt = 39 ;
         }
-        else if (primeInt == 37)
-        {
-            Char1name.text = "";
-            Char1speech.text = "";
-            Char2name.text = "";
-            Char2speech.text = "";
-        }
-        else if (primeInt == 38)
-        {
-            Char1name.text = "";
-            Char1speech.text = "";
-            Char2name.text = "";
-            Char2speech.text = "";
-        }
-        else if (primeInt == 39)
-        {
-            Char1name.text = "";
-            Char1speech.text = "";
-            Char2name.text = "";
-            Char2speech.text = "";
-        }
+
+
+
+
         else if (primeInt == 40)
         {
+            ArtChar2a.SetActive(true);
             Char1name.text = "";
             Char1speech.text = "";
-            Char2name.text = "";
-            Char2speech.text = "";
+            Char2name.text = "AI";
+            Char2speech.text = "Your question is as follows:";
         }
         else if (primeInt == 41)
         {
+            ArtChar2a.SetActive(true);
             Char1name.text = "";
             Char1speech.text = "";
-            Char2name.text = "";
-            Char2speech.text = "";
+            Char2name.text = "AI";
+            Char2speech.text = "Would You Rather fight ten horse-sized chickens...<p>...or one-hundred chicken sized horses?";
+
         }
         else if (primeInt == 42)
         {
-            Char1name.text = "";
-            Char1speech.text = "";
+            Char1name.text = "R.O.B.I.";
+            Char1speech.text = "I'd have to say...";
             Char2name.text = "";
             Char2speech.text = "";
+            // Turn off the "Next" button, turn on "Choice" buttons
+            nextButton.SetActive(false);
+            allowSpace = false;
+            Choice2a.SetActive(true); // function Choice1aFunct()
+            Choice2b.SetActive(true); // function Choice1bFunct()
         }
-        else if (primeInt == 43)
+        //after answer 2a
+        else if (primeInt == 4)
         {
+            ArtChar2a.SetActive(true);
             Char1name.text = "";
             Char1speech.text = "";
-            Char2name.text = "";
-            Char2speech.text = "";
+            Char2name.text = "AI";
+            Char2speech.text = "Chickens are managable...an acceptable answer";
+
         }
-        else if (primeInt == 44)
+        else if (primeInt == 4)
         {
-            Char1name.text = "";
-            Char1speech.text = "";
+            ArtChar2a.SetActive(true);
+            Char1name.text = "R.O.B.I.";
+            Char1speech.text = "Chickens never fail me!";
             Char2name.text = "";
             Char2speech.text = "";
+
         }
-        else if (primeInt == 45)
+        else if (primeInt == 29)
         {
+            ArtChar1b.SetActive(false);
+            ArtChar2b.SetActive(false);
+            nextButton.SetActive(false);
+            allowSpace = false;
+            DialogueDisplay.SetActive(false);
+
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "";
             Char2speech.text = "";
+            NextScene1Button.SetActive(true);
         }
+        //after answer 2b
+
+        else if (primeInt == 4)
+        {
+            ArtChar2a.SetActive(true);
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "AI";
+            Char2speech.text = "Horses are scary, no matter the size. I cannot accept that answer";
+        }
+        else if (primeInt == 4)
+        {
+            ArtChar2a.SetActive(true);
+            Char1name.text = "R.O.B.I.";
+            Char1speech.text = "Man...";
+            Char2name.text = "";
+            Char2speech.text = "";
+        }
+        else if (primeInt == 29)
+        {
+            ArtChar1b.SetActive(false);
+            ArtChar2b.SetActive(false);
+            nextButton.SetActive(false);
+            allowSpace = false;
+            DialogueDisplay.SetActive(false);
+
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "";
+            Char2speech.text = "";
+            NextScene2Button.SetActive(true);
+        }
+
+
+        
+
+
+
+
+
+
+
 
         //Please do NOT delete this final bracket that ends the Next() function:
     }
@@ -340,20 +289,8 @@ public class Scene4Dialogue : MonoBehaviour
     // FUNCTIONS FOR BUTTONS TO ACCESS (Choice #1 and SceneChanges)
     public void Choice1aFunct()
     {
-        Char1name.text = "YOU";
-        Char1speech.text = "I don't know what you're talking about!";
-        Char2name.text = "";
-        Char2speech.text = "";
-        primeInt = 19;
-        Choice1a.SetActive(false);
-        Choice1b.SetActive(false);
-        nextButton.SetActive(true);
-        allowSpace = true;
-    }
-    public void Choice1bFunct()
-    {
-        Char1name.text = "YOU";
-        Char1speech.text = "Sure, anything you want... just lay off the club.";
+        Char1name.text = "R.O.B.I.";
+        Char1speech.text = "Uh alright. Ask away.";
         Char2name.text = "";
         Char2speech.text = "";
         primeInt = 29;
@@ -362,13 +299,48 @@ public class Scene4Dialogue : MonoBehaviour
         nextButton.SetActive(true);
         allowSpace = true;
     }
-
+    public void Choice1bFunct()
+    {
+        Char1name.text = "R.O.B.I.";
+        Char1speech.text = "That doesn’t seem fair at all!";
+        Char2name.text = "";
+        Char2speech.text = "";
+        primeInt = 34;
+        Choice1a.SetActive(false);
+        Choice1b.SetActive(false);
+        nextButton.SetActive(true);
+        allowSpace = true;
+    }
+    public void Choice2aFunct()
+    {
+        Char1name.text = "";
+        Char1speech.text = "The Horse-Sized Chickens!";
+        Char2name.text = "";
+        Char2speech.text = "";
+        primeInt =1 ;
+        Choice1a.SetActive(false);
+        Choice1b.SetActive(false);
+        nextButton.SetActive(true);
+        allowSpace = true;
+    }
+    public void Choice2bFunct()
+    {
+        Char1name.text = "";
+        Char1speech.text = "The Chicken-Sized Horses!";
+        Char2name.text = "";
+        Char2speech.text = "";
+        primeInt = 1;
+        Choice1a.SetActive(false);
+        Choice1b.SetActive(false);
+        nextButton.SetActive(true);
+        allowSpace = true;
+    }
     public void SceneChange1()
     {
-        SceneManager.LoadScene("Scene2");
+        SceneManager.LoadScene("Scene6");
     }
     public void SceneChange2()
     {
-        SceneManager.LoadScene("Scene2b");
+        SceneManager.LoadScene("Scene2");
     }
 }
