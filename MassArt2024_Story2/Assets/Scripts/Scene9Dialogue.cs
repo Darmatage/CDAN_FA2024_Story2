@@ -434,6 +434,8 @@ public class Scene9Dialogue : MonoBehaviour
         Choice1b.SetActive(false);
         nextButton.SetActive(true);
         allowSpace = true;
+        ArtChar1a.SetActive(false);
+        ArtChar2a.SetActive(false);
     }
     public void Choice2aFunct()
     {
