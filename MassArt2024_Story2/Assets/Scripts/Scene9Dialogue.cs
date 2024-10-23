@@ -463,7 +463,7 @@ public class Scene9Dialogue : MonoBehaviour
 
     public void SceneChange1()
     {
-        SceneManager.LoadScene("Scene2");
+        SceneManager.LoadScene("Scene10");
     }
     public void SceneChange2()
     {
