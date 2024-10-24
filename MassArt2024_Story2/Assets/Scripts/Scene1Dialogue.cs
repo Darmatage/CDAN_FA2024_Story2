@@ -337,9 +337,13 @@ public class Scene1Dialogue : MonoBehaviour
         {
             ArtChar1b.SetActive(false);
             ArtChar1e.SetActive(true);
+			ArtChar2a.SetActive(false);
+			ArtChar2b.SetActive(false);
             ArtChar2c.SetActive(false);
+			ArtChar2d.SetActive(false);
+            ArtChar2e.SetActive(false);
             Char1name.text = "R.O.B.I.";
-            Char1speech.text = "Huh?! What do you mean TOODLES";
+            Char1speech.text = "Huh?! What do you mean 'TOODLES'?";
             Char2name.text = "";
             Char2speech.text = "";
         }
@@ -398,6 +402,11 @@ public class Scene1Dialogue : MonoBehaviour
             Char2name.text = "";
             Char2speech.text = "";
             ExamineButton.SetActive(true);
+			// Turn off the "Next" button, turn on "Choice" buttons
+            nextButton.SetActive(false);
+            allowSpace = false;
+			DialogueDisplay.SetActive(false);
+
         }
         else if (primeInt == 49)
         {
