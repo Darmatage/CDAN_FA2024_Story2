@@ -307,11 +307,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6779939291938725811, guid: 6c81f688c67b553418685f9a2c335471, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 312
+      value: 700
       objectReference: {fileID: 0}
     - target: {fileID: 6779939291938725811, guid: 6c81f688c67b553418685f9a2c335471, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 720
+      value: 700
       objectReference: {fileID: 0}
     - target: {fileID: 6779939291938725811, guid: 6c81f688c67b553418685f9a2c335471, type: 3}
       propertyPath: m_LocalPosition.x
@@ -343,11 +343,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6779939291938725811, guid: 6c81f688c67b553418685f9a2c335471, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 486
+      value: 185.454
       objectReference: {fileID: 0}
     - target: {fileID: 6779939291938725811, guid: 6c81f688c67b553418685f9a2c335471, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -3
+      value: 21.598
       objectReference: {fileID: 0}
     - target: {fileID: 6779939291938725811, guid: 6c81f688c67b553418685f9a2c335471, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -430,7 +430,7 @@ GameObject:
   - component: {fileID: 48616957}
   - component: {fileID: 48616956}
   m_Layer: 5
-  m_Name: ImageChar2d
+  m_Name: ImageChar2d_suprise
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -720,7 +720,7 @@ GameObject:
   - component: {fileID: 177714603}
   - component: {fileID: 177714602}
   m_Layer: 5
-  m_Name: ImageChar2c
+  m_Name: ImageChar2c_happy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -746,7 +746,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: e5d934cdec63d5543bdbad884aed7847, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f759e54448cdc14468e17f1891fba3c0, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1140,7 +1140,7 @@ GameObject:
   - component: {fileID: 305646231}
   - component: {fileID: 305646230}
   m_Layer: 5
-  m_Name: ImageChar1a
+  m_Name: ImageChar1a_neutral
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1216,7 +1216,7 @@ GameObject:
   - component: {fileID: 393681675}
   - component: {fileID: 393681674}
   m_Layer: 5
-  m_Name: ImageChar2e
+  m_Name: ImageChar2e_mad
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1242,7 +1242,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: e5d934cdec63d5543bdbad884aed7847, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1f7d0d90eda67c34d96ee886b5d76525, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2039,7 +2039,7 @@ GameObject:
   - component: {fileID: 1237628026}
   - component: {fileID: 1237628025}
   m_Layer: 5
-  m_Name: ImageChar1c
+  m_Name: ImageChar1c_happy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2065,7 +2065,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 8aed5006e54065d43a42c046d0df654c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 601d62e59e7211e41803cfc698773449, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2324,7 +2324,7 @@ GameObject:
   - component: {fileID: 1378820424}
   - component: {fileID: 1378820423}
   m_Layer: 5
-  m_Name: ImageChar1e
+  m_Name: ImageChar1e_mad
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2350,7 +2350,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 8aed5006e54065d43a42c046d0df654c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4166ec477d2f169439ed1ea9836aee88, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2715,7 +2715,7 @@ GameObject:
   - component: {fileID: 1544328990}
   - component: {fileID: 1544328989}
   m_Layer: 5
-  m_Name: ImageChar2a
+  m_Name: ImageChar2a_neutral
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3179,7 +3179,7 @@ GameObject:
   - component: {fileID: 2108674731}
   - component: {fileID: 2108674730}
   m_Layer: 5
-  m_Name: ImageChar2b
+  m_Name: ImageChar2b_confused
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3205,7 +3205,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: e5d934cdec63d5543bdbad884aed7847, type: 3}
+  m_Sprite: {fileID: 21300000, guid: efda1e758e6b04b4fa6e23b9545915eb, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3331,11 +3331,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8177911768339052308, guid: f47a1449ec44fbd4cb11c0871c9445d8, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 249.53
+      value: 302.211
       objectReference: {fileID: 0}
     - target: {fileID: 8177911768339052308, guid: f47a1449ec44fbd4cb11c0871c9445d8, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 311.102
+      value: 290.981
       objectReference: {fileID: 0}
     - target: {fileID: 8177911768339052308, guid: f47a1449ec44fbd4cb11c0871c9445d8, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3367,11 +3367,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8177911768339052308, guid: f47a1449ec44fbd4cb11c0871c9445d8, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -34.765
+      value: -38.47
       objectReference: {fileID: 0}
     - target: {fileID: 8177911768339052308, guid: f47a1449ec44fbd4cb11c0871c9445d8, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 62.008
+      value: 54.463
       objectReference: {fileID: 0}
     - target: {fileID: 8177911768339052308, guid: f47a1449ec44fbd4cb11c0871c9445d8, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -3402,7 +3402,7 @@ GameObject:
   - component: {fileID: 2127129847}
   - component: {fileID: 2127129846}
   m_Layer: 5
-  m_Name: ImageChar1d
+  m_Name: ImageChar1d_suprise
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3428,7 +3428,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 8aed5006e54065d43a42c046d0df654c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 3a83a9cc2bef59c47906ae1850f76bcc, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

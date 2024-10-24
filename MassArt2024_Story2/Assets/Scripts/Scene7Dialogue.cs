@@ -353,7 +353,6 @@ public class Scene7Dialogue : MonoBehaviour
         }
         else if (primeInt == 55)
         {
-            GetComponent<CharactersBounceTwo>().BounceMe2();
             ArtChar1a.SetActive(true);
             ArtChar2a.SetActive(true);
             nextButton.SetActive(true);

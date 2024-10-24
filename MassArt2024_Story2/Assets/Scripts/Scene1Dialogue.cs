@@ -190,6 +190,8 @@ public class Scene1Dialogue : MonoBehaviour
         }
         else if (primeInt == 16)
         {
+            ArtChar2a.SetActive(false);
+            ArtChar2c.SetActive(false);
             Char1name.text = "";
             Char1speech.text = " ";
             Char2name.text = "AI";
@@ -244,6 +246,8 @@ public class Scene1Dialogue : MonoBehaviour
         }
         else if (primeInt == 31)
         {
+            ArtChar1b.SetActive(false);
+            ArtChar1a.SetActive(true);
             Char1name.text = "R.O.B.I.";
             Char1speech.text = "So, What exactly am I supposed to do?";
             Char2name.text = "";
@@ -258,6 +262,8 @@ public class Scene1Dialogue : MonoBehaviour
         }
         else if (primeInt == 33)
         {
+            ArtChar1a.SetActive(false);
+            ArtChar1c.SetActive(true);
             Char1name.text = "R.O.B.I.";
             Char1speech.text = "Oh! It. . .";
             Char2name.text = "";
@@ -265,6 +271,8 @@ public class Scene1Dialogue : MonoBehaviour
         }
         else if (primeInt == 34)
         {
+            ArtChar1c.SetActive(false);
+            ArtChar1d.SetActive(true);
             Char1name.text = "R.O.B.I.";
             Char1speech.text = "Um. . .";
             Char2name.text = "";
@@ -272,6 +280,8 @@ public class Scene1Dialogue : MonoBehaviour
         }
         else if (primeInt == 35)
         {
+            ArtChar1d.SetActive(false);
+            ArtChar1b.SetActive(true);
             Char1name.text = "R.O.B.I.";
             Char1speech.text = "Where in my programming does it say that?";
             Char2name.text = "";
@@ -315,6 +325,8 @@ public class Scene1Dialogue : MonoBehaviour
         }
         else if (primeInt == 41)
         {
+            ArtChar1b.SetActive(false);
+            ArtChar1e.SetActive(true);
             Char1name.text = "R.O.B.I.";
             Char1speech.text = "Huh?! What do you mean TOODLES";
             Char2name.text = "";
@@ -329,6 +341,8 @@ public class Scene1Dialogue : MonoBehaviour
         }
         else if (primeInt == 43)
         {
+            ArtChar1e.SetActive(false);
+            ArtChar1a.SetActive(true);
             Char1name.text = "R.O.B.I.";
             Char1speech.text = "Oh well, guess ill have to figure it out myself";
             Char2name.text = "";
@@ -376,6 +390,8 @@ public class Scene1Dialogue : MonoBehaviour
         }
         else if (primeInt == 49)
         {
+            ArtChar1a.SetActive(false);
+            ArtChar1c.SetActive(true);
             Char1name.text = "R.O.B.I.";
             Char1speech.text = "Oh, the door is open!";
             Char2name.text = "";
