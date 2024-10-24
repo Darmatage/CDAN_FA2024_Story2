@@ -336,8 +336,8 @@ public class Scene7Dialogue : MonoBehaviour
             //gameHandler.AddPlayerStat(1);
             Char1name.text = "";
             Char1speech.text = "";
-            Char2name.text = "You do that. And feel free to look around while you're at it.";
-            Char2speech.text = "";
+            Char2name.text = "Slime";
+            Char2speech.text = "You do that. And feel free to look around while you're at it.";
 
         }
         else if (primeInt == 54)
@@ -353,7 +353,7 @@ public class Scene7Dialogue : MonoBehaviour
         }
         else if (primeInt == 55)
         {
-            GetComponent<CharactersBounceTwo>().BounceMe2();
+            //GetComponent<Character2Bounce>().BounceMe();
             ArtChar1a.SetActive(true);
             ArtChar2a.SetActive(true);
             nextButton.SetActive(true);
@@ -380,6 +380,7 @@ public class Scene7Dialogue : MonoBehaviour
             Char1speech.text = "";
             Char2name.text = "Slime";
             Char2speech.text = "Then carry on, my friend.";
+            
         }
         else if (primeInt == 58)
         {
