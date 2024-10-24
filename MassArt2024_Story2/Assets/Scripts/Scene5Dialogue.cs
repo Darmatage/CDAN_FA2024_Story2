@@ -25,6 +25,10 @@ public class Scene5Dialogue : MonoBehaviour
     public GameObject ArtChar1e;
     //this is for the second character in scene
     public GameObject ArtChar2a;
+    public GameObject ArtChar2b;
+    public GameObject ArtChar2c;
+    public GameObject ArtChar2d;
+    public GameObject ArtChar2e;
     //public GameObject ArtChar1b;
     //public GameObject ArtChar2;
     public GameObject ArtBG1;
@@ -35,6 +39,7 @@ public class Scene5Dialogue : MonoBehaviour
     public GameObject NextScene1Button;
     public GameObject NextScene2Button;
     public GameObject nextButton;
+    public GameObject ExamineButton;
     //public AudioSource audioSource1;
     private bool allowSpace = true;
 
@@ -42,8 +47,19 @@ public class Scene5Dialogue : MonoBehaviour
     void Start()
     {
         DialogueDisplay.SetActive(false);
+        //Char 1
         ArtChar1a.SetActive(false);
+        ArtChar1b.SetActive(false);
+        ArtChar1c.SetActive(false);
+        ArtChar1d.SetActive(false);
+        ArtChar1e.SetActive(false);
+        //Char 2
         ArtChar2a.SetActive(false);
+        ArtChar2b.SetActive(false);
+        ArtChar2c.SetActive(false);
+        ArtChar2d.SetActive(false);
+        ArtChar2e.SetActive(false);
+
         ArtBG1.SetActive(true);
         Choice1a.SetActive(false);
         Choice1b.SetActive(false);
@@ -52,6 +68,7 @@ public class Scene5Dialogue : MonoBehaviour
         NextScene1Button.SetActive(false);
         NextScene2Button.SetActive(false);
         nextButton.SetActive(true);
+        ExamineButton.SetActive(false);
     }
 
     // Use the spacebar as a faster "Next" button:
@@ -76,7 +93,7 @@ public class Scene5Dialogue : MonoBehaviour
         }
         else if (primeInt == 2)
         {
-            ArtChar1a.SetActive(true);
+            ArtChar1c.SetActive(true);
             DialogueDisplay.SetActive(true);
             Char1name.text = "ROBI";
             Char1speech.text = "Great the door's locked.";
@@ -85,7 +102,7 @@ public class Scene5Dialogue : MonoBehaviour
         }
         else if (primeInt == 3)
         {
-            ArtChar2a.SetActive(true); //*Allows second charcter to appear! Copy and paste where needed
+            ArtChar2b.SetActive(true); //*Allows second charcter to appear! Copy and paste where needed
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "AI";
@@ -94,6 +111,8 @@ public class Scene5Dialogue : MonoBehaviour
         }
         else if (primeInt == 4)
         {
+            ArtChar1c.SetActive(false);
+            ArtChar1d.SetActive(true);
             Char1name.text = "ROBI";
             Char1speech.text = "Are you serious?";
             Char2name.text = "";
@@ -108,6 +127,8 @@ public class Scene5Dialogue : MonoBehaviour
         }
         else if (primeInt == 6)
         {
+            ArtChar1d.SetActive(false);
+            ArtChar1a.SetActive(true);
             Char1name.text = "ROBI";
             Char1speech.text = "Somehow I don't believe you.";
             Char2name.text = "";
@@ -122,6 +143,8 @@ public class Scene5Dialogue : MonoBehaviour
         }
         else if (primeInt == 8)
         {
+            ArtChar1a.SetActive(false);
+            ArtChar1c.SetActive(true);
             Char1name.text = "ROBI";
             Char1speech.text = "Hey! Who said I can't do it!";
             Char2name.text = "";
@@ -142,6 +165,8 @@ public class Scene5Dialogue : MonoBehaviour
             Char2speech.text = "";
             Choice2a.SetActive(true);
             Choice2b.SetActive(true);
+            allowSpace = false;
+            nextButton.SetActive(false);
         }
         else if (primeInt == 12)
         {
@@ -175,6 +200,8 @@ public class Scene5Dialogue : MonoBehaviour
         }
         else if (primeInt == 21)
         {
+            ArtChar2b.SetActive(false);
+            ArtChar2c.SetActive(true);
             //gameHandler.AddPlayerStat(1);
             Char1name.text = "";
             Char1speech.text = "";
@@ -201,6 +228,9 @@ public class Scene5Dialogue : MonoBehaviour
         }
         else if (primeInt == 31)
         {
+            ArtChar1c.SetActive(false);
+            ArtChar1b.SetActive(true);
+
             Char1name.text = "R.O.B.I.";
             Char1speech.text = "Heh... thanks.";
             Char2name.text = "";
@@ -208,6 +238,9 @@ public class Scene5Dialogue : MonoBehaviour
         }
         else if (primeInt == 32)
         {
+            ArtChar1b.SetActive(false);
+            ArtChar1c.SetActive(true);
+
             Char1name.text = "ROBI";
             Char1speech.text = "Hey wait! What's that supposed to mean!";
             Char2name.text = "";
