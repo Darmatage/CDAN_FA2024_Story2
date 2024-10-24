@@ -2071,6 +2071,7 @@ RectTransform:
   - {fileID: 1230473908}
   - {fileID: 568697069}
   - {fileID: 1398699725}
+  - {fileID: 818298562}
   - {fileID: 3667947604214096755}
   - {fileID: 1753036761174183861}
   - {fileID: 814273010}
@@ -2079,7 +2080,6 @@ RectTransform:
   - {fileID: 1463551557}
   - {fileID: 1403222659}
   - {fileID: 7187159439930186500}
-  - {fileID: 818298562}
   - {fileID: 4122588851800750754}
   - {fileID: 4301880175777162128}
   - {fileID: 1439550791}
@@ -3836,7 +3836,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6715431197828167057, guid: ec42db7921ad94a449340046d3e5a170, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7384584564711111022, guid: ec42db7921ad94a449340046d3e5a170, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
