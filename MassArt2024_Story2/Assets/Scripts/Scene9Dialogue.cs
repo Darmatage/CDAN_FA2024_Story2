@@ -284,6 +284,8 @@ public class Scene9Dialogue : MonoBehaviour
         }
         else if (primeInt == 25)
         {
+            ArtChar1a.SetActive(false);
+            ArtChar2b.SetActive(false);
             nextButton.SetActive(false);
             allowSpace = false;
             DialogueDisplay.SetActive(false);

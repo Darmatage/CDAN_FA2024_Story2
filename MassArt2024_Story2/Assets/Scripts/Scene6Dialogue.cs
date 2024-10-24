@@ -94,7 +94,7 @@ public class Scene6Dialogue : MonoBehaviour
         }
         else if (primeInt == 2)
         {
-            GetComponent<CharactersBounceTwo>().BounceMe1();
+            //GetComponent<CharactersBounceTwo>().BounceMe1();
             ArtChar1a.SetActive(true);
             DialogueDisplay.SetActive(true);
             Char1name.text = "R.O.B.I.";

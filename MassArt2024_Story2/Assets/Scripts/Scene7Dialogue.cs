@@ -113,8 +113,7 @@ public class Scene7Dialogue : MonoBehaviour
         else if (primeInt == 4)
         {
 
-            ArtChar1a.SetActive(false);
-            ArtChar1e.SetActive(true);
+            
             Char1name.text = "R.O.B.I.";
             Char1speech.text = "Huh? Who’s there?";
             Char2name.text = "";
@@ -208,8 +207,7 @@ public class Scene7Dialogue : MonoBehaviour
         else if (primeInt == 21)
         {
 
-            ArtChar2d.SetActive(false);
-            ArtChar2a.SetActive(true);
+            
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Slime";
@@ -336,12 +334,14 @@ public class Scene7Dialogue : MonoBehaviour
             //gameHandler.AddPlayerStat(1);
             Char1name.text = "";
             Char1speech.text = "";
-            Char2name.text = "You do that. And feel free to look around while you're at it.";
-            Char2speech.text = "";
+            Char2name.text = "Slime";
+            Char2speech.text = "You do that. And feel free to look around while you're at it.";
 
         }
         else if (primeInt == 54)
         {
+            ArtChar1a.SetActive(false);
+            ArtChar2a.SetActive(false);
             nextButton.SetActive(false);
             allowSpace = false;
             DialogueDisplay.SetActive(false);
@@ -382,8 +382,9 @@ public class Scene7Dialogue : MonoBehaviour
         }
         else if (primeInt == 58)
         {
-            ArtChar1b.SetActive(false);
-            ArtChar2b.SetActive(false);
+            ArtChar1a.SetActive(false);
+            ArtChar2a.SetActive(false);
+            
             nextButton.SetActive(false);
             allowSpace = false;
             DialogueDisplay.SetActive(false);
@@ -418,6 +419,17 @@ public class Scene7Dialogue : MonoBehaviour
             Char1speech.text = "";
             Char2name.text = "Slime";
             Char2speech.text = "Oh bother, I'm afraid we'll be together for quite a while my friend...";
+
+            
+        }
+        else if (primeInt == 63)
+        {
+            ArtChar1a.SetActive(false);
+            ArtChar2a.SetActive(false);
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "";
+            Char2speech.text = "";
 
             // Turn off the "Next" button, turn on "Scene" button/s
             nextButton.SetActive(false);
