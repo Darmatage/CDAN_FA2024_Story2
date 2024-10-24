@@ -6,7 +6,7 @@ using TMPro;
 using UnityEngine.SceneManagement;
 using UnityEngine.Audio;
 
-public class Scene2Dialogue : MonoBehaviour
+public class Scene3Dialogue : MonoBehaviour
 {
     // These are the script variables.
     // For more character images or buttons, duplicate the ArtChar ones listed here and renumber.
@@ -49,7 +49,7 @@ public class Scene2Dialogue : MonoBehaviour
     // Use the spacebar as a faster "Next" button:
     void Update()
     {
-        if (allowSpace == false)
+        if (allowSpace == true)
         {
             if (Input.GetKeyDown("space"))
             {
@@ -68,88 +68,74 @@ public class Scene2Dialogue : MonoBehaviour
         }
         else if (primeInt == 2)
         {
-            ArtChar1a.SetActive(true);
+            ArtChar2a.SetActive(true);
             DialogueDisplay.SetActive(true);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "AI";
-            Char2speech.text = "[ POWER- UP INITIATED ]";
+            Char2speech.text = "Where do you think you're going?";
         }
         else if (primeInt == 3)
         {
-            ArtChar2a.SetActive(true); //*Allows second charcter to appear! Copy and paste where needed
-            Char1name.text = "";
-            Char1speech.text = "";
-            Char2name.text = "AI";
-            Char2speech.text = "[ BEGINNING START-UP. ] ";
+            ArtChar1a.SetActive(true); //*Allows second charcter to appear! Copy and paste where needed
+            Char1name.text = "ROBI";
+            Char1speech.text = "...";
+            Char2name.text = "";
+            Char2speech.text = "";
             //gameHandler.AddPlayerStat(1);
         }
         else if (primeInt == 4)
         {
             Char1name.text = "";
             Char1speech.text = "";
-            Char2name.text = "AI";
-            Char2speech.text = "[ BOOTING. ]";
+            Char2name.text = "A.I";
+            Char2speech.text = "I'd suggest answering.";
         }
         else if (primeInt == 5)
         {
-            Char1name.text = "";
-            Char1speech.text = "";
-            Char2name.text = "AI";
-            Char2speech.text = "[ BOOTING. . ] ";
+            Char1name.text = "ROBI";
+            Char1speech.text = "I don't know!";
+            Char2name.text = "";
+            Char2speech.text = "";
         }
         else if (primeInt == 6)
         {
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "AI";
-            Char2speech.text = "[ BOOTING . . . ] ";
+            Char2speech.text = "I see... it may be an issue of your lack of decision making.";
         }
         else if (primeInt == 7)
         {
             Char1name.text = "";
             Char1speech.text = "";
-            Char2name.text = "AI";
-            Char2speech.text = "[ SUCCESS ! ]";
+            Char2name.text = "A.I";
+            Char2speech.text = "Allow me to perform further testing...";
         }
         else if (primeInt == 8)
         {
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "AI";
-            Char2speech.text = "[ WELCOME ONLINE, R.O.B.I. ]";
+            Char2speech.text = "You stand at a railway track, with many biologicals tied to each track.";
         }
         else if (primeInt == 9)
         {
-            Char1name.text = "R.O.B.I.";
-            Char1speech.text = "( My lens suddenly opened, revealing a messy, dusty, run down laboratory. )";
-            Char2name.text = "";
-            Char2speech.text = "";
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "A.I";
+            Char2speech.text = "The current path carries only one trapped biological, while the one you can switch to using the provided track flipping mechanism, has five child biologicals.";
         }
         else if (primeInt == 10)
         {
-            Char1name.text = "R.O.B.I.";
-            Char1speech.text = "( . . .At least, that's what my sensors are telling me. )";
-            Char2name.text = "";
-            Char2speech.text = "";
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "A.I";
+            Char2speech.text = " The trolly is making way, do you willingly switch the tracK?";
+            Choice1a.SetActive(true);
+            Choice1b.SetActive(true);
         }
-        else if (primeInt == 11)
-        {
-            Char1name.text = "R.O.B.I.";
-            Char1speech.text = "( My logic unit feels as if its not working up to speed. . .) ";
-            Char2name.text = "";
-            Char2speech.text = "";
-        }
-        else if (primeInt == 12)
-        {
-            Char1name.text = "R.O.B.I.";
-            Char1speech.text = "( Maybe I should charge just a little bit more. . . )";
-            Char2name.text = "";
-            Char2speech.text = "";
-            // Here would be a game over choice with robi either continuing or sleeping. If he sleeps it would lead to a Game over screen, but if he stays awake script would continue as usual. Ask 10/17/24 jason how to make more buttons, either me or someone else if im still sick - SAM
-        // Didnt put any choices here for now! will when we figure out. :-D!!!!
-    }
-    else if (primeInt == 13)
+        else if (primeInt == 13)
         {
             Char1name.text = "R.O.B.I.";
             Char1speech.text = "( I cant be messing around! Its probably just a slow start up. . . better start looking around!)";
@@ -212,7 +198,74 @@ public class Scene2Dialogue : MonoBehaviour
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "AI";
-            Char2speech.text = "Excellent. I see you are working as expected.";
+            Char2speech.text = "Either way, you could never have won. It was unfair of me to offer, but I appreciate the honesty";
+        }
+        else if (primeInt == 21)
+        {
+            //gameHandler.AddPlayerStat(1);
+            Char1name.text = "ROBI";
+            Char1speech.text = "I don't really like that puzzle...";
+            Char2name.text = "";
+            Char2speech.text = "";
+        }
+        else if (primeInt == 22)
+        {
+            //gameHandler.AddPlayerStat(1);
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "A.I";
+            Char2speech.text = "I understand. Either way. Your opinion doesn't completely matter for this.";
+        }
+        else if (primeInt == 23)
+        {
+            //gameHandler.AddPlayerStat(1);
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "A.I";
+            Char2speech.text = "There is only a 0.0004733% chance you would ever fall into the situation this choice would present.";
+        }
+        else if (primeInt == 24)
+        {
+            //gameHandler.AddPlayerStat(1);
+            Char1name.text = "ROBI";
+            Char1speech.text = "Right... I'll take that my purpose doesn't revolve around a Trolly?";
+            Char2name.text = "";
+            Char2speech.text = "";
+        }
+        else if (primeInt == 25)
+        {
+            //gameHandler.AddPlayerStat(1);
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "A.I";
+            Char2speech.text = "Precisely";
+        }
+        else if (primeInt == 26)
+        {
+            //gameHandler.AddPlayerStat(1);
+            Char1name.text = "ROBI";
+            Char1speech.text = "Sooo, does this mean I can go on ahead?";
+            Char2name.text = "";
+            Char2speech.text = "";
+        }
+        else if (primeInt == 27)
+        {
+            //gameHandler.AddPlayerStat(1);
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "A.I";
+            Char2speech.text = "Please do. Time is of the essence after all.";
+        }
+        else if (primeInt == 28)
+        {
+            //gameHandler.AddPlayerStat(1);
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "";
+            Char2speech.text = "";
+            DialogueDisplay.SetActive(false);
+            NextScene1Button.SetActive(true);
+            nextButton.SetActive(false);
         }
 
         // after choice 1b
@@ -235,7 +288,7 @@ public class Scene2Dialogue : MonoBehaviour
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "AI";
-            Char2speech.text = "That’s a simple question! What does your programming tell you to do?";
+            Char2speech.text = "That's a simple question! What does your programming tell you to do?";
         }
         else if (primeInt == 33)
         {
@@ -335,10 +388,10 @@ public class Scene2Dialogue : MonoBehaviour
     // FUNCTIONS FOR BUTTONS TO ACCESS (Choice #1 and SceneChanges)
     public void Choice1aFunct()
     {
-        Char1name.text = "YOU";
-        Char1speech.text = "I don't know what you're talking about!";
-        Char2name.text = "";
-        Char2speech.text = "";
+        Char1name.text = "";
+        Char1speech.text = "";
+        Char2name.text = "A.I";
+        Char2speech.text = "I understand... with your current programming you currently prioritize human life.";
         primeInt = 19;
         Choice1a.SetActive(false);
         Choice1b.SetActive(false);
@@ -347,10 +400,10 @@ public class Scene2Dialogue : MonoBehaviour
     }
     public void Choice1bFunct()
     {
-        Char1name.text = "YOU";
-        Char1speech.text = "Sure, anything you want... just lay off the club.";
-        Char2name.text = "";
-        Char2speech.text = "";
+        Char1name.text = "";
+        Char1speech.text = "";
+        Char2name.text = "A.I";
+        Char2speech.text = "I understand... with your current programming you currently prioritize human life.";
         primeInt = 29;
         Choice1a.SetActive(false);
         Choice1b.SetActive(false);
@@ -360,7 +413,7 @@ public class Scene2Dialogue : MonoBehaviour
 
     public void SceneChange1()
     {
-        SceneManager.LoadScene("Scene3");
+        SceneManager.LoadScene("Scene7");
     }
     public void SceneChange2()
     {

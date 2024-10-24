@@ -37,8 +37,7 @@ public class GameHandler : MonoBehaviour
         void Start(){
                 pauseMenuUI.SetActive(false);
                 GameisPaused = false;
-        
-		timeRemaining = timeMax;
+                timeRemaining = timeMax;
 		UpdateStats(); 
 	}
 
