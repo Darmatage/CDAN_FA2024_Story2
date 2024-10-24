@@ -19,11 +19,18 @@ public class Scene1Dialogue : MonoBehaviour
     //public Text Char3speech;
     public GameObject DialogueDisplay;
     public GameObject ArtChar1a;
+    public GameObject ArtChar1b;
+    public GameObject ArtChar1c;
+    public GameObject ArtChar1d;
+    public GameObject ArtChar1e;
     //this is for the second character in scene
     public GameObject ArtChar2a;
-    //public GameObject ArtChar1b;
-    //public GameObject ArtChar2;
+    public GameObject ArtChar2b;
+    public GameObject ArtChar2c;
+    public GameObject ArtChar2d;
+    public GameObject ArtChar2e;
     public GameObject ArtBG1;
+    public GameObject ArtBG2;
     public GameObject Choice1a;
     public GameObject Choice1b;
     public GameObject NextScene1Button;
@@ -31,6 +38,8 @@ public class Scene1Dialogue : MonoBehaviour
     public GameObject nextButton;
     //public AudioSource audioSource1;
     private bool allowSpace = true;
+    public GameObject ExamineButton;
+    public GameObject TimerBG;
 
     // Initial visibility settings. Any new images or buttons need to also be SetActive(false);
     void Start()
@@ -39,11 +48,14 @@ public class Scene1Dialogue : MonoBehaviour
         ArtChar1a.SetActive(false);
         ArtChar2a.SetActive(false);
         ArtBG1.SetActive(true);
+        ArtBG2.SetActive(true);
         Choice1a.SetActive(false);
         Choice1b.SetActive(false);
         NextScene1Button.SetActive(false);
         NextScene2Button.SetActive(false);
         nextButton.SetActive(true);
+        ExamineButton.SetActive(false);
+        TimerBG.SetActive(false);
     }
 
     // Use the spacebar as a faster "Next" button:
@@ -68,7 +80,7 @@ public class Scene1Dialogue : MonoBehaviour
         }
         else if (primeInt == 2)
         {
-            ArtChar1a.SetActive(true);
+           
             DialogueDisplay.SetActive(true);
             Char1name.text = "";
             Char1speech.text = "";
@@ -77,7 +89,7 @@ public class Scene1Dialogue : MonoBehaviour
         }
         else if (primeInt == 3)
         {
-            ArtChar2a.SetActive(true); //*Allows second charcter to appear! Copy and paste where needed
+           
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "AI";
@@ -122,6 +134,7 @@ public class Scene1Dialogue : MonoBehaviour
         }
         else if (primeInt == 9)
         {
+            ArtBG2.SetActive(false);
             Char1name.text = "R.O.B.I.";
             Char1speech.text = "( My lens suddenly opened, revealing a messy, dusty, run down laboratory. )";
             Char2name.text = "";
@@ -129,6 +142,7 @@ public class Scene1Dialogue : MonoBehaviour
         }
         else if (primeInt == 10)
         {
+            ArtChar1a.SetActive(true);
             Char1name.text = "R.O.B.I.";
             Char1speech.text = "( . . .At least, that's what my sensors are telling me. )";
             Char2name.text = "";
@@ -159,6 +173,7 @@ public class Scene1Dialogue : MonoBehaviour
         }
         else if (primeInt == 14)
         {
+            ArtChar2a.SetActive(true); //*Allows second charcter to appear! Copy and paste where needed
             Char1name.text = "";
             Char1speech.text = " ";
             Char2name.text = "AI";
@@ -166,6 +181,8 @@ public class Scene1Dialogue : MonoBehaviour
         }
         else if (primeInt == 15)
         {
+            ArtChar1a.SetActive(false);
+            ArtChar1b.SetActive(true);
             Char1name.text = "R.O.B.I";
             Char1speech.text = "Huh?";
             Char2name.text = "";
@@ -287,6 +304,7 @@ public class Scene1Dialogue : MonoBehaviour
             Char1speech.text = "";
             Char2name.text = "AI";
             Char2speech.text = "The facility is currently running off Emergency power, wouldnt want to drain the rest of our lives";
+            TimerBG.SetActive(true);
         }
         else if (primeInt == 40)
         {
@@ -347,9 +365,26 @@ public class Scene1Dialogue : MonoBehaviour
             Char1speech.text = "Something techy that makes computers open up to you...";
             Char2name.text = "";
             Char2speech.text = "";
-            NextScene1Button.SetActive(true);
-            
         }
+        else if (primeInt == 48)
+        {
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "";
+            Char2speech.text = "";
+            ExamineButton.SetActive(true);
+        }
+        else if (primeInt == 49)
+        {
+            Char1name.text = "R.O.B.I.";
+            Char1speech.text = "Oh, the door is open!";
+            Char2name.text = "";
+            Char2speech.text = "";
+            ExamineButton.SetActive(false);
+            NextScene1Button.SetActive(true); 
+        }
+
+
         //Please do NOT delete this final bracket that ends the Next() function:
     }
 

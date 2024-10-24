@@ -6,7 +6,6 @@ using UnityEngine.UI;
 using TMPro;
 using UnityEngine.SceneManagement;
 using UnityEngine.Audio;
-using UnityEditor.PackageManager;
 
 public class GameHandler : MonoBehaviour
 {

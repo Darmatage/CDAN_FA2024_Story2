@@ -31,6 +31,7 @@ public class Scene2Dialogue : MonoBehaviour
     public GameObject nextButton;
     //public AudioSource audioSource1;
     private bool allowSpace = true;
+    public GameObject ExamineButton;
 
     // Initial visibility settings. Any new images or buttons need to also be SetActive(false);
     void Start()
@@ -44,6 +45,7 @@ public class Scene2Dialogue : MonoBehaviour
         NextScene1Button.SetActive(false);
         NextScene2Button.SetActive(false);
         nextButton.SetActive(true);
+        ExamineButton.SetActive(false);
     }
 
     // Use the spacebar as a faster "Next" button:

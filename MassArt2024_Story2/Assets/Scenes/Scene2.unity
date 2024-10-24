@@ -1691,6 +1691,7 @@ MonoBehaviour:
   NextScene1Button: {fileID: 814273006}
   NextScene2Button: {fileID: 1403222655}
   nextButton: {fileID: 5551555657027391361}
+  ExamineButton: {fileID: 1114762057532414892}
 --- !u!1 &814273006 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7966427278787692198, guid: f47a1449ec44fbd4cb11c0871c9445d8, type: 3}
@@ -3186,6 +3187,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Button_EXAMINE
       objectReference: {fileID: 0}
+    - target: {fileID: 751929523048330801, guid: de6e8a32d7ae64b439a4457fcccabbe8, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 813075715136571630, guid: de6e8a32d7ae64b439a4457fcccabbe8, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -3299,6 +3304,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: de6e8a32d7ae64b439a4457fcccabbe8, type: 3}
+--- !u!1 &1114762057532414892 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 751929523048330801, guid: de6e8a32d7ae64b439a4457fcccabbe8, type: 3}
+  m_PrefabInstance: {fileID: 1114762057532414891}
+  m_PrefabAsset: {fileID: 0}
 --- !u!224 &1753036761174183861 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8177911768339052308, guid: f47a1449ec44fbd4cb11c0871c9445d8, type: 3}
