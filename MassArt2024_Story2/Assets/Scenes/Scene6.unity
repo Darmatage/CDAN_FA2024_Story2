@@ -823,7 +823,7 @@ PrefabInstance:
     - target: {fileID: 3704665436291957346, guid: 6c81f688c67b553418685f9a2c335471, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 87377c099f207cc4782aa6c60633d80f, type: 3}
+      objectReference: {fileID: 21300000, guid: 0b13ff3520e32a844af6c789ff940684, type: 3}
     - target: {fileID: 5128110136315399583, guid: 6c81f688c67b553418685f9a2c335471, type: 3}
       propertyPath: m_Name
       value: Item3_ToExamine
@@ -862,11 +862,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6779939291938725811, guid: 6c81f688c67b553418685f9a2c335471, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 162.3931
+      value: 74.869
       objectReference: {fileID: 0}
     - target: {fileID: 6779939291938725811, guid: 6c81f688c67b553418685f9a2c335471, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 160
+      value: 73
       objectReference: {fileID: 0}
     - target: {fileID: 6779939291938725811, guid: 6c81f688c67b553418685f9a2c335471, type: 3}
       propertyPath: m_LocalPosition.x
@@ -898,11 +898,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6779939291938725811, guid: 6c81f688c67b553418685f9a2c335471, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -368
+      value: -106
       objectReference: {fileID: 0}
     - target: {fileID: 6779939291938725811, guid: 6c81f688c67b553418685f9a2c335471, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -58
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6779939291938725811, guid: 6c81f688c67b553418685f9a2c335471, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -954,21 +954,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6885355987710768044, guid: 6c81f688c67b553418685f9a2c335471, type: 3}
       propertyPath: examineThoughts.Array.data[0]
-      value: ( It's the screen that did the power warning... It looks to be off now.
-        )
+      value: (It looks like blueprints of...me.)
       objectReference: {fileID: 0}
     - target: {fileID: 6885355987710768044, guid: 6c81f688c67b553418685f9a2c335471, type: 3}
       propertyPath: examineThoughts.Array.data[1]
-      value: ( I'm really worried what will come of the whole power situation. )
+      value: (I guess this is where I was designed.)
       objectReference: {fileID: 0}
     - target: {fileID: 6885355987710768044, guid: 6c81f688c67b553418685f9a2c335471, type: 3}
       propertyPath: examineThoughts.Array.data[2]
-      value: ( I better not take took long looking at stuff with the whole power
-        crisis. )
+      value: (It doesn't say anything about why, though.)
       objectReference: {fileID: 0}
     - target: {fileID: 6885355987710768044, guid: 6c81f688c67b553418685f9a2c335471, type: 3}
       propertyPath: examineThoughts.Array.data[3]
-      value: ( I'd hate to know what it feels like to run out... )
+      value: (At least whoever drew me made me look cute!)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1527,7 +1525,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6779939291938725811, guid: 6c81f688c67b553418685f9a2c335471, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 180
+      value: 135.177
       objectReference: {fileID: 0}
     - target: {fileID: 6779939291938725811, guid: 6c81f688c67b553418685f9a2c335471, type: 3}
       propertyPath: m_SizeDelta.y
@@ -1563,7 +1561,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6779939291938725811, guid: 6c81f688c67b553418685f9a2c335471, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -315
+      value: -292.58826
       objectReference: {fileID: 0}
     - target: {fileID: 6779939291938725811, guid: 6c81f688c67b553418685f9a2c335471, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -1680,7 +1678,6 @@ GameObject:
   - component: {fileID: 792738243}
   - component: {fileID: 792738242}
   - component: {fileID: 792738247}
-  - component: {fileID: 792738249}
   - component: {fileID: 792738248}
   m_Layer: 5
   m_Name: Canvas
@@ -1842,7 +1839,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 792738241}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 25110e2347c3c4e4ea4676f2bb06a92e, type: 3}
+  m_Script: {fileID: 11500000, guid: edf5e7574d59dbb45a12771d11c9ee20, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   curveMove:
@@ -1851,34 +1848,40 @@ MonoBehaviour:
     - serializedVersion: 3
       time: 0
       value: 0
-      inSlope: 3.6706374
-      outSlope: 3.6706374
+      inSlope: 2.0893896
+      outSlope: 2.0893896
       tangentMode: 0
       weightedMode: 0
       inWeight: 0
-      outWeight: 0.18333334
+      outWeight: 0.31666666
     - serializedVersion: 3
-      time: 0.25
+      time: 0.5
       value: 1
-      inSlope: 0.0018396871
-      outSlope: 0.0018396871
+      inSlope: -0.011129567
+      outSlope: -0.011129567
       tangentMode: 0
       weightedMode: 0
       inWeight: 0.33333334
-      outWeight: 0.5619341
+      outWeight: 0.28068292
     - serializedVersion: 3
-      time: 0.5
+      time: 1
       value: 0
-      inSlope: -3.1894455
-      outSlope: -3.1894455
+      inSlope: -0.8906695
+      outSlope: -0.8906695
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.16666663
+      inWeight: 0.26666665
       outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
   charImages:
+  - {fileID: 305646228}
+  - {fileID: 1380492208}
+  - {fileID: 1218439438}
+  - {fileID: 1015329791}
+  - {fileID: 559251309}
+  charImages2:
   - {fileID: 921126510}
   - {fileID: 2122094115}
   - {fileID: 960084675}
@@ -1890,65 +1893,14 @@ MonoBehaviour:
   - {x: 0, y: 0, z: 0}
   - {x: 0, y: 0, z: 0}
   - {x: 0, y: 0, z: 0}
-  bounceAmt: 5
---- !u!114 &792738249
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 792738241}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7393ae79a4bca4d4491431b12ee60b33, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  curveMove:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 4.0351424
-      outSlope: 4.0351424
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0.15582237
-    - serializedVersion: 3
-      time: 0.25
-      value: 1
-      inSlope: 0.0006779858
-      outSlope: 0.0006779858
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.88687944
-    - serializedVersion: 3
-      time: 0.5
-      value: 0
-      inSlope: -3.493712
-      outSlope: -3.493712
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.13716304
-      outWeight: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  charImages:
-  - {fileID: 305646228}
-  - {fileID: 1380492208}
-  - {fileID: 1218439438}
-  - {fileID: 1015329791}
-  - {fileID: 559251309}
-  startPos:
+  startPos2:
   - {x: 0, y: 0, z: 0}
   - {x: 0, y: 0, z: 0}
   - {x: 0, y: 0, z: 0}
   - {x: 0, y: 0, z: 0}
   - {x: 0, y: 0, z: 0}
   bounceAmt: 5
+  bounceAmt2: 5
 --- !u!1 &814273006 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7966427278787692198, guid: f47a1449ec44fbd4cb11c0871c9445d8, type: 3}
@@ -3688,7 +3640,7 @@ PrefabInstance:
     - target: {fileID: 5619988457422349120, guid: f47a1449ec44fbd4cb11c0871c9445d8, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: f8b7790be3d20ca46b18eba11db875f1, type: 3}
+      objectReference: {fileID: 21300000, guid: 1a1378a328043e34283cd3e4360d5647, type: 3}
     - target: {fileID: 5619988457422349120, guid: f47a1449ec44fbd4cb11c0871c9445d8, type: 3}
       propertyPath: m_Color.a
       value: 1
@@ -3731,11 +3683,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8177911768339052308, guid: f47a1449ec44fbd4cb11c0871c9445d8, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 249.53
+      value: 177.84
       objectReference: {fileID: 0}
     - target: {fileID: 8177911768339052308, guid: f47a1449ec44fbd4cb11c0871c9445d8, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 311.102
+      value: 178.3002
       objectReference: {fileID: 0}
     - target: {fileID: 8177911768339052308, guid: f47a1449ec44fbd4cb11c0871c9445d8, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3767,11 +3719,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8177911768339052308, guid: f47a1449ec44fbd4cb11c0871c9445d8, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -54
+      value: -420.1461
       objectReference: {fileID: 0}
     - target: {fileID: 8177911768339052308, guid: f47a1449ec44fbd4cb11c0871c9445d8, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 62.008
+      value: -13.1
       objectReference: {fileID: 0}
     - target: {fileID: 8177911768339052308, guid: f47a1449ec44fbd4cb11c0871c9445d8, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -5205,15 +5157,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6885355987710768044, guid: 6c81f688c67b553418685f9a2c335471, type: 3}
       propertyPath: examineThoughts.Array.data[0]
-      value: (It's a clock! Doesn't seem to be ticking...)
+      value: (It's the magnet Dodo told me not to touch.)
       objectReference: {fileID: 0}
     - target: {fileID: 6885355987710768044, guid: 6c81f688c67b553418685f9a2c335471, type: 3}
       propertyPath: examineThoughts.Array.data[1]
-      value: (I wonder what time it is.)
+      value: (I'm sure he told me for good reason...but it's so...shiny.)
       objectReference: {fileID: 0}
     - target: {fileID: 6885355987710768044, guid: 6c81f688c67b553418685f9a2c335471, type: 3}
       propertyPath: examineThoughts.Array.data[2]
-      value: (Though I guess it doesn't matter too much.)
+      value: (Gah! I need to resist it for my own good!)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

@@ -94,6 +94,7 @@ public class Scene6Dialogue : MonoBehaviour
         }
         else if (primeInt == 2)
         {
+            GetComponent<CharactersBounceTwo>().BounceMe1();
             ArtChar1a.SetActive(true);
             DialogueDisplay.SetActive(true);
             Char1name.text = "R.O.B.I.";
@@ -112,7 +113,7 @@ public class Scene6Dialogue : MonoBehaviour
         }
         else if (primeInt == 4)
         {
-            GetComponent<CharacterBounce>().BounceMe();
+            GetComponent<CharactersBounceTwo>().BounceMe1();
             ArtChar1a.SetActive(false);
             ArtChar1e.SetActive(true);
             Char1name.text = "R.O.B.I.";
@@ -130,7 +131,7 @@ public class Scene6Dialogue : MonoBehaviour
         else if (primeInt == 6)
         {
             ArtChar2a.SetActive(true);
-            GetComponent<Character2Bounce>().BounceMe();
+            GetComponent<CharactersBounceTwo>().BounceMe2();
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Dodo";
@@ -138,7 +139,7 @@ public class Scene6Dialogue : MonoBehaviour
         }
         else if (primeInt == 7)
         {
-            GetComponent<Character2Bounce>().BounceMe();
+            GetComponent<CharactersBounceTwo>().BounceMe2();
             ArtChar2a.SetActive(false);
             ArtChar2d.SetActive(true);
             Char1name.text = "";
@@ -148,6 +149,9 @@ public class Scene6Dialogue : MonoBehaviour
         }
         else if (primeInt == 8)
         {
+            GetComponent<CharactersBounceTwo>().BounceMe1();
+            ArtChar1e.SetActive(false);
+            ArtChar1a.SetActive(true);
             Char1name.text = "R.O.B.I.";
             Char1speech.text = "I’m not quite sure. There was a voice telling me to look for the override items so I figured I’d look around.";
             Char2name.text = "";
@@ -184,7 +188,7 @@ public class Scene6Dialogue : MonoBehaviour
         }
         else if (primeInt == 21)
         {
-            GetComponent<CharacterBounce>().BounceMe();
+            GetComponent<CharactersBounceTwo>().BounceMe2();
             ArtChar2d.SetActive(false);
             ArtChar2a.SetActive(true);
             Char1name.text = "";
@@ -194,6 +198,9 @@ public class Scene6Dialogue : MonoBehaviour
         }
         else if (primeInt == 22)
         {
+            GetComponent<CharactersBounceTwo>().BounceMe1();
+            ArtChar1a.SetActive(false);
+            ArtChar1e.SetActive(true);
             Char1name.text = "R.O.B.I.";
             Char1speech.text = "Yes, of course. Hah ha. Ha.";
             Char2name.text = "";
@@ -204,13 +211,19 @@ public class Scene6Dialogue : MonoBehaviour
         //if player chose choice1b:
         else if (primeInt == 30)
         {
+            GetComponent<CharactersBounceTwo>().BounceMe2();
+            ArtChar2d.SetActive(false);
+            ArtChar2a.SetActive(true);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Dodo";
             Char2speech.text = "Whatever you say...";
         }
-        else if (primeInt == 32)
+        else if (primeInt == 31)
         {
+            GetComponent<CharactersBounceTwo>().BounceMe1();
+            ArtChar1c.SetActive(false);
+            ArtChar1a.SetActive(true);
             Char1name.text = "R.O.B.I.";
             Char1speech.text = "I've had a weird day. Can I please look around?";
             Char2name.text = "";
@@ -222,7 +235,9 @@ public class Scene6Dialogue : MonoBehaviour
         //after both choices 1a and 1b:
         else if (primeInt == 40)
         {
-            
+            GetComponent<CharactersBounceTwo>().BounceMe1();
+            ArtChar1e.SetActive(false);
+            ArtChar1a.SetActive(true);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Dodo";
@@ -233,7 +248,7 @@ public class Scene6Dialogue : MonoBehaviour
         {
             ArtChar2a.SetActive(false);
             ArtChar2c.SetActive(true);
-            GetComponent<CharacterBounce>().BounceMe();
+            GetComponent<CharactersBounceTwo>().BounceMe2();
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Dodo";
@@ -241,6 +256,9 @@ public class Scene6Dialogue : MonoBehaviour
         }
         else if (primeInt == 42)
         {
+            GetComponent<CharactersBounceTwo>().BounceMe1();
+            ArtChar1a.SetActive(false);
+            ArtChar1d.SetActive(true);
             Char1name.text = "R.O.B.I.";
             Char1speech.text = "You mean this magnet?";
             Char2name.text = "";
@@ -259,7 +277,7 @@ public class Scene6Dialogue : MonoBehaviour
         {
             ArtChar2c.SetActive(false);
             ArtChar2e.SetActive(true);
-            GetComponent<CharacterBounce>().BounceMe();
+            GetComponent<CharactersBounceTwo>().BounceMe2();
             //gameHandler.AddPlayerStat(1);
             Char1name.text = "";
             Char1speech.text = "";
@@ -270,7 +288,7 @@ public class Scene6Dialogue : MonoBehaviour
         {
             //gameHandler.AddPlayerStat(1);
             Char1name.text = "";
-            Char1speech.text = "ROBI’s internal circuitry is damaged beyond repair! The lab loses power and shuts down! ";
+            Char1speech.text = "R.O.B.I.’s internal circuitry is damaged beyond repair! The lab loses power and shuts down! ";
             Char2name.text = "";
             Char2speech.text = "";
             // Turn off the "Next" button, turn on "Scene" button/s
@@ -282,8 +300,13 @@ public class Scene6Dialogue : MonoBehaviour
         // after choice 2b
         else if (primeInt == 60)
         {
-            DialogueDisplay.SetActive(false);
             ExamineButton.SetActive(true);
+            nextButton.SetActive(false);
+            allowSpace = false;
+            ArtChar1a.SetActive(false);
+            ArtChar2c.SetActive(false);
+            DialogueDisplay.SetActive(false);
+            
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "";
@@ -291,9 +314,13 @@ public class Scene6Dialogue : MonoBehaviour
         }
         else if (primeInt == 61)
         {
+            nextButton.SetActive(true);
+            allowSpace = true;
+            
+            ExamineButton.SetActive(false);
             ArtChar2c.SetActive(false);
             ArtChar2a.SetActive(true);
-            GetComponent<CharacterBounce>().BounceMe();
+            GetComponent<CharactersBounceTwo>().BounceMe2();
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Dodo";
@@ -307,9 +334,22 @@ public class Scene6Dialogue : MonoBehaviour
             Char2speech.text = "";
 
             // Turn off the "Next" button, turn on "Scene" button/s
-            nextButton.SetActive(true);
-            allowSpace = true;
+            
+        }
+        else if (primeInt == 63)
+        {
+            ArtChar1a.SetActive(false); 
+            ArtChar2a.SetActive(false);
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "";
+            Char2speech.text = "";
+
+            // Turn off the "Next" button, turn on "Scene" button/s
+            nextButton.SetActive(false);
+            allowSpace = false;
             NextScene1Button.SetActive(true);
+            DialogueDisplay.SetActive(false);
         }
 
 
@@ -333,6 +373,9 @@ public class Scene6Dialogue : MonoBehaviour
     }
     public void Choice1bFunct()
     {
+        GetComponent<CharactersBounceTwo>().BounceMe1();
+        ArtChar1a.SetActive(false);
+        ArtChar1c.SetActive(true);
         Char1name.text = "R.O.B.I.";
         Char1speech.text = "I’m certain I heard something!";
         Char2name.text = "";
@@ -349,6 +392,9 @@ public class Scene6Dialogue : MonoBehaviour
     //choice 2a and 2b functions:
     public void Choice2aFunct()
     {
+        GetComponent<CharactersBounceTwo>().BounceMe1();
+        ArtChar1d.SetActive(false);
+        ArtChar1e.SetActive(true);
         Char1name.text = "R.O.B.I.";
         Char1speech.text = "Buh! I can’t get it off! Please help! I feel...funny.";
         Char2name.text = "";
@@ -361,6 +407,10 @@ public class Scene6Dialogue : MonoBehaviour
     }
     public void Choice2bFunct()
     {
+        
+        GetComponent<CharactersBounceTwo>().BounceMe1();
+        ArtChar1d.SetActive(false);
+        ArtChar1a.SetActive(true);
         Char1name.text = "R.O.B.I.";
         Char1speech.text = "[I should listen to what Dodo said. Better put this down]";
         Char2name.text = "";
@@ -369,7 +419,10 @@ public class Scene6Dialogue : MonoBehaviour
         Choice2a.SetActive(false);
         Choice2b.SetActive(false);
         nextButton.SetActive(true);
-        allowSpace = true;
+        allowSpace = false;
+
+
+
     }
 
     public void SceneChange1()
