@@ -191,7 +191,7 @@ public class Scene1Dialogue : MonoBehaviour
         else if (primeInt == 16)
         {
             ArtChar2a.SetActive(false);
-            ArtChar2c.SetActive(false);
+            ArtChar2c.SetActive(true);
             Char1name.text = "";
             Char1speech.text = " ";
             Char2name.text = "AI";
@@ -199,6 +199,8 @@ public class Scene1Dialogue : MonoBehaviour
         }
         else if (primeInt == 17)
         {
+            ArtChar2c.SetActive(false);
+            ArtChar2a.SetActive(true);
             Char1name.text = "";
             Char1speech.text = " ";
             Char2name.text = "AI";
@@ -214,6 +216,8 @@ public class Scene1Dialogue : MonoBehaviour
         }
         else if (primeInt == 19)
         {
+            ArtChar2a.SetActive(false);
+            ArtChar2b.SetActive(true);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "AI";
@@ -239,6 +243,8 @@ public class Scene1Dialogue : MonoBehaviour
         // after choice 1b
         else if (primeInt == 30)
         {
+            ArtChar2b.SetActive(false);
+            ArtChar2e.SetActive(true);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "AI";
@@ -255,6 +261,8 @@ public class Scene1Dialogue : MonoBehaviour
         }
         else if (primeInt == 32)
         {
+            ArtChar2e.SetActive(false);
+            ArtChar2a.SetActive(true);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "AI";
@@ -310,6 +318,8 @@ public class Scene1Dialogue : MonoBehaviour
         }
         else if (primeInt == 39)
         {
+            ArtChar2a.SetActive(false);
+            ArtChar2c.SetActive(true);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "AI";
@@ -327,6 +337,7 @@ public class Scene1Dialogue : MonoBehaviour
         {
             ArtChar1b.SetActive(false);
             ArtChar1e.SetActive(true);
+            ArtChar2c.SetActive(false);
             Char1name.text = "R.O.B.I.";
             Char1speech.text = "Huh?! What do you mean TOODLES";
             Char2name.text = "";
