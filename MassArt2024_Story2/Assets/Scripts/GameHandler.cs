@@ -7,14 +7,13 @@ using TMPro;
 using UnityEngine.SceneManagement;
 using UnityEngine.Audio;
 
-public class GameHandler : MonoBehaviour
-{
+public class GameHandler : MonoBehaviour{
     public static bool hasUSB = false;  // scene 9
     public static bool hasKeycard = false; // scene 7
     public static bool hasPassword = false; // scene 6
 
-    public static int timeRemaining;
-	public int timeMax = 100;
+    public static int timeRemaining=100;
+	//public int timeMax = 100;
 	public TMP_Text timerText;
     // public GameObject textGameObject;
 
@@ -25,18 +24,18 @@ public class GameHandler : MonoBehaviour
     private Slider sliderVolumeCtrl;
 
     void Awake(){
-                SetLevel (volumeLevel);
-                GameObject sliderTemp = GameObject.FindWithTag("PauseMenuSlider");
-                if (sliderTemp != null){
-                        sliderVolumeCtrl = sliderTemp.GetComponent<Slider>();
-                        sliderVolumeCtrl.value = volumeLevel;
-                }
-        }
+		SetLevel (volumeLevel);
+		GameObject sliderTemp = GameObject.FindWithTag("PauseMenuSlider");
+		if (sliderTemp != null){
+			sliderVolumeCtrl = sliderTemp.GetComponent<Slider>();
+			sliderVolumeCtrl.value = volumeLevel;
+		}
+	}
 
-        void Start(){
-                pauseMenuUI.SetActive(false);
-                GameisPaused = false;
-                timeRemaining = timeMax;
+	void Start(){
+		pauseMenuUI.SetActive(false);
+		GameisPaused = false;
+		//timeRemaining = timeMax;
 		UpdateStats(); 
 	}
 
@@ -74,7 +73,7 @@ public class GameHandler : MonoBehaviour
 
 	//public function that other scripts can access to update stats like time remaining:
     public void UpdateStats () {
-    	timerText.text = "TIME REMAINING: " + timeRemaining; 
+    	timerText.text = "Time Remaining: " + timeRemaining; 
         if (timeRemaining == 0)
         {
             SceneManager.LoadScene("SceneLose");

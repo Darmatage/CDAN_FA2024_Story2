@@ -418,6 +418,7 @@ public class Scene1Dialogue : MonoBehaviour
             Char2speech.text = "";
             ExamineButton.SetActive(false);
             NextScene1Button.SetActive(true); 
+			nextButton.SetActive(false);
         }
 
 

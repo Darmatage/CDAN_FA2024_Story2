@@ -227,7 +227,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 0
     m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
@@ -288,3 +288,10 @@ MonoBehaviour:
   dialogueDisplay: {fileID: 0}
   Char1name: {fileID: 0}
   Char1speech: {fileID: 0}
+  Char2name: {fileID: 0}
+  Char2speech: {fileID: 0}
+  examineThoughts: []
+  timeCost: 10
+  isUSB: 0
+  isKeycard: 0
+  isPassword: 0
