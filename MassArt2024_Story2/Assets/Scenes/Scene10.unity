@@ -1120,6 +1120,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5b1b576e11c56145b638b3286563d37, type: 3}
+--- !u!1 &454382269 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 751929523048330801, guid: de6e8a32d7ae64b439a4457fcccabbe8, type: 3}
+  m_PrefabInstance: {fileID: 1114762057532414891}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &473520741
 GameObject:
   m_ObjectHideFlags: 0
@@ -1686,6 +1691,7 @@ MonoBehaviour:
   NextScene3Button: {fileID: 2026388166}
   NextScene4Button: {fileID: 1375884740}
   nextButton: {fileID: 5551555657027391361}
+  ExamineButton: {fileID: 454382269}
 --- !u!1 &814273006 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7966427278787692198, guid: f47a1449ec44fbd4cb11c0871c9445d8, type: 3}
@@ -3484,6 +3490,10 @@ PrefabInstance:
     - target: {fileID: 751929523048330801, guid: de6e8a32d7ae64b439a4457fcccabbe8, type: 3}
       propertyPath: m_Name
       value: Button_EXAMINE
+      objectReference: {fileID: 0}
+    - target: {fileID: 751929523048330801, guid: de6e8a32d7ae64b439a4457fcccabbe8, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 813075715136571630, guid: de6e8a32d7ae64b439a4457fcccabbe8, type: 3}
       propertyPath: m_Pivot.x

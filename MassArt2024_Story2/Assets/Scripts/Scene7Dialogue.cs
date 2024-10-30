@@ -171,7 +171,7 @@ public class Scene7Dialogue : MonoBehaviour
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Slime";
-            Char2speech.text = "Jolly good! What a convienint program. ";
+            Char2speech.text = "Jolly good! What a convenient program. ";
         }
         else if (primeInt == 12)
         {

@@ -55,9 +55,15 @@ public class ItemToExamine : MonoBehaviour{
 		GameHandler.timeRemaining -= timeCost;
 		gameHandler.UpdateStats();
 
-        if (isUSB = true) { GameHandler.hasUSB = true; }
-        else if (isKeycard = true) { GameHandler.hasKeycard = true; }
-        else if (isPassword = true) { GameHandler.hasPassword = true; }
+        if (isUSB = true) { 
+            Debug.Log("I got the USB!");
+            GameHandler.hasUSB = true; }
+        else if (isKeycard = true) { 
+            Debug.Log("I got the Keycard!");
+            GameHandler.hasKeycard = true; }
+        else if (isPassword = true) { 
+            Debug.Log("I got the Password!");
+            GameHandler.hasPassword = true; }
     }
 
     public void ItemNext(){

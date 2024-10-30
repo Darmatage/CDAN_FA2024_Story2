@@ -33,6 +33,7 @@ public class Scene10Dialogue : MonoBehaviour
     public GameObject NextScene3Button; //scenelose
     public GameObject NextScene4Button; //sceneloseboom
     public GameObject nextButton;
+    public GameObject ExamineButton;
     //public AudioSource audioSource1;
     private bool allowSpace = true;
 
@@ -52,6 +53,7 @@ public class Scene10Dialogue : MonoBehaviour
         NextScene3Button.SetActive(false);
         NextScene4Button.SetActive(false);
         nextButton.SetActive(true);
+        ExamineButton.SetActive(false);
     }
 
     // Use the spacebar as a faster "Next" button:
@@ -200,7 +202,8 @@ public class Scene10Dialogue : MonoBehaviour
         }
         // after choice 1b
         else if (primeInt == 30)
-        {
+        {   
+            ///ExamineButton.SetActive(true);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "A.I";
