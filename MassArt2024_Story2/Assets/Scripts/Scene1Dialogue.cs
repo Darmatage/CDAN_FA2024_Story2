@@ -102,14 +102,14 @@ public class Scene1Dialogue : MonoBehaviour
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "AI";
-            Char2speech.text = "[ BOOTING. ]";
+            Char2speech.text = "[ BOOTING . ]";
         }
         else if (primeInt == 5)
         {
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "AI";
-            Char2speech.text = "[ BOOTING. . ] ";
+            Char2speech.text = "[ BOOTING . . ] ";
         }
         else if (primeInt == 6)
         {
@@ -144,21 +144,21 @@ public class Scene1Dialogue : MonoBehaviour
         {
             ArtChar1a.SetActive(true);
             Char1name.text = "R.O.B.I.";
-            Char1speech.text = "( . . .At least, that's what my sensors are telling me. )";
+            Char1speech.text = "( . . . At least, that's what my sensors are telling me. )";
             Char2name.text = "";
             Char2speech.text = "";
         }
         else if (primeInt == 11)
         {
             Char1name.text = "R.O.B.I.";
-            Char1speech.text = "( My logic unit feels as if its not working up to speed. . .) ";
+            Char1speech.text = "( My logic unit feels as if it's not working up to speed. . .) ";
             Char2name.text = "";
             Char2speech.text = "";
         }
         else if (primeInt == 12)
         {
             Char1name.text = "R.O.B.I.";
-            Char1speech.text = "( Maybe I should charge just a little bit more. . . )";
+            Char1speech.text = "( Maybe I should charge just a little bit more . . . ? )";
             Char2name.text = "";
             Char2speech.text = "";
             // Here would be a game over choice with robi either continuing or sleeping. If he sleeps it would lead to a Game over screen, but if he stays awake script would continue as usual. Ask 10/17/24 jason how to make more buttons, either me or someone else if im still sick - SAM
@@ -167,7 +167,7 @@ public class Scene1Dialogue : MonoBehaviour
     else if (primeInt == 13)
         {
             Char1name.text = "R.O.B.I.";
-            Char1speech.text = "( I cant be messing around! Its probably just a slow start up. . . better start looking around!)";
+            Char1speech.text = "( I can't be messing around! \nIt's probably just a slow start up. . . better start looking around!)";
             Char2name.text = "";
             Char2speech.text = "";
         }
@@ -211,7 +211,7 @@ public class Scene1Dialogue : MonoBehaviour
             Char1name.text = "";
             Char1speech.text = " ";
             Char2name.text = "AI";
-            Char2speech.text = "However, if you are confused about your identification. Your shortened name is R.O.B.I, or Responsive Optimization Behavior Interface";
+            Char2speech.text = "Are you are confused about your identification? \nYour shortened name is R.O.B.I, or Responsive Optimization Behavior Interface";
        
         }
         else if (primeInt == 19)
@@ -248,7 +248,7 @@ public class Scene1Dialogue : MonoBehaviour
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "AI";
-            Char2speech.text = "Ah, you must have gained some damage throughout the time prior to your activation. You will most likely be fine. ";
+            Char2speech.text = "Ah, you must have gained some damage throughout the time prior to your activation. \nYou will most likely be fine. ";
         }
         else if (primeInt == 31)
         {
@@ -266,7 +266,7 @@ public class Scene1Dialogue : MonoBehaviour
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "AI";
-            Char2speech.text = "That's a simple question! What does your programming tell you to do?";
+            Char2speech.text = "That's a simple question! \nWhat does your programming tell you to do?";
         }
         else if (primeInt == 33)
         {
@@ -300,7 +300,7 @@ public class Scene1Dialogue : MonoBehaviour
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "AI";
-            Char2speech.text = "You would know. Perhaps you were never programmed with one.";
+            Char2speech.text = "You would know. \nPerhaps you were never programmed with one.";
         }
         else if (primeInt == 37)
         {
@@ -323,7 +323,7 @@ public class Scene1Dialogue : MonoBehaviour
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "AI";
-            Char2speech.text = "The facility is currently running off Emergency power, wouldnt want to drain the rest of our lives";
+            Char2speech.text = "The facility is currently running off Emergency power. \nWouldn't want to drain the rest of our lives.";
             TimerBG.SetActive(true);
         }
         else if (primeInt == 40)
@@ -350,7 +350,7 @@ public class Scene1Dialogue : MonoBehaviour
         else if (primeInt == 42)
         {
             Char1name.text = "R.O.B.I.";
-            Char1speech.text = "They never answered my question!";
+            Char1speech.text = "They never answered my questions!";
             Char2name.text = "";
             Char2speech.text = "";
         }
@@ -359,14 +359,14 @@ public class Scene1Dialogue : MonoBehaviour
             ArtChar1e.SetActive(false);
             ArtChar1a.SetActive(true);
             Char1name.text = "R.O.B.I.";
-            Char1speech.text = "Oh well, guess ill have to figure it out myself";
+            Char1speech.text = "Oh well, guess I'll have to figure it out myself.";
             Char2name.text = "";
             Char2speech.text = "";
         }
         else if (primeInt == 44)
         {
             Char1name.text = "R.O.B.I.";
-            Char1speech.text = ". . .and fast too, that power issue worries me";
+            Char1speech.text = ". . . and fast too, that power issue worries me.";
             Char2name.text = "";
             Char2speech.text = "";
         }
@@ -382,7 +382,7 @@ public class Scene1Dialogue : MonoBehaviour
         else if (primeInt == 46)
         {
             Char1name.text = "R.O.B.I.";
-            Char1speech.text = "That damn AI has gotta know something! Perhaps I should find things to get them to talk...";
+            Char1speech.text = "That damn AI has gotta know something! \nPerhaps I should find things to get them to talk...";
             Char2name.text = "";
             Char2speech.text = "";
             
@@ -443,7 +443,7 @@ public class Scene1Dialogue : MonoBehaviour
         Char1name.text = "";
         Char1speech.text = "";
         Char2name.text = "AI";
-        Char2speech.text = "Ah, you must have gained some damage throughout the time prior to your activation. You will most likely be fine. ";
+        Char2speech.text = "Ah, you must have gained some damage throughout the time prior to your activation. \nYou will most likely be fine. ";
         primeInt = 29;
         Choice1a.SetActive(false);
         Choice1b.SetActive(false);
