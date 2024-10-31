@@ -257,6 +257,7 @@ public class Scene5Dialogue : MonoBehaviour
         {
             NextScene2Button.SetActive(true);
             DialogueDisplay.SetActive(false);
+			nextButton.SetActive(false);
         }
 
         //Please do NOT delete this final bracket that ends the Next() function:
