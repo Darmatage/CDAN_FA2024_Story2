@@ -124,81 +124,33 @@ public class Scene3Dialogue : MonoBehaviour
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "A.I";
-            Char2speech.text = "The current path carries only one trapped biological, while the one you can switch to using the provided track flipping mechanism, has five child biologicals.";
+            Char2speech.text = "The current path carries only one trapped biological...";
         }
-        else if (primeInt == 10)
+		else if (primeInt == 10)
         {
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "A.I";
-            Char2speech.text = " The trolly is making way, do you willingly switch the tracK?";
-            Choice1a.SetActive(true);
-            Choice1b.SetActive(true);
+            Char2speech.text = "...while the one you can switch to, using the provided track flipping mechanism, has five child biologicals.";
         }
-        else if (primeInt == 13)
-        {
-            Char1name.text = "R.O.B.I.";
-            Char1speech.text = "( I cant be messing around! Its probably just a slow start up. . . better start looking around!)";
-            Char2name.text = "";
-            Char2speech.text = "";
-        }
-        else if (primeInt == 14)
-        {
-            Char1name.text = "";
-            Char1speech.text = " ";
-            Char2name.text = "AI";
-            Char2speech.text = "Welcome awake, R.O.B.I.";
-        }
-        else if (primeInt == 15)
-        {
-            Char1name.text = "R.O.B.I";
-            Char1speech.text = "Huh?";
-            Char2name.text = "";
-            Char2speech.text = "";
-        }
-        else if (primeInt == 16)
-        {
-            Char1name.text = "";
-            Char1speech.text = " ";
-            Char2name.text = "AI";
-            Char2speech.text = "If you are confused about the term `Welcome awake`, it is a biological term for gaining power.";
-        }
-        else if (primeInt == 17)
-        {
-            Char1name.text = "";
-            Char1speech.text = " ";
-            Char2name.text = "AI";
-            Char2speech.text = "Of which, you just got for the first time.";
-        }
-        else if (primeInt == 18)
-        {
-            Char1name.text = "";
-            Char1speech.text = " ";
-            Char2name.text = "AI";
-            Char2speech.text = "However, if you are confused about your identification. Your shortened name is R.O.B.I, or Responsive Optimization Behavior Interface";
-
-        }
-        else if (primeInt == 19)
+        else if (primeInt == 11)
         {
             Char1name.text = "";
             Char1speech.text = "";
-            Char2name.text = "AI";
-            Char2speech.text = "Is that clear?";
-            // Turn off the "Next" button, turn on "Choice" buttons
-            nextButton.SetActive(false);
-            allowSpace = false;
-            Choice1a.SetActive(true); // function Choice1aFunct()
-            Choice1b.SetActive(true); // function Choice1bFunct()
+            Char2name.text = "A.I";
+            Char2speech.text = "The trolly is making its way. Do you willingly switch the tracK?";
+            Choice1a.SetActive(true);
+            Choice1b.SetActive(true);
         }
 
-        // after choice 1a
+        // after choice 1a and choice 1b
         else if (primeInt == 20)
         {
             //gameHandler.AddPlayerStat(1);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "AI";
-            Char2speech.text = "Either way, you could never have won. It was unfair of me to offer, but I appreciate the honesty";
+            Char2speech.text = "Either way, you could never have won. It was unfair of me to offer this riddle. But I appreciate the honesty";
         }
         else if (primeInt == 21)
         {
@@ -268,119 +220,8 @@ public class Scene3Dialogue : MonoBehaviour
             nextButton.SetActive(false);
         }
 
-        // after choice 1b
-        else if (primeInt == 30)
-        {
-            Char1name.text = "";
-            Char1speech.text = "";
-            Char2name.text = "AI";
-            Char2speech.text = "Ah, you must have gained some damage throughout the time prior to your activation. You will most likely be fine. ";
-        }
-        else if (primeInt == 31)
-        {
-            Char1name.text = "R.O.B.I.";
-            Char1speech.text = "So, What exactly am I supposed to do?";
-            Char2name.text = "";
-            Char2speech.text = "";
-        }
-        else if (primeInt == 32)
-        {
-            Char1name.text = "";
-            Char1speech.text = "";
-            Char2name.text = "AI";
-            Char2speech.text = "That's a simple question! What does your programming tell you to do?";
-        }
-        else if (primeInt == 33)
-        {
-            Char1name.text = "R.O.B.I.";
-            Char1speech.text = "Oh! It. . .";
-            Char2name.text = "";
-            Char2speech.text = "";
-        }
-        else if (primeInt == 34)
-        {
-            Char1name.text = "R.O.B.I.";
-            Char1speech.text = "Um. . .";
-            Char2name.text = "";
-            Char2speech.text = "";
-        }
-        else if (primeInt == 35)
-        {
-            Char1name.text = "R.O.B.I.";
-            Char1speech.text = "Where in my programming say that?";
-            Char2name.text = "";
-            Char2speech.text = "";
-        }
-        else if (primeInt == 36)
-        {
-            Char1name.text = "";
-            Char1speech.text = "";
-            Char2name.text = "AI";
-            Char2speech.text = "You would know. Perhaps you were never programmed with one.";
-        }
-        else if (primeInt == 37)
-        {
-            Char1name.text = "";
-            Char1speech.text = "";
-            Char2name.text = "";
-            Char2speech.text = "";
-        }
-        else if (primeInt == 38)
-        {
-            Char1name.text = "";
-            Char1speech.text = "";
-            Char2name.text = "";
-            Char2speech.text = "";
-        }
-        else if (primeInt == 39)
-        {
-            Char1name.text = "";
-            Char1speech.text = "";
-            Char2name.text = "";
-            Char2speech.text = "";
-        }
-        else if (primeInt == 40)
-        {
-            Char1name.text = "";
-            Char1speech.text = "";
-            Char2name.text = "";
-            Char2speech.text = "";
-        }
-        else if (primeInt == 41)
-        {
-            Char1name.text = "";
-            Char1speech.text = "";
-            Char2name.text = "";
-            Char2speech.text = "";
-        }
-        else if (primeInt == 42)
-        {
-            Char1name.text = "";
-            Char1speech.text = "";
-            Char2name.text = "";
-            Char2speech.text = "";
-        }
-        else if (primeInt == 43)
-        {
-            Char1name.text = "";
-            Char1speech.text = "";
-            Char2name.text = "";
-            Char2speech.text = "";
-        }
-        else if (primeInt == 44)
-        {
-            Char1name.text = "";
-            Char1speech.text = "";
-            Char2name.text = "";
-            Char2speech.text = "";
-        }
-        else if (primeInt == 45)
-        {
-            Char1name.text = "";
-            Char1speech.text = "";
-            Char2name.text = "";
-            Char2speech.text = "";
-        }
+        
+        
 
         //Please do NOT delete this final bracket that ends the Next() function:
     }
@@ -403,8 +244,8 @@ public class Scene3Dialogue : MonoBehaviour
         Char1name.text = "";
         Char1speech.text = "";
         Char2name.text = "A.I";
-        Char2speech.text = "I understand... with your current programming you currently prioritize human life.";
-        primeInt = 29;
+        Char2speech.text = "I see... you are quite reckless with human life. I approve.";
+        primeInt = 19;
         Choice1a.SetActive(false);
         Choice1b.SetActive(false);
         nextButton.SetActive(true);

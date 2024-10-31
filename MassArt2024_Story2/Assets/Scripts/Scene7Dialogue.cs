@@ -115,7 +115,7 @@ public class Scene7Dialogue : MonoBehaviour
 
             
             Char1name.text = "R.O.B.I.";
-            Char1speech.text = "Huh? Who’s there?";
+            Char1speech.text = "Huh? Who's there?";
             Char2name.text = "";
             Char2speech.text = "";
         }
@@ -132,7 +132,7 @@ public class Scene7Dialogue : MonoBehaviour
 
 
             Char1name.text = "R.O.B.I";
-            Char1speech.text = "Oh… you're a slime. Neat!";
+            Char1speech.text = "Oh... you're a slime. Neat!";
             Char2name.text = "";
             Char2speech.text = "";
         }
@@ -176,7 +176,7 @@ public class Scene7Dialogue : MonoBehaviour
         else if (primeInt == 12)
         {
             Char1name.text = "R.O.B.I.";
-            Char1speech.text = "I've used the translator for the Overseer's experiments, but I've never gotten the chance to talk to a slime one-to-one.";
+            Char1speech.text = "My knowledge core has reference to slimes. I've never gotten the chance to talk to a slime one-to-one!";
             Char2name.text = "";
             Char2speech.text = "";
         }
@@ -202,12 +202,10 @@ public class Scene7Dialogue : MonoBehaviour
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Slime";
-            Char2speech.text = "Ah. We're simply a mixture of Polyvynle alcohol, some glue, and a substnace high in borate ions.";
+            Char2speech.text = "Ah. We're simply a mixture of Polyvynle alcohol, some glue, and a substance high in borate ions.";
         }
         else if (primeInt == 21)
         {
-
-            
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Slime";
@@ -216,7 +214,7 @@ public class Scene7Dialogue : MonoBehaviour
         else if (primeInt == 22)
         {
             Char1name.text = "R.O.B.I.";
-            Char1speech.text = "...facinating.";
+            Char1speech.text = "...fascinating.";
             Char2name.text = "";
             Char2speech.text = "";
             primeInt = 39;
@@ -251,7 +249,7 @@ public class Scene7Dialogue : MonoBehaviour
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Slime";
-            Char2speech.text = "Forgive me, I have not excersized in quite a while.";
+            Char2speech.text = "Forgive me, I have not exercised in quite a while.";
             primeInt = 39;
         }
 
@@ -296,14 +294,12 @@ public class Scene7Dialogue : MonoBehaviour
         }
 
 
-
-
         // after choice 2a
         else if (primeInt == 50)
         {
             //gameHandler.AddPlayerStat(1);
-            Char1name.text = "";
-            Char1speech.text = "The card is pulled out, but slips out of R.O.B.I.'s hand and is flung onto a nearby lecturn.";
+            Char1name.text = "R.O.B.I.";
+            Char1speech.text = "The card is out! \nWoah-- it slipped out of my hand. \nIt landed on that lecturn.";
             Char2name.text = "";
             Char2speech.text = "";
             // Turn off the "Next" button, turn on "Scene" button/s
@@ -311,7 +307,6 @@ public class Scene7Dialogue : MonoBehaviour
         }
         else if (primeInt == 51)
         {
-
             //gameHandler.AddPlayerStat(1);
             Char1name.text = "";
             Char1speech.text = "";
@@ -321,7 +316,6 @@ public class Scene7Dialogue : MonoBehaviour
 
         else if (primeInt == 52)
         {
-
             //gameHandler.AddPlayerStat(1);
             Char1name.text = "R.O.B.I.";
             Char1speech.text = "Whoops! I'll get it!";
@@ -330,7 +324,6 @@ public class Scene7Dialogue : MonoBehaviour
         }
         else if (primeInt == 53)
         {
-
             //gameHandler.AddPlayerStat(1);
             Char1name.text = "";
             Char1speech.text = "";

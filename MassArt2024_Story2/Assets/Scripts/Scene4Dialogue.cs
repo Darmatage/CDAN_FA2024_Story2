@@ -108,7 +108,7 @@ public class Scene4Dialogue : MonoBehaviour
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "AI";
-            Char2speech.text = "To gain entry, you must answer this Would You Rather question correctly.";
+            Char2speech.text = "To gain entry, you must answer this 'Would You Rather' question correctly.";
 
         }
         else if (primeInt == 5)
