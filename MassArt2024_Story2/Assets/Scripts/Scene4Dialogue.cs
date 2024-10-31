@@ -129,12 +129,6 @@ public class Scene4Dialogue : MonoBehaviour
             Char2name.text = "AI";
             Char2speech.text = "I shall decide on my own, through logical deductive reasoning, which option is the most optimal for survival and general satisfaction.";
         }
-
-
-
-
-
-
         else if (primeInt == 7)
         {
             Char1name.text = "R.O.B.I.";
@@ -284,16 +278,6 @@ public class Scene4Dialogue : MonoBehaviour
             NextScene2Button.SetActive(true);
         }
 
-
-        
-
-
-
-
-
-
-
-
         //Please do NOT delete this final bracket that ends the Next() function:
     }
 
@@ -313,7 +297,7 @@ public class Scene4Dialogue : MonoBehaviour
     public void Choice1bFunct()
     {
         Char1name.text = "R.O.B.I.";
-        Char1speech.text = "That doesn’t seem fair at all!";
+        Char1speech.text = "That doesn't seem fair at all!";
         Char2name.text = "";
         Char2speech.text = "";
         primeInt = 34;
@@ -324,7 +308,7 @@ public class Scene4Dialogue : MonoBehaviour
     }
     public void Choice2aFunct()
     {
-        Char1name.text = "";
+        Char1name.text = "R.O.B.I.";
         Char1speech.text = "The Horse-Sized Chickens!";
         Char2name.text = "";
         Char2speech.text = "";
@@ -336,7 +320,7 @@ public class Scene4Dialogue : MonoBehaviour
     }
     public void Choice2bFunct()
     {
-        Char1name.text = "";
+        Char1name.text = "R.O.B.I.";
         Char1speech.text = "The Chicken-Sized Horses!";
         Char2name.text = "";
         Char2speech.text = "";

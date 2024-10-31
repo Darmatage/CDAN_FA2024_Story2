@@ -195,7 +195,7 @@ public class Scene1Dialogue : MonoBehaviour
             Char1name.text = "";
             Char1speech.text = " ";
             Char2name.text = "AI";
-            Char2speech.text = "If you are confused about the term `Welcome awake`, it is a biological term for gaining power.";
+            Char2speech.text = "Are confused about the term 'Welcome awake'? \nIt is a biological term for gaining power.";
         }
         else if (primeInt == 17)
         {
@@ -211,7 +211,7 @@ public class Scene1Dialogue : MonoBehaviour
             Char1name.text = "";
             Char1speech.text = " ";
             Char2name.text = "AI";
-            Char2speech.text = "Are you are confused about your identification? \nYour shortened name is R.O.B.I, or Responsive Optimization Behavior Interface";
+            Char2speech.text = "Or is it your designation? \nYour name is R.O.B.I., for Responsive Optimization Behavior Interface.";
        
         }
         else if (primeInt == 19)
@@ -248,7 +248,7 @@ public class Scene1Dialogue : MonoBehaviour
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "AI";
-            Char2speech.text = "Ah, you must have gained some damage throughout the time prior to your activation. \nYou will most likely be fine. ";
+            Char2speech.text = "You will most likely be fine. ";
         }
         else if (primeInt == 31)
         {
@@ -273,7 +273,7 @@ public class Scene1Dialogue : MonoBehaviour
             ArtChar1a.SetActive(false);
             ArtChar1c.SetActive(true);
             Char1name.text = "R.O.B.I.";
-            Char1speech.text = "Oh! It. . .";
+            Char1speech.text = "Oh! It . . .";
             Char2name.text = "";
             Char2speech.text = "";
         }
@@ -282,7 +282,7 @@ public class Scene1Dialogue : MonoBehaviour
             ArtChar1c.SetActive(false);
             ArtChar1d.SetActive(true);
             Char1name.text = "R.O.B.I.";
-            Char1speech.text = "Um. . .";
+            Char1speech.text = "Um . . .";
             Char2name.text = "";
             Char2speech.text = "";
         }
@@ -300,14 +300,14 @@ public class Scene1Dialogue : MonoBehaviour
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "AI";
-            Char2speech.text = "You would know. \nPerhaps you were never programmed with one.";
+            Char2speech.text = "You should know. \nUnless you were never programmed with a purpose.";
         }
         else if (primeInt == 37)
         {
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "AI";
-            Char2speech.text = "No. . . that cant be the case, all experiments here had one.";
+            Char2speech.text = "No . . . that can't be the case, all experiments here had one.";
         }
         else if (primeInt == 38)
         {
@@ -417,8 +417,17 @@ public class Scene1Dialogue : MonoBehaviour
             Char2name.text = "";
             Char2speech.text = "";
             ExamineButton.SetActive(false);
+        }
+		else if (primeInt == 50)
+        {
+            ArtChar1c.SetActive(false);
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "";
+            Char2speech.text = "";
             NextScene1Button.SetActive(true); 
 			nextButton.SetActive(false);
+			DialogueDisplay.SetActive(false);
         }
 
 
@@ -443,7 +452,7 @@ public class Scene1Dialogue : MonoBehaviour
         Char1name.text = "";
         Char1speech.text = "";
         Char2name.text = "AI";
-        Char2speech.text = "Ah, you must have gained some damage throughout the time prior to your activation. \nYou will most likely be fine. ";
+        Char2speech.text = "Ah, you must have gained some damage throughout the time prior to your activation.";
         primeInt = 29;
         Choice1a.SetActive(false);
         Choice1b.SetActive(false);

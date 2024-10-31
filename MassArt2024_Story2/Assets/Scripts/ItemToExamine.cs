@@ -35,6 +35,8 @@ public class ItemToExamine : MonoBehaviour{
         }
     }
 // Use the spacebar as a faster "Next" button:
+//NOTE: turned off, because as displaying the same text for all items...?
+/*
     void Update(){        
         if (allowSpace == true){
             if (Input.GetKeyDown("space")){
@@ -42,6 +44,7 @@ public class ItemToExamine : MonoBehaviour{
             }
         }
     }
+*/
 
 	//function assigned to the button:
     public void RevealBigItem(){

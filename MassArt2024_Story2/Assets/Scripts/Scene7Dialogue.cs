@@ -97,7 +97,7 @@ public class Scene7Dialogue : MonoBehaviour
             ArtChar1a.SetActive(true);
             DialogueDisplay.SetActive(true);
             Char1name.text = "R.O.B.I.";
-            Char1speech.text = "Heyyyyyy! Anyone homeeee!";
+            Char1speech.text = "Heyyyyyy! Anyone homeeee?";
             Char2name.text = "";
             Char2speech.text = "";
         }
@@ -231,12 +231,36 @@ public class Scene7Dialogue : MonoBehaviour
         else if (primeInt == 31)
         {
             Char1name.text = "";
-            Char1speech.text = "Slime squishes its body all the way down, and gives its biggest bounce. It goes approximatly three feet high.";
-            Char2name.text = "";
-            Char2speech.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Slime";
+            Char2speech.text = "I just squish my body aaaallll the way down...";
 
         }
-        else if (primeInt == 32)
+		else if (primeInt == 32)
+        {
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Slime";
+            Char2speech.text = "...and give my biggest bounce!";
+
+        }
+		else if (primeInt == 33)
+        {
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Slime";
+            Char2speech.text = "WEEE!";
+
+        }
+		else if (primeInt == 34)
+        {
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Slime";
+            Char2speech.text = "Did you see! Almost three feet high!";
+
+        }
+        else if (primeInt == 35)
         {
             Char1name.text = "R.O.B.I.";
             Char1speech.text = "To be honest, I kinda expected higher.";
@@ -244,7 +268,7 @@ public class Scene7Dialogue : MonoBehaviour
             Char2speech.text = "";
 
         }
-        else if (primeInt == 33)
+        else if (primeInt == 36)
         {
             Char1name.text = "";
             Char1speech.text = "";
@@ -262,7 +286,7 @@ public class Scene7Dialogue : MonoBehaviour
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Slime";
-            Char2speech.text = "So, about that question I blubbed earlier, it's about the card stuck inside me.";
+            Char2speech.text = "So, about that question I blubbed earlier. \nIt's about this card stuck inside me.";
         }
         else if (primeInt == 41)
         {
@@ -270,9 +294,17 @@ public class Scene7Dialogue : MonoBehaviour
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Slime";
-            Char2speech.text = "Would you kindly reach in and pull it out, it's getting quite uncomfortable. But do be quick, I tend to be a tad...clingy.";
+            Char2speech.text = "Would you kindly reach in and pull it out? \nIt's getting quite uncomfortable.";
         }
-        else if (primeInt == 42)
+		else if (primeInt == 42)
+        {
+
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Slime";
+            Char2speech.text = "But do be quick, I tend to be a tad... clingy.";
+        }
+        else if (primeInt == 43)
         {
 
             Char1name.text = "R.O.B.I.";
@@ -280,7 +312,7 @@ public class Scene7Dialogue : MonoBehaviour
             Char2name.text = "";
             Char2speech.text = " ";
         }
-        else if (primeInt == 43)
+        else if (primeInt == 44)
         {
             Char1name.text = "R.O.B.I.";
             Char1speech.text = "How should I approach this?";
@@ -299,11 +331,9 @@ public class Scene7Dialogue : MonoBehaviour
         {
             //gameHandler.AddPlayerStat(1);
             Char1name.text = "R.O.B.I.";
-            Char1speech.text = "The card is out! \nWoah-- it slipped out of my hand. \nIt landed on that lecturn.";
+            Char1speech.text = "The card is out! \nWoah-- it slipped out of my hand... \n...and landed on that lecturn.";
             Char2name.text = "";
             Char2speech.text = "";
-            // Turn off the "Next" button, turn on "Scene" button/s
-
         }
         else if (primeInt == 51)
         {
@@ -452,7 +482,7 @@ public class Scene7Dialogue : MonoBehaviour
     public void Choice1bFunct()
     {
         Char1name.text = "R.O.B.I.";
-        Char1speech.text = "How high can you jump!";
+        Char1speech.text = "How high can you jump?";
         Char2name.text = "";
         Char2speech.text = "";
         primeInt = 29;
@@ -480,7 +510,7 @@ public class Scene7Dialogue : MonoBehaviour
     public void Choice2bFunct()
     {
         Char1name.text = "R.O.B.I.";
-        Char1speech.text = "Let's reach in slow.";
+        Char1speech.text = "Let's reach in slow ...";
         Char2name.text = "";
         Char2speech.text = "";
         primeInt = 59;
