@@ -158,15 +158,25 @@ public void Next(){
                 Char2name.text = "";
                 Char2speech.text = "";
         }
-       else if (primeInt == 32){
+ 		else if (primeInt == 32){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "A.I";
                 Char2speech.text = "Be thorough.";
+        }
+
+
+       else if (primeInt == 33){
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "";
+                Char2speech.text = "";
                 // Turn off the "Next" button, turn on "Scene" button/s
+				DialogueDisplay.SetActive(false);
                 nextButton.SetActive(false);
                 allowSpace = false;
-                NextScene1Button.SetActive(true);
+                NextScene1Button.SetActive(true); //doorway to next scene
+				
         }
 
       //Please do NOT delete this final bracket that ends the Next() function:

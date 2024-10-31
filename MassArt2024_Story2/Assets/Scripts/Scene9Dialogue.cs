@@ -200,7 +200,7 @@ public class Scene9Dialogue : MonoBehaviour
         }
 
 
-        
+        //after dialogue from choices 2a and 2b
         else if (primeInt == 17)
         {
             GetComponent<CharactersBounceTwo>().BounceMe1();
@@ -279,7 +279,7 @@ public class Scene9Dialogue : MonoBehaviour
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Prof. Fin";
-            Char2speech.text = "Oh word? There should be an item like that somewhere in this room, a USB! I'd search for it with you, but again no hands.";
+            Char2speech.text = "Oh word? There should be an item like that somewhere in this room, a USB! \nI'd search for it with you, but again no hands.";
             
         }
         else if (primeInt == 25)
@@ -346,43 +346,7 @@ public class Scene9Dialogue : MonoBehaviour
 
 
 
-
-
-        // after choice 1a
-
-        else if (primeInt == 60)
-        {
-            Char1name.text = "";
-            Char1speech.text = "";
-            Char2name.text = "Prof. Fin";
-            Char2speech.text = "Alright you asked for it!";
-           
-        }
-        else if (primeInt == 61)
-        {
-            Char1name.text = "";
-            Char1speech.text = "";
-            Char2name.text = "";
-            Char2speech.text = "Prof. Fin warned you not to run! He's unsurprisingly athletic and catches you in an instant. He tears you apart with his jaws and you watch the Lab run out of power.";
-            // Turn off the "Next" button, turn on "Scene" button/s
-            nextButton.SetActive(false);
-            allowSpace = false;
-            NextScene2Button.SetActive(true);
-        }
-
-        else if (primeInt == 31)
-        {
-            Char1name.text = "";
-            Char1speech.text = "";
-            Char2name.text = "";
-            Char2speech.text = "";
-            // Turn off the "Next" button, turn on "Scene" button/s
-            nextButton.SetActive(false);
-            allowSpace = false;
-            NextScene2Button.SetActive(true);
-        }
         //after choice 2a
-        
         else if (primeInt == 40)
         {
             GetComponent<CharactersBounceTwo>().BounceMe2();
@@ -396,7 +360,6 @@ public class Scene9Dialogue : MonoBehaviour
         }
 
         //after choice 2b
-        
         else if (primeInt == 50)
         {
             GetComponent<CharactersBounceTwo>().BounceMe2();
@@ -406,9 +369,56 @@ public class Scene9Dialogue : MonoBehaviour
             Char1speech.text = "";
             Char2name.text = "Prof. Fin";
             Char2speech.text = "Hey don't knock the lifestyle, I get by just fine!";
-
             primeInt = 16;
         }
+
+
+	// after choice 1a
+        else if (primeInt == 60)
+        {
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Prof. Fin";
+            Char2speech.text = "Alright you asked for it!";
+           
+        }
+		else if (primeInt == 61)
+        {
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Prof. Fin";
+            Char2speech.text = "I warned you not to run!";
+           
+        }
+        else if (primeInt == 62)
+        {
+            Char1name.text = "R.O.B.I.";
+            Char1speech.text = "Aaaah! Leave me alone!";
+            Char2name.text = "";
+            Char2speech.text = "";
+           
+        }
+        else if (primeInt == 63)
+        {
+            Char1name.text = "R.O.B.I.";
+            Char1speech.text = "Nooo... not my arms! Give those back!";
+            Char2name.text = "";
+            Char2speech.text = "";
+           
+        }
+        else if (primeInt == 64)
+        {
+            Char1name.text = "R.O.B.I.";
+            Char1speech.text = "The lab... going dark... looosing poooooowwwweeeeerrrr...";
+            Char2name.text = "";
+            Char2speech.text = "";
+            // Turn off the "Next" button, turn on "Scene" button/s
+            nextButton.SetActive(false);
+            allowSpace = false;
+            NextScene2Button.SetActive(true);
+        }
+
+
         //Please do NOT delete this final bracket that ends the Next() function:
     }
 
