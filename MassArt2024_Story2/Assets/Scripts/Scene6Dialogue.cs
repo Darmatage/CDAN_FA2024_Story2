@@ -182,7 +182,7 @@ public class Scene6Dialogue : MonoBehaviour
         else if (primeInt == 20)
         {
             Char1name.text = "R.O.B.I.";
-            Char1speech.text = "Must’ve been my imagination";
+            Char1speech.text = "Must've been my imagination";
             Char2name.text = "";
             Char2speech.text = "";
         }
@@ -194,7 +194,7 @@ public class Scene6Dialogue : MonoBehaviour
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Dodo";
-            Char2speech.text = " Robots don’t have imaginations, son.";
+            Char2speech.text = " Robots don't have imaginations, son.";
         }
         else if (primeInt == 22)
         {
@@ -241,7 +241,7 @@ public class Scene6Dialogue : MonoBehaviour
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Dodo";
-            Char2speech.text = "Alright, go ahead and take a look around, but don’t mess up any of my work papers! Can’t have you messing up years of calculations.";
+            Char2speech.text = "Alright, go ahead and take a look around, but don't mess up any of my work papers! Can’t have you messing up years of calculations.";
 
     }
     else if (primeInt == 41)
@@ -287,8 +287,8 @@ public class Scene6Dialogue : MonoBehaviour
         else if (primeInt == 51)
         {
             //gameHandler.AddPlayerStat(1);
-            Char1name.text = "";
-            Char1speech.text = "R.O.B.I.’s internal circuitry is damaged beyond repair! The lab loses power and shuts down! ";
+            Char1name.text = "R.O.B.I.";
+            Char1speech.text = "my... circuitry... damaged.. The lab... losing power... shutting doooooowwwwn...";
             Char2name.text = "";
             Char2speech.text = "";
             // Turn off the "Next" button, turn on "Scene" button/s

@@ -73,7 +73,7 @@ public class GameHandler : MonoBehaviour{
 
 	//public function that other scripts can access to update stats like time remaining:
     public void UpdateStats () {
-    	timerText.text = "Time Remaining: " + timeRemaining; 
+    	timerText.text = " Time Remaining: " + timeRemaining; 
         if (timeRemaining == 0)
         {
             SceneManager.LoadScene("SceneLose");
